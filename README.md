@@ -147,16 +147,55 @@
 - AR - регистр адреса
 
 # Система команд
+## Набор инструкций
 
-| Команда      | Вход                                                                           | Выход                                                                            | Описание                             |
-|:-------------|:-------------------------------------------------------------------------------|----------------------------------------------------------------------------------|:-------------------------------------|
-| PUSH <value> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>...</td></tr></table> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table> | пушит на вершину стека свой аргумент |
-| PUSH <value> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>...</td></tr></table> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table> | пушит на вершину стека свой аргумент |
-| PUSH <value> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>...</td></tr></table> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table> | пушит на вершину стека свой аргумент |
-| PUSH <value> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>...</td></tr></table> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table> | пушит на вершину стека свой аргумент |
-| PUSH <value> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>...</td></tr></table> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table> | пушит на вершину стека свой аргумент |
-| PUSH <value> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>...</td></tr></table> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table> | пушит на вершину стека свой аргумент |
-| PUSH <value> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>...</td></tr></table> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table> | пушит на вершину стека свой аргумент |
+| Команда                                                         | Число тактов | Стек ДО                                                                           | Стек ПОСЛЕ                                                                         | Описание                                                                                                                                                                                       |
+|:----------------------------------------------------------------|--------------|:----------------------------------------------------------------------------------|------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| PUSH [value]                                                    | 1            | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>...</td></tr></table>    | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table>   | пушит на вершину стека свой аргумент                                                                                                                                                           |
+| LOAD                                                            | 2            | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>addr</td></tr></table>   | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table>   | загружает значение из памяти, адрес берется из вершины стека                                                                                                                                   |
+| STORE                                                           | 2            | <table><tr><td>...</td></tr><tr><td>value</td></tr><tr><td>addr</td></tr></table> | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table>   | сохраняет значение из второй ячейки стека, адрес берется из вершины стека                                                                                                                      |
+| POP                                                             | 1            | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table>  | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>...</td></tr></table>     | удаляет вершину стека                                                                                                                                                                          |
+| ADD<br/>SUB<br/>MUL<br/>DIV<br/>MOD                             | 1            | <table><tr><td>...</td></tr><tr><td>a</td></tr><tr><td>b</td></tr></table>        | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>result</td></tr></table>  | выполняет арифметическую операцию                                                                                                                                                              |
+| FLAGS                                                           | 1            | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table>  | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table>   | выставляет флаги N (negative) и Z (zero) для value                                                                                                                                             |
+| INC<br/>DEC                                                     | 1            | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table>  | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>result</td></tr></table>  | выполняет инкремент или декремент                                                                                                                                                              |
+| READ [port]                                                     | 1            | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>...</td></tr></table>    | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table>   | читает из порта один символ                                                                                                                                                                    |
+| WRITE [port]                                                    | 1            | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table>  | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>...</td></tr></table>     | записывает вершину стека в порт                                                                                                                                                                |
+| DUP                                                             | 1            | <table><tr><td>...</td></tr><tr><td>...</td></tr><tr><td>value</td></tr></table>  | <table><tr><td>...</td></tr><tr><td>value</td></tr><tr><td>value</td></tr></table> | дублирует значение с вершины стека                                                                                                                                                             |
+| SWAP                                                            | 1            | <table><tr><td>...</td></tr><tr><td>a</td></tr><tr><td>b</td></tr></table>        | <table><tr><td>...</td></tr><tr><td>b</td></tr><tr><td>a</td></tr></table>         | меняет местами верхние 2 значения в стеке                                                                                                                                                      |
+| JUMP [len]<br/>JZ [len]<br/>JNZ [len]<br/>JP [len]<br/>JM [len] | 1            | -                                                                                 | -                                                                                  | прыжок на указанное расстояние на основании выставленных флагов. <br/>JUMP - безусловный, <br/>JZ - прыжок, если ноль, <br/>JNZ - прыжок, если не ноль, , <br/>JP/JM - прыжок, если плюс/минус |
+| CALL [addr]                                                     | 1            | -                                                                                 | -                                                                                  | вызов функции по адресу addr                                                                                                                                                                   |
+| RET                                                             | 1            | -                                                                                 | -                                                                                  | возврат из функции                                                                                                                                                                             |
+| HALT                                                            | 1            | -                                                                                 | -                                                                                  | остановить выполнение                                                                                                                                                                          |
+
+
+## Формат инструкций
+Инструкции представлены в формате _JSON_ по заданию
+```json
+{
+  "index": 1,
+  "opcode": "push",
+  "arg": 123,
+  "term": "defvar"
+}
+```
+где:
+- `opcode` - код операции (Opcode - тип данных, определенный в [isa](isa.py))
+- `arg` - аргумент инструкции
+- `term` - указывает на то, к какой части исходного кода относится инструкция
+
+# Транслятор
+Интерфейс командной строки: `python translator.py <input_file> <target_file>`
+
+Транслятор реализован в модуле [translator](translator.py)
+
+Этапы трансляции:
+1. удаление комментариев
+2. определение строковых литералов и замена их на заглушки
+3. форматирование программы (удаление двойных пробелов и пр.)
+4. парсинг программы: исходный код представляется как вложенные объекты класса `Expression` (определен в [translator](translator.py), попутная проверка на корректность скобочной последовательности)
+5. генерация машинного кода на основе объектов `Expression`, попутная проверка корректности использования синтаксических конструкций языка
+6. сериализация - представление в формате _JSON_
+
 
 
 

@@ -538,37 +538,35 @@ def _func(args_codes: list[list]) -> list[Instr]:
 
 
 instructions = {
-    "defvar": defvar, # +
-    "setq": setq, # +
+    "defvar": defvar,
+    "setq": setq,
 
-    "+": add, # +
-    "-": sub, # +
-    "*": mul, # +
-    "/": div, # +
-    "mod": mod, # +
+    "+": add,
+    "-": sub,
+    "*": mul,
+    "/": div,
+    "mod": mod,
 
-    "=": eq, # +
-    ">": larger, # +
-    "<": lower, # +
+    "=": eq,
+    ">": larger,
+    "<": lower,
 
-    "if": if_, # +
+    "if": if_,
+    "and": and_,
+    "or": or_,
+    "not": not_,
 
-    "and": and_, # +
-    "or": or_, # +
-    "not": not_, # +
+    "print_str" : print_str,
+    "print_int" : print_int,
+    "read_str": read_str,
 
-    "print_str" : print_str, # +
-    "print_int" : print_int, # +
-    "read_str": read_str, # +
-
-    "loop_while": loop_while, # +
+    "loop_while": loop_while,
 
     '"FUNC': _func, #technical thing
 }
 
 def main(program_str: str) -> list:
     global next_var_addr, str_literals_addresses, dynamic_string_max_length
-    # teststr = "(defvar a (if 0 1 2)) (+ a a 8)"
     expressions, str_literals, str_dynamic = parse_string(f"(A {program_str})")
     func_definitions_code = []
     program_code = []
@@ -633,8 +631,8 @@ def main(program_str: str) -> list:
     full_code.extend(func_definitions_code)
     full_code.extend(program_code)
 
-    for p in full_code:
-        print(str(p))
+    # for p in full_code:
+    #     print(str(p))
     return full_code
 
 if __name__ == '__main__':
