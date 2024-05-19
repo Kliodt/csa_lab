@@ -4,6 +4,8 @@ from components.memory import Memory
 from components.stacks import DataStack
 from isa import Opcode
 
+import logging
+
 
 class DataPath:
     def __init__(self, stack: DataStack, memory: Memory, io_controller: IOController):
@@ -27,7 +29,9 @@ class DataPath:
             self.stack.push(alu(opcode, self.stack.pop(), 0))
 
         elif opcode == Opcode.READ:
-            self.stack.push(self.io_controller.signal_read())
+            symbol = self.io_controller.signal_read()
+            self.stack.push(symbol)
+            logging.debug("ввод: %s", chr(symbol))
         elif opcode == Opcode.WRITE:
             pass #не сюда, в CU
 

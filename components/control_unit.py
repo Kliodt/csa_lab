@@ -3,6 +3,7 @@ from components.data_path import DataPath
 from components.stacks import CallStack
 from isa import Opcode
 
+import logging
 
 class ControlUnit:
 
@@ -73,8 +74,10 @@ class ControlUnit:
             self.tick()
 
         elif opcode == Opcode.WRITE:
-            self.data_path.io_controller.signal_write(self.data_path.stack.pop())
+            symbol = self.data_path.stack.pop()
+            self.data_path.io_controller.signal_write(symbol)
             self.signal_latch_program_counter(opcode)
+            logging.debug("вывод: %s", chr(symbol))
             self.tick()
 
         elif opcode == Opcode.POP:

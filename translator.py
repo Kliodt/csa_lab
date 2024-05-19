@@ -1,4 +1,5 @@
 import re
+import sys
 
 from isa import Opcode
 import json
@@ -635,9 +636,7 @@ def main(program_str: str) -> list:
     #     print(str(p))
     return full_code
 
-if __name__ == '__main__':
-    input_file = "program.lisp"
-    output_file = "machine_code.json"
+def translate(input_file: str, output_file: str):
     with open(input_file, "r") as src_file:
         with open(output_file, "w+") as out_file:
             program_lines = src_file.readlines()
@@ -645,3 +644,7 @@ if __name__ == '__main__':
             program: str = "".join(program_lines_no_comments)
             json.dump(main(program), out_file, default=Instr.to_dict, indent=2)
 
+if __name__ == '__main__':
+    assert len(sys.argv) == 3, "Неверное число аргументов. Использование: translator.py <input_file> <output_file>"
+    _, source, target = sys.argv
+    translate(source, target)

@@ -1,6 +1,6 @@
 [
   {
-    "index": 113,
+    "index": 72,
     "opcode": "jump",
     "arg": 0,
     "term": null
@@ -8,8 +8,8 @@
   {
     "index": 0,
     "opcode": "push",
-    "arg": 119,
-    "term": "(static string, char: w)"
+    "arg": 110,
+    "term": "(static string, char: n)"
   },
   {
     "index": 1,
@@ -32,8 +32,8 @@
   {
     "index": 4,
     "opcode": "push",
-    "arg": 104,
-    "term": "(static string, char: h)"
+    "arg": 111,
+    "term": "(static string, char: o)"
   },
   {
     "index": 5,
@@ -56,8 +56,8 @@
   {
     "index": 8,
     "opcode": "push",
-    "arg": 97,
-    "term": "(static string, char: a)"
+    "arg": 111,
+    "term": "(static string, char: o)"
   },
   {
     "index": 9,
@@ -80,8 +80,8 @@
   {
     "index": 12,
     "opcode": "push",
-    "arg": 116,
-    "term": "(static string, char: t)"
+    "arg": 111,
+    "term": "(static string, char: o)"
   },
   {
     "index": 13,
@@ -104,8 +104,8 @@
   {
     "index": 16,
     "opcode": "push",
-    "arg": 32,
-    "term": "(static string, char:  )"
+    "arg": 111,
+    "term": "(static string, char: o)"
   },
   {
     "index": 17,
@@ -128,8 +128,8 @@
   {
     "index": 20,
     "opcode": "push",
-    "arg": 105,
-    "term": "(static string, char: i)"
+    "arg": 111,
+    "term": "(static string, char: o)"
   },
   {
     "index": 21,
@@ -152,8 +152,8 @@
   {
     "index": 24,
     "opcode": "push",
-    "arg": 115,
-    "term": "(static string, char: s)"
+    "arg": 111,
+    "term": "(static string, char: o)"
   },
   {
     "index": 25,
@@ -176,8 +176,8 @@
   {
     "index": 28,
     "opcode": "push",
-    "arg": 32,
-    "term": "(static string, char:  )"
+    "arg": 111,
+    "term": "(static string, char: o)"
   },
   {
     "index": 29,
@@ -200,8 +200,8 @@
   {
     "index": 32,
     "opcode": "push",
-    "arg": 121,
-    "term": "(static string, char: y)"
+    "arg": 111,
+    "term": "(static string, char: o)"
   },
   {
     "index": 33,
@@ -224,8 +224,8 @@
   {
     "index": 36,
     "opcode": "push",
-    "arg": 111,
-    "term": "(static string, char: o)"
+    "arg": 0,
+    "term": "(static string, 0-termination)"
   },
   {
     "index": 37,
@@ -248,425 +248,185 @@
   {
     "index": 40,
     "opcode": "push",
-    "arg": 117,
-    "term": "(static string, char: u)"
+    "arg": 10,
+    "term": "read_str"
   },
   {
     "index": 41,
-    "opcode": "push",
-    "arg": 10,
-    "term": null
+    "opcode": "dup",
+    "arg": null,
+    "term": "read_str"
   },
   {
     "index": 42,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 43,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 44,
-    "opcode": "push",
-    "arg": 114,
-    "term": "(static string, char: r)"
-  },
-  {
-    "index": 45,
-    "opcode": "push",
-    "arg": 11,
-    "term": null
-  },
-  {
-    "index": 46,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 47,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 48,
-    "opcode": "push",
-    "arg": 32,
-    "term": "(static string, char:  )"
-  },
-  {
-    "index": 49,
-    "opcode": "push",
-    "arg": 12,
-    "term": null
-  },
-  {
-    "index": 50,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 51,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 52,
-    "opcode": "push",
-    "arg": 110,
-    "term": "(static string, char: n)"
-  },
-  {
-    "index": 53,
-    "opcode": "push",
-    "arg": 13,
-    "term": null
-  },
-  {
-    "index": 54,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 55,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 56,
-    "opcode": "push",
-    "arg": 97,
-    "term": "(static string, char: a)"
-  },
-  {
-    "index": 57,
-    "opcode": "push",
-    "arg": 14,
-    "term": null
-  },
-  {
-    "index": 58,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 59,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 60,
-    "opcode": "push",
-    "arg": 109,
-    "term": "(static string, char: m)"
-  },
-  {
-    "index": 61,
-    "opcode": "push",
-    "arg": 15,
-    "term": null
-  },
-  {
-    "index": 62,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 63,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 64,
-    "opcode": "push",
-    "arg": 101,
-    "term": "(static string, char: e)"
-  },
-  {
-    "index": 65,
-    "opcode": "push",
-    "arg": 16,
-    "term": null
-  },
-  {
-    "index": 66,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 67,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 68,
-    "opcode": "push",
-    "arg": 63,
-    "term": "(static string, char: ?)"
-  },
-  {
-    "index": 69,
-    "opcode": "push",
-    "arg": 17,
-    "term": null
-  },
-  {
-    "index": 70,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 71,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 72,
-    "opcode": "push",
-    "arg": 10,
-    "term": "(static string, char: \n)"
-  },
-  {
-    "index": 73,
-    "opcode": "push",
-    "arg": 18,
-    "term": null
-  },
-  {
-    "index": 74,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 75,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 76,
-    "opcode": "push",
-    "arg": 0,
-    "term": "(static string, 0-termination)"
-  },
-  {
-    "index": 77,
-    "opcode": "push",
-    "arg": 19,
-    "term": null
-  },
-  {
-    "index": 78,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 79,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 80,
-    "opcode": "push",
-    "arg": 0,
-    "term": "(static string)"
-  },
-  {
-    "index": 81,
-    "opcode": "dup",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 82,
-    "opcode": "load",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 83,
-    "opcode": "flags",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 84,
-    "opcode": "jump_zero",
-    "arg": 3,
-    "term": "print_str"
-  },
-  {
-    "index": 85,
-    "opcode": "write",
-    "arg": 0,
-    "term": "print_str"
-  },
-  {
-    "index": 86,
-    "opcode": "inc",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 87,
-    "opcode": "jump",
-    "arg": -7,
-    "term": "print_str"
-  },
-  {
-    "index": 88,
-    "opcode": "pop",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 90,
-    "opcode": "pop",
-    "arg": null,
-    "term": "(top-level expression)"
-  },
-  {
-    "index": 91,
-    "opcode": "push",
-    "arg": 20,
-    "term": "read_str"
-  },
-  {
-    "index": 92,
-    "opcode": "dup",
-    "arg": null,
-    "term": "read_str"
-  },
-  {
-    "index": 93,
     "opcode": "read",
     "arg": 0,
     "term": "read_str"
   },
   {
-    "index": 94,
+    "index": 43,
     "opcode": "flags",
     "arg": null,
     "term": "read_str"
   },
   {
-    "index": 95,
+    "index": 44,
     "opcode": "swap",
     "arg": null,
     "term": "read_str"
   },
   {
-    "index": 96,
+    "index": 45,
     "opcode": "store",
     "arg": null,
     "term": "read_str"
   },
   {
-    "index": 97,
+    "index": 46,
     "opcode": "pop",
     "arg": null,
     "term": "read_str"
   },
   {
-    "index": 98,
+    "index": 47,
     "opcode": "inc",
     "arg": null,
     "term": "read_str"
   },
   {
-    "index": 99,
+    "index": 48,
     "opcode": "jump_non_zero",
     "arg": -8,
     "term": "read_str"
   },
   {
-    "index": 100,
+    "index": 49,
     "opcode": "pop",
     "arg": null,
     "term": "read_str"
   },
   {
-    "index": 101,
+    "index": 50,
     "opcode": "push",
-    "arg": 20,
+    "arg": 10,
     "term": "read_str"
   },
   {
-    "index": 102,
+    "index": 52,
     "opcode": "dup",
     "arg": null,
     "term": "print_str"
   },
   {
-    "index": 103,
+    "index": 53,
     "opcode": "load",
     "arg": null,
     "term": "print_str"
   },
   {
-    "index": 104,
+    "index": 54,
     "opcode": "flags",
     "arg": null,
     "term": "print_str"
   },
   {
-    "index": 105,
+    "index": 55,
     "opcode": "jump_zero",
     "arg": 3,
     "term": "print_str"
   },
   {
-    "index": 106,
+    "index": 56,
     "opcode": "write",
     "arg": 0,
     "term": "print_str"
   },
   {
-    "index": 107,
+    "index": 57,
     "opcode": "inc",
     "arg": null,
     "term": "print_str"
   },
   {
-    "index": 108,
+    "index": 58,
     "opcode": "jump",
     "arg": -7,
     "term": "print_str"
   },
   {
-    "index": 109,
+    "index": 59,
     "opcode": "pop",
     "arg": null,
     "term": "print_str"
   },
   {
-    "index": 111,
+    "index": 60,
+    "opcode": "pop",
+    "arg": null,
+    "term": "print_str"
+  },
+  {
+    "index": 51,
+    "opcode": "push",
+    "arg": 0,
+    "term": "(static string)"
+  },
+  {
+    "index": 61,
+    "opcode": "dup",
+    "arg": null,
+    "term": "print_str"
+  },
+  {
+    "index": 62,
+    "opcode": "load",
+    "arg": null,
+    "term": "print_str"
+  },
+  {
+    "index": 63,
+    "opcode": "flags",
+    "arg": null,
+    "term": "print_str"
+  },
+  {
+    "index": 64,
+    "opcode": "jump_zero",
+    "arg": 3,
+    "term": "print_str"
+  },
+  {
+    "index": 65,
+    "opcode": "write",
+    "arg": 0,
+    "term": "print_str"
+  },
+  {
+    "index": 66,
+    "opcode": "inc",
+    "arg": null,
+    "term": "print_str"
+  },
+  {
+    "index": 67,
+    "opcode": "jump",
+    "arg": -7,
+    "term": "print_str"
+  },
+  {
+    "index": 68,
+    "opcode": "pop",
+    "arg": null,
+    "term": "print_str"
+  },
+  {
+    "index": 70,
     "opcode": "pop",
     "arg": null,
     "term": "(top-level expression)"
   },
   {
-    "index": 112,
+    "index": 71,
     "opcode": "halt",
     "arg": null,
     "term": null
