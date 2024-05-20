@@ -487,7 +487,7 @@ def read_str(args_codes: list[list]) -> list[Instr]:
     term = "read_str"
     assert len(args_codes) == 0, "Недопустимое число аргументов для read_str"
     code = []
-    addr = str_literals_addresses.pop()
+    addr = str_literals_addresses.pop() #addr for new string to read
     code.extend([
         Instr(Opcode.PUSH, arg=addr, term=term),
         Instr(Opcode.DUP, term=term),
@@ -500,6 +500,28 @@ def read_str(args_codes: list[list]) -> list[Instr]:
         Instr(Opcode.JNZ, arg=-8, term=term),
         Instr(Opcode.POP, term=term),
         Instr(Opcode.PUSH, arg=addr, term=term),
+    ])
+    return code
+
+def read_char(args_codes: list[list]) -> list[Instr]:
+    global def_port
+    term = "read_char"
+    assert len(args_codes) == 0, "Недопустимое число аргументов для read_char"
+    code = []
+    code.extend([
+        Instr(Opcode.READ, arg=def_port, term=term),
+    ])
+    return code
+
+def print_char(args_codes: list[list]) -> list[Instr]:
+    global def_port
+    term = "print_char"
+    assert len(args_codes) == 1, "Недопустимое число аргументов для print_char"
+    code = []
+    code.extend(args_codes[0])
+    code.extend([
+        Instr(Opcode.DUP, term=term),
+        Instr(Opcode.WRITE, arg=def_port, term=term),
     ])
     return code
 
@@ -558,8 +580,11 @@ instructions = {
     "not": not_,
 
     "print_str" : print_str,
+    "print_char": print_char,
     "print_int" : print_int,
+
     "read_str": read_str,
+    "read_char": read_char,
 
     "loop_while": loop_while,
 

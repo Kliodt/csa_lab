@@ -1,432 +1,606 @@
 [
   {
-    "index": 72,
+    "index": 100,
     "opcode": "jump",
     "arg": 0,
     "term": null
   },
   {
-    "index": 0,
-    "opcode": "push",
-    "arg": 110,
-    "term": "(static string, char: n)"
-  },
-  {
     "index": 1,
     "opcode": "push",
-    "arg": 0,
-    "term": null
+    "arg": 1,
+    "term": "(number literal: 1)"
+  },
+  {
+    "index": 0,
+    "opcode": "push",
+    "arg": 1,
+    "term": "defvar"
   },
   {
     "index": 2,
     "opcode": "store",
     "arg": null,
-    "term": null
+    "term": "defvar"
   },
   {
     "index": 3,
     "opcode": "pop",
     "arg": null,
-    "term": null
-  },
-  {
-    "index": 4,
-    "opcode": "push",
-    "arg": 111,
-    "term": "(static string, char: o)"
+    "term": "(top-level expression)"
   },
   {
     "index": 5,
     "opcode": "push",
     "arg": 1,
-    "term": null
+    "term": "(number literal: 1)"
+  },
+  {
+    "index": 4,
+    "opcode": "push",
+    "arg": 2,
+    "term": "defvar"
   },
   {
     "index": 6,
     "opcode": "store",
     "arg": null,
-    "term": null
+    "term": "defvar"
   },
   {
     "index": 7,
     "opcode": "pop",
     "arg": null,
-    "term": null
-  },
-  {
-    "index": 8,
-    "opcode": "push",
-    "arg": 111,
-    "term": "(static string, char: o)"
+    "term": "(top-level expression)"
   },
   {
     "index": 9,
     "opcode": "push",
-    "arg": 2,
-    "term": null
+    "arg": 0,
+    "term": "defvar"
+  },
+  {
+    "index": 8,
+    "opcode": "push",
+    "arg": 3,
+    "term": "defvar"
   },
   {
     "index": 10,
     "opcode": "store",
     "arg": null,
-    "term": null
+    "term": "defvar"
   },
   {
     "index": 11,
     "opcode": "pop",
     "arg": null,
-    "term": null
-  },
-  {
-    "index": 12,
-    "opcode": "push",
-    "arg": 111,
-    "term": "(static string, char: o)"
+    "term": "(top-level expression)"
   },
   {
     "index": 13,
     "opcode": "push",
-    "arg": 3,
-    "term": null
+    "arg": 0,
+    "term": "(number literal: 0)"
+  },
+  {
+    "index": 12,
+    "opcode": "push",
+    "arg": 4,
+    "term": "defvar"
   },
   {
     "index": 14,
     "opcode": "store",
     "arg": null,
-    "term": null
+    "term": "defvar"
   },
   {
     "index": 15,
     "opcode": "pop",
     "arg": null,
-    "term": null
+    "term": "(top-level expression)"
   },
   {
     "index": 16,
     "opcode": "push",
-    "arg": 111,
-    "term": "(static string, char: o)"
+    "arg": 2,
+    "term": "(variable: b)"
   },
   {
     "index": 17,
-    "opcode": "push",
-    "arg": 4,
-    "term": null
+    "opcode": "load",
+    "arg": null,
+    "term": "(variable: b)"
   },
   {
     "index": 18,
-    "opcode": "store",
-    "arg": null,
-    "term": null
+    "opcode": "push",
+    "arg": 4000000,
+    "term": "(number literal: 4000000)"
   },
   {
     "index": 19,
-    "opcode": "pop",
+    "opcode": "sub",
     "arg": null,
-    "term": null
+    "term": "<"
   },
   {
     "index": 20,
-    "opcode": "push",
-    "arg": 111,
-    "term": "(static string, char: o)"
+    "opcode": "flags",
+    "arg": null,
+    "term": "<"
   },
   {
     "index": 21,
-    "opcode": "push",
-    "arg": 5,
-    "term": null
+    "opcode": "pop",
+    "arg": null,
+    "term": "<"
   },
   {
     "index": 22,
-    "opcode": "store",
-    "arg": null,
-    "term": null
+    "opcode": "jump_minus",
+    "arg": 2,
+    "term": "<"
   },
   {
     "index": 23,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
+    "opcode": "push",
+    "arg": 0,
+    "term": "<"
   },
   {
     "index": 24,
-    "opcode": "push",
-    "arg": 111,
-    "term": "(static string, char: o)"
+    "opcode": "jump",
+    "arg": 1,
+    "term": "<"
   },
   {
     "index": 25,
     "opcode": "push",
-    "arg": 6,
-    "term": null
+    "arg": 1,
+    "term": "<"
   },
   {
-    "index": 26,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 27,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 28,
-    "opcode": "push",
-    "arg": 111,
-    "term": "(static string, char: o)"
-  },
-  {
-    "index": 29,
-    "opcode": "push",
-    "arg": 7,
-    "term": null
-  },
-  {
-    "index": 30,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 31,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 32,
-    "opcode": "push",
-    "arg": 111,
-    "term": "(static string, char: o)"
-  },
-  {
-    "index": 33,
-    "opcode": "push",
-    "arg": 8,
-    "term": null
-  },
-  {
-    "index": 34,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 35,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 36,
-    "opcode": "push",
-    "arg": 0,
-    "term": "(static string, 0-termination)"
-  },
-  {
-    "index": 37,
-    "opcode": "push",
-    "arg": 9,
-    "term": null
-  },
-  {
-    "index": 38,
-    "opcode": "store",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 39,
-    "opcode": "pop",
-    "arg": null,
-    "term": null
-  },
-  {
-    "index": 40,
-    "opcode": "push",
-    "arg": 10,
-    "term": "read_str"
-  },
-  {
-    "index": 41,
-    "opcode": "dup",
-    "arg": null,
-    "term": "read_str"
-  },
-  {
-    "index": 42,
-    "opcode": "read",
-    "arg": 0,
-    "term": "read_str"
-  },
-  {
-    "index": 43,
+    "index": 69,
     "opcode": "flags",
     "arg": null,
-    "term": "read_str"
-  },
-  {
-    "index": 44,
-    "opcode": "swap",
-    "arg": null,
-    "term": "read_str"
-  },
-  {
-    "index": 45,
-    "opcode": "store",
-    "arg": null,
-    "term": "read_str"
-  },
-  {
-    "index": 46,
-    "opcode": "pop",
-    "arg": null,
-    "term": "read_str"
-  },
-  {
-    "index": 47,
-    "opcode": "inc",
-    "arg": null,
-    "term": "read_str"
-  },
-  {
-    "index": 48,
-    "opcode": "jump_non_zero",
-    "arg": -8,
-    "term": "read_str"
-  },
-  {
-    "index": 49,
-    "opcode": "pop",
-    "arg": null,
-    "term": "read_str"
-  },
-  {
-    "index": 50,
-    "opcode": "push",
-    "arg": 10,
-    "term": "read_str"
-  },
-  {
-    "index": 52,
-    "opcode": "dup",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 53,
-    "opcode": "load",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 54,
-    "opcode": "flags",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 55,
-    "opcode": "jump_zero",
-    "arg": 3,
-    "term": "print_str"
-  },
-  {
-    "index": 56,
-    "opcode": "write",
-    "arg": 0,
-    "term": "print_str"
-  },
-  {
-    "index": 57,
-    "opcode": "inc",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 58,
-    "opcode": "jump",
-    "arg": -7,
-    "term": "print_str"
-  },
-  {
-    "index": 59,
-    "opcode": "pop",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 60,
-    "opcode": "pop",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 51,
-    "opcode": "push",
-    "arg": 0,
-    "term": "(static string)"
-  },
-  {
-    "index": 61,
-    "opcode": "dup",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 62,
-    "opcode": "load",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 63,
-    "opcode": "flags",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 64,
-    "opcode": "jump_zero",
-    "arg": 3,
-    "term": "print_str"
-  },
-  {
-    "index": 65,
-    "opcode": "write",
-    "arg": 0,
-    "term": "print_str"
-  },
-  {
-    "index": 66,
-    "opcode": "inc",
-    "arg": null,
-    "term": "print_str"
-  },
-  {
-    "index": 67,
-    "opcode": "jump",
-    "arg": -7,
-    "term": "print_str"
-  },
-  {
-    "index": 68,
-    "opcode": "pop",
-    "arg": null,
-    "term": "print_str"
+    "term": "loop_while"
   },
   {
     "index": 70,
     "opcode": "pop",
     "arg": null,
-    "term": "(top-level expression)"
+    "term": "loop_while"
   },
   {
     "index": 71,
+    "opcode": "jump_zero",
+    "arg": 44,
+    "term": "loop_while"
+  },
+  {
+    "index": 27,
+    "opcode": "push",
+    "arg": 1,
+    "term": "(variable: a)"
+  },
+  {
+    "index": 28,
+    "opcode": "load",
+    "arg": null,
+    "term": "(variable: a)"
+  },
+  {
+    "index": 29,
+    "opcode": "push",
+    "arg": 2,
+    "term": "(variable: b)"
+  },
+  {
+    "index": 30,
+    "opcode": "load",
+    "arg": null,
+    "term": "(variable: b)"
+  },
+  {
+    "index": 31,
+    "opcode": "add",
+    "arg": null,
+    "term": "+"
+  },
+  {
+    "index": 26,
+    "opcode": "push",
+    "arg": 3,
+    "term": "setq"
+  },
+  {
+    "index": 32,
+    "opcode": "store",
+    "arg": null,
+    "term": "setq"
+  },
+  {
+    "index": 65,
+    "opcode": "pop",
+    "arg": null,
+    "term": "loop_while"
+  },
+  {
+    "index": 33,
+    "opcode": "push",
+    "arg": 0,
+    "term": "(number literal: 0)"
+  },
+  {
+    "index": 34,
+    "opcode": "push",
+    "arg": 2,
+    "term": "(variable: b)"
+  },
+  {
+    "index": 35,
+    "opcode": "load",
+    "arg": null,
+    "term": "(variable: b)"
+  },
+  {
+    "index": 36,
+    "opcode": "push",
+    "arg": 2,
+    "term": "(number literal: 2)"
+  },
+  {
+    "index": 37,
+    "opcode": "mod",
+    "arg": null,
+    "term": "%"
+  },
+  {
+    "index": 38,
+    "opcode": "sub",
+    "arg": null,
+    "term": "="
+  },
+  {
+    "index": 39,
+    "opcode": "flags",
+    "arg": null,
+    "term": "="
+  },
+  {
+    "index": 40,
+    "opcode": "pop",
+    "arg": null,
+    "term": "="
+  },
+  {
+    "index": 41,
+    "opcode": "jump_zero",
+    "arg": 2,
+    "term": "="
+  },
+  {
+    "index": 42,
+    "opcode": "push",
+    "arg": 0,
+    "term": "="
+  },
+  {
+    "index": 43,
+    "opcode": "jump",
+    "arg": 1,
+    "term": "="
+  },
+  {
+    "index": 44,
+    "opcode": "push",
+    "arg": 1,
+    "term": "="
+  },
+  {
+    "index": 53,
+    "opcode": "flags",
+    "arg": null,
+    "term": "if"
+  },
+  {
+    "index": 54,
+    "opcode": "pop",
+    "arg": null,
+    "term": "if"
+  },
+  {
+    "index": 55,
+    "opcode": "jump_zero",
+    "arg": 8,
+    "term": "if"
+  },
+  {
+    "index": 46,
+    "opcode": "push",
+    "arg": 4,
+    "term": "(variable: sum)"
+  },
+  {
+    "index": 47,
+    "opcode": "load",
+    "arg": null,
+    "term": "(variable: sum)"
+  },
+  {
+    "index": 48,
+    "opcode": "push",
+    "arg": 2,
+    "term": "(variable: b)"
+  },
+  {
+    "index": 49,
+    "opcode": "load",
+    "arg": null,
+    "term": "(variable: b)"
+  },
+  {
+    "index": 50,
+    "opcode": "add",
+    "arg": null,
+    "term": "+"
+  },
+  {
+    "index": 45,
+    "opcode": "push",
+    "arg": 4,
+    "term": "setq"
+  },
+  {
+    "index": 51,
+    "opcode": "store",
+    "arg": null,
+    "term": "setq"
+  },
+  {
+    "index": 56,
+    "opcode": "jump",
+    "arg": 1,
+    "term": "if"
+  },
+  {
+    "index": 52,
+    "opcode": "push",
+    "arg": 0,
+    "term": "(number literal: 0)"
+  },
+  {
+    "index": 66,
+    "opcode": "pop",
+    "arg": null,
+    "term": "loop_while"
+  },
+  {
+    "index": 58,
+    "opcode": "push",
+    "arg": 2,
+    "term": "(variable: b)"
+  },
+  {
+    "index": 59,
+    "opcode": "load",
+    "arg": null,
+    "term": "(variable: b)"
+  },
+  {
+    "index": 57,
+    "opcode": "push",
+    "arg": 1,
+    "term": "setq"
+  },
+  {
+    "index": 60,
+    "opcode": "store",
+    "arg": null,
+    "term": "setq"
+  },
+  {
+    "index": 67,
+    "opcode": "pop",
+    "arg": null,
+    "term": "loop_while"
+  },
+  {
+    "index": 62,
+    "opcode": "push",
+    "arg": 3,
+    "term": "(variable: next)"
+  },
+  {
+    "index": 63,
+    "opcode": "load",
+    "arg": null,
+    "term": "(variable: next)"
+  },
+  {
+    "index": 61,
+    "opcode": "push",
+    "arg": 2,
+    "term": "setq"
+  },
+  {
+    "index": 64,
+    "opcode": "store",
+    "arg": null,
+    "term": "setq"
+  },
+  {
+    "index": 68,
+    "opcode": "pop",
+    "arg": null,
+    "term": "loop_while"
+  },
+  {
+    "index": 72,
+    "opcode": "jump",
+    "arg": -57,
+    "term": "loop_while"
+  },
+  {
+    "index": 73,
+    "opcode": "push",
+    "arg": 0,
+    "term": "loop_while"
+  },
+  {
+    "index": 74,
+    "opcode": "pop",
+    "arg": null,
+    "term": "(top-level expression)"
+  },
+  {
+    "index": 77,
+    "opcode": "push",
+    "arg": -1,
+    "term": "print_int"
+  },
+  {
+    "index": 75,
+    "opcode": "push",
+    "arg": 4,
+    "term": "(variable: sum)"
+  },
+  {
+    "index": 76,
+    "opcode": "load",
+    "arg": null,
+    "term": "(variable: sum)"
+  },
+  {
+    "index": 78,
+    "opcode": "flags",
+    "arg": null,
+    "term": "print_int"
+  },
+  {
+    "index": 79,
+    "opcode": "jump_plus",
+    "arg": 3,
+    "term": "print_int"
+  },
+  {
+    "index": 80,
+    "opcode": "neg",
+    "arg": null,
+    "term": "print_int"
+  },
+  {
+    "index": 81,
+    "opcode": "push",
+    "arg": 45,
+    "term": "print_int"
+  },
+  {
+    "index": 82,
+    "opcode": "write",
+    "arg": 0,
+    "term": "print_int"
+  },
+  {
+    "index": 83,
+    "opcode": "dup",
+    "arg": null,
+    "term": "print_int"
+  },
+  {
+    "index": 84,
+    "opcode": "push",
+    "arg": 10,
+    "term": "print_int"
+  },
+  {
+    "index": 85,
+    "opcode": "mod",
+    "arg": null,
+    "term": "print_int"
+  },
+  {
+    "index": 86,
+    "opcode": "push",
+    "arg": 48,
+    "term": "print_int"
+  },
+  {
+    "index": 87,
+    "opcode": "add",
+    "arg": null,
+    "term": "print_int"
+  },
+  {
+    "index": 88,
+    "opcode": "swap",
+    "arg": null,
+    "term": "print_int"
+  },
+  {
+    "index": 89,
+    "opcode": "push",
+    "arg": 10,
+    "term": "print_int"
+  },
+  {
+    "index": 90,
+    "opcode": "div",
+    "arg": null,
+    "term": "print_int"
+  },
+  {
+    "index": 91,
+    "opcode": "flags",
+    "arg": null,
+    "term": "print_int"
+  },
+  {
+    "index": 92,
+    "opcode": "jump_non_zero",
+    "arg": -10,
+    "term": "print_int"
+  },
+  {
+    "index": 93,
+    "opcode": "pop",
+    "arg": null,
+    "term": "print_int"
+  },
+  {
+    "index": 94,
+    "opcode": "flags",
+    "arg": null,
+    "term": "print_int"
+  },
+  {
+    "index": 95,
+    "opcode": "jump_minus",
+    "arg": 2,
+    "term": "print_int"
+  },
+  {
+    "index": 96,
+    "opcode": "write",
+    "arg": 0,
+    "term": "print_int"
+  },
+  {
+    "index": 97,
+    "opcode": "jump",
+    "arg": -4,
+    "term": "print_int"
+  },
+  {
+    "index": 98,
+    "opcode": "pop",
+    "arg": null,
+    "term": "(top-level expression)"
+  },
+  {
+    "index": 99,
     "opcode": "halt",
     "arg": null,
     "term": null
