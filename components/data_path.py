@@ -31,7 +31,7 @@ class DataPath:
         elif opcode == Opcode.READ:
             symbol = self.io_controller.signal_read()
             self.stack.push(symbol)
-            logging.debug("ввод: %s", chr(symbol))
+            logging.debug("ввод: %s", chr(symbol) if symbol != 0 else "\\0") # fix for golden test parser
         elif opcode == Opcode.WRITE:
             pass #не сюда, в CU
 

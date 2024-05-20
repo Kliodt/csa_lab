@@ -59,4 +59,4 @@ if __name__ == "__main__":
     logging.getLogger().setLevel(logging.DEBUG)
     assert len(sys.argv) == 3, "Неверное число аргументов. Использование: machine.py <code_file> <input_file>"
     _, code_file, input_file = sys.argv
-    main(code_file,input_file)
+    main(code_file, input_file)

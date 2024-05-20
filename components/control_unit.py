@@ -77,7 +77,7 @@ class ControlUnit:
             symbol = self.data_path.stack.pop()
             self.data_path.io_controller.signal_write(symbol)
             self.signal_latch_program_counter(opcode)
-            logging.debug("вывод: %s", chr(symbol))
+            logging.debug("вывод: %s", chr(symbol) if symbol != 0 else "\\0") # fix for golden test parser
             self.tick()
 
         elif opcode == Opcode.POP:

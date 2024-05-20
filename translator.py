@@ -105,12 +105,12 @@ def parse_string(text: str) -> tuple[Expression, list[str], int]:
 
 
 instructions: dict
-variables: dict = {}
-functions: dict = {}
-str_literals_addresses: list = []
-next_var_addr = 0
+variables: dict
+functions: dict
+str_literals_addresses: list
+next_var_addr: int
 def_port = 0 # default i/o port
-dynamic_string_max_length = 40
+dynamic_string_max_length = 40 # default
 
 def defun_process(func_vars: list, body: list) -> list[Instr]:
     # returns function name and list of instructions
@@ -662,6 +662,9 @@ def main(program_str: str) -> list:
     return full_code
 
 def translate(input_file: str, output_file: str):
+    global variables, functions, str_literals_addresses, next_var_addr
+    variables = {}; functions = {}; str_literals_addresses = []; next_var_addr = 0
+
     with open(input_file, "r") as src_file:
         with open(output_file, "w+") as out_file:
             program_lines = src_file.readlines()

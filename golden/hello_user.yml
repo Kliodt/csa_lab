@@ -1,0 +1,1516 @@
+in_source: |-
+  (print_str "What is your name?")
+  (print_str "
+  Hello, "  (read_str) "!")
+
+in_stdin: |-
+  Vadim
+out_stdout: |
+  ============================================================
+  program counter: 171, ticks: 495.
+  Вывод:
+  What is your name?
+  Hello, Vadim!
+
+out_code: |-
+  [
+    {
+      "index": 193,
+      "opcode": "jump",
+      "arg": 0,
+      "term": null
+    },
+    {
+      "index": 20,
+      "opcode": "push",
+      "arg": 87,
+      "term": "(static string, char: W)"
+    },
+    {
+      "index": 21,
+      "opcode": "push",
+      "arg": 0,
+      "term": null
+    },
+    {
+      "index": 22,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 23,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 24,
+      "opcode": "push",
+      "arg": 104,
+      "term": "(static string, char: h)"
+    },
+    {
+      "index": 25,
+      "opcode": "push",
+      "arg": 1,
+      "term": null
+    },
+    {
+      "index": 26,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 27,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 28,
+      "opcode": "push",
+      "arg": 97,
+      "term": "(static string, char: a)"
+    },
+    {
+      "index": 29,
+      "opcode": "push",
+      "arg": 2,
+      "term": null
+    },
+    {
+      "index": 30,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 31,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 32,
+      "opcode": "push",
+      "arg": 116,
+      "term": "(static string, char: t)"
+    },
+    {
+      "index": 33,
+      "opcode": "push",
+      "arg": 3,
+      "term": null
+    },
+    {
+      "index": 34,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 35,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 36,
+      "opcode": "push",
+      "arg": 32,
+      "term": "(static string, char:  )"
+    },
+    {
+      "index": 37,
+      "opcode": "push",
+      "arg": 4,
+      "term": null
+    },
+    {
+      "index": 38,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 39,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 40,
+      "opcode": "push",
+      "arg": 105,
+      "term": "(static string, char: i)"
+    },
+    {
+      "index": 41,
+      "opcode": "push",
+      "arg": 5,
+      "term": null
+    },
+    {
+      "index": 42,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 43,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 44,
+      "opcode": "push",
+      "arg": 115,
+      "term": "(static string, char: s)"
+    },
+    {
+      "index": 45,
+      "opcode": "push",
+      "arg": 6,
+      "term": null
+    },
+    {
+      "index": 46,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 47,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 48,
+      "opcode": "push",
+      "arg": 32,
+      "term": "(static string, char:  )"
+    },
+    {
+      "index": 49,
+      "opcode": "push",
+      "arg": 7,
+      "term": null
+    },
+    {
+      "index": 50,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 51,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 52,
+      "opcode": "push",
+      "arg": 121,
+      "term": "(static string, char: y)"
+    },
+    {
+      "index": 53,
+      "opcode": "push",
+      "arg": 8,
+      "term": null
+    },
+    {
+      "index": 54,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 55,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 56,
+      "opcode": "push",
+      "arg": 111,
+      "term": "(static string, char: o)"
+    },
+    {
+      "index": 57,
+      "opcode": "push",
+      "arg": 9,
+      "term": null
+    },
+    {
+      "index": 58,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 59,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 60,
+      "opcode": "push",
+      "arg": 117,
+      "term": "(static string, char: u)"
+    },
+    {
+      "index": 61,
+      "opcode": "push",
+      "arg": 10,
+      "term": null
+    },
+    {
+      "index": 62,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 63,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 64,
+      "opcode": "push",
+      "arg": 114,
+      "term": "(static string, char: r)"
+    },
+    {
+      "index": 65,
+      "opcode": "push",
+      "arg": 11,
+      "term": null
+    },
+    {
+      "index": 66,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 67,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 68,
+      "opcode": "push",
+      "arg": 32,
+      "term": "(static string, char:  )"
+    },
+    {
+      "index": 69,
+      "opcode": "push",
+      "arg": 12,
+      "term": null
+    },
+    {
+      "index": 70,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 71,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 72,
+      "opcode": "push",
+      "arg": 110,
+      "term": "(static string, char: n)"
+    },
+    {
+      "index": 73,
+      "opcode": "push",
+      "arg": 13,
+      "term": null
+    },
+    {
+      "index": 74,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 75,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 76,
+      "opcode": "push",
+      "arg": 97,
+      "term": "(static string, char: a)"
+    },
+    {
+      "index": 77,
+      "opcode": "push",
+      "arg": 14,
+      "term": null
+    },
+    {
+      "index": 78,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 79,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 80,
+      "opcode": "push",
+      "arg": 109,
+      "term": "(static string, char: m)"
+    },
+    {
+      "index": 81,
+      "opcode": "push",
+      "arg": 15,
+      "term": null
+    },
+    {
+      "index": 82,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 83,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 84,
+      "opcode": "push",
+      "arg": 101,
+      "term": "(static string, char: e)"
+    },
+    {
+      "index": 85,
+      "opcode": "push",
+      "arg": 16,
+      "term": null
+    },
+    {
+      "index": 86,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 87,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 88,
+      "opcode": "push",
+      "arg": 63,
+      "term": "(static string, char: ?)"
+    },
+    {
+      "index": 89,
+      "opcode": "push",
+      "arg": 17,
+      "term": null
+    },
+    {
+      "index": 90,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 91,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 92,
+      "opcode": "push",
+      "arg": 0,
+      "term": "(static string, 0-termination)"
+    },
+    {
+      "index": 93,
+      "opcode": "push",
+      "arg": 18,
+      "term": null
+    },
+    {
+      "index": 94,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 95,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 96,
+      "opcode": "push",
+      "arg": 10,
+      "term": "(static string, char: \n)"
+    },
+    {
+      "index": 97,
+      "opcode": "push",
+      "arg": 19,
+      "term": null
+    },
+    {
+      "index": 98,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 99,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 100,
+      "opcode": "push",
+      "arg": 72,
+      "term": "(static string, char: H)"
+    },
+    {
+      "index": 101,
+      "opcode": "push",
+      "arg": 20,
+      "term": null
+    },
+    {
+      "index": 102,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 103,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 104,
+      "opcode": "push",
+      "arg": 101,
+      "term": "(static string, char: e)"
+    },
+    {
+      "index": 105,
+      "opcode": "push",
+      "arg": 21,
+      "term": null
+    },
+    {
+      "index": 106,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 107,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 108,
+      "opcode": "push",
+      "arg": 108,
+      "term": "(static string, char: l)"
+    },
+    {
+      "index": 109,
+      "opcode": "push",
+      "arg": 22,
+      "term": null
+    },
+    {
+      "index": 110,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 111,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 112,
+      "opcode": "push",
+      "arg": 108,
+      "term": "(static string, char: l)"
+    },
+    {
+      "index": 113,
+      "opcode": "push",
+      "arg": 23,
+      "term": null
+    },
+    {
+      "index": 114,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 115,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 116,
+      "opcode": "push",
+      "arg": 111,
+      "term": "(static string, char: o)"
+    },
+    {
+      "index": 117,
+      "opcode": "push",
+      "arg": 24,
+      "term": null
+    },
+    {
+      "index": 118,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 119,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 120,
+      "opcode": "push",
+      "arg": 44,
+      "term": "(static string, char: ,)"
+    },
+    {
+      "index": 121,
+      "opcode": "push",
+      "arg": 25,
+      "term": null
+    },
+    {
+      "index": 122,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 123,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 124,
+      "opcode": "push",
+      "arg": 32,
+      "term": "(static string, char:  )"
+    },
+    {
+      "index": 125,
+      "opcode": "push",
+      "arg": 26,
+      "term": null
+    },
+    {
+      "index": 126,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 127,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 128,
+      "opcode": "push",
+      "arg": 0,
+      "term": "(static string, 0-termination)"
+    },
+    {
+      "index": 129,
+      "opcode": "push",
+      "arg": 27,
+      "term": null
+    },
+    {
+      "index": 130,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 131,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 132,
+      "opcode": "push",
+      "arg": 33,
+      "term": "(static string, char: !)"
+    },
+    {
+      "index": 133,
+      "opcode": "push",
+      "arg": 28,
+      "term": null
+    },
+    {
+      "index": 134,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 135,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 136,
+      "opcode": "push",
+      "arg": 0,
+      "term": "(static string, 0-termination)"
+    },
+    {
+      "index": 137,
+      "opcode": "push",
+      "arg": 29,
+      "term": null
+    },
+    {
+      "index": 138,
+      "opcode": "store",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 139,
+      "opcode": "pop",
+      "arg": null,
+      "term": null
+    },
+    {
+      "index": 140,
+      "opcode": "push",
+      "arg": 0,
+      "term": "(static string)"
+    },
+    {
+      "index": 141,
+      "opcode": "dup",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 142,
+      "opcode": "load",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 143,
+      "opcode": "flags",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 144,
+      "opcode": "jump_zero",
+      "arg": 3,
+      "term": "print_str"
+    },
+    {
+      "index": 145,
+      "opcode": "write",
+      "arg": 0,
+      "term": "print_str"
+    },
+    {
+      "index": 146,
+      "opcode": "inc",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 147,
+      "opcode": "jump",
+      "arg": -7,
+      "term": "print_str"
+    },
+    {
+      "index": 148,
+      "opcode": "pop",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 150,
+      "opcode": "pop",
+      "arg": null,
+      "term": "(top-level expression)"
+    },
+    {
+      "index": 151,
+      "opcode": "push",
+      "arg": 19,
+      "term": "(static string)"
+    },
+    {
+      "index": 164,
+      "opcode": "dup",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 165,
+      "opcode": "load",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 166,
+      "opcode": "flags",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 167,
+      "opcode": "jump_zero",
+      "arg": 3,
+      "term": "print_str"
+    },
+    {
+      "index": 168,
+      "opcode": "write",
+      "arg": 0,
+      "term": "print_str"
+    },
+    {
+      "index": 169,
+      "opcode": "inc",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 170,
+      "opcode": "jump",
+      "arg": -7,
+      "term": "print_str"
+    },
+    {
+      "index": 171,
+      "opcode": "pop",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 172,
+      "opcode": "pop",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 152,
+      "opcode": "push",
+      "arg": 30,
+      "term": "read_str"
+    },
+    {
+      "index": 153,
+      "opcode": "dup",
+      "arg": null,
+      "term": "read_str"
+    },
+    {
+      "index": 154,
+      "opcode": "read",
+      "arg": 0,
+      "term": "read_str"
+    },
+    {
+      "index": 155,
+      "opcode": "flags",
+      "arg": null,
+      "term": "read_str"
+    },
+    {
+      "index": 156,
+      "opcode": "swap",
+      "arg": null,
+      "term": "read_str"
+    },
+    {
+      "index": 157,
+      "opcode": "store",
+      "arg": null,
+      "term": "read_str"
+    },
+    {
+      "index": 158,
+      "opcode": "pop",
+      "arg": null,
+      "term": "read_str"
+    },
+    {
+      "index": 159,
+      "opcode": "inc",
+      "arg": null,
+      "term": "read_str"
+    },
+    {
+      "index": 160,
+      "opcode": "jump_non_zero",
+      "arg": -8,
+      "term": "read_str"
+    },
+    {
+      "index": 161,
+      "opcode": "pop",
+      "arg": null,
+      "term": "read_str"
+    },
+    {
+      "index": 162,
+      "opcode": "push",
+      "arg": 30,
+      "term": "read_str"
+    },
+    {
+      "index": 173,
+      "opcode": "dup",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 174,
+      "opcode": "load",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 175,
+      "opcode": "flags",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 176,
+      "opcode": "jump_zero",
+      "arg": 3,
+      "term": "print_str"
+    },
+    {
+      "index": 177,
+      "opcode": "write",
+      "arg": 0,
+      "term": "print_str"
+    },
+    {
+      "index": 178,
+      "opcode": "inc",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 179,
+      "opcode": "jump",
+      "arg": -7,
+      "term": "print_str"
+    },
+    {
+      "index": 180,
+      "opcode": "pop",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 181,
+      "opcode": "pop",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 163,
+      "opcode": "push",
+      "arg": 28,
+      "term": "(static string)"
+    },
+    {
+      "index": 182,
+      "opcode": "dup",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 183,
+      "opcode": "load",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 184,
+      "opcode": "flags",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 185,
+      "opcode": "jump_zero",
+      "arg": 3,
+      "term": "print_str"
+    },
+    {
+      "index": 186,
+      "opcode": "write",
+      "arg": 0,
+      "term": "print_str"
+    },
+    {
+      "index": 187,
+      "opcode": "inc",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 188,
+      "opcode": "jump",
+      "arg": -7,
+      "term": "print_str"
+    },
+    {
+      "index": 189,
+      "opcode": "pop",
+      "arg": null,
+      "term": "print_str"
+    },
+    {
+      "index": 191,
+      "opcode": "pop",
+      "arg": null,
+      "term": "(top-level expression)"
+    },
+    {
+      "index": 192,
+      "opcode": "halt",
+      "arg": null,
+      "term": null
+    }
+  ]
+
+
+out_log: |
+  DEBUG    root:machine.py:24 TICK:   0,  PC:   0,  AR:   0,  MEM_OUT:   0,  TOS: []                    ,    jump 0    
+  DEBUG    root:machine.py:27 TICK:   1,  PC:   1,  AR:   0,  MEM_OUT:   0,  TOS: []                    ,    push 87    // (static string, char: W)
+  DEBUG    root:machine.py:27 TICK:   2,  PC:   2,  AR:   0,  MEM_OUT:   0,  TOS: [87]                  ,    push 0    
+  DEBUG    root:machine.py:27 TICK:   3,  PC:   3,  AR:   0,  MEM_OUT:   0,  TOS: [0, 87]               ,    store     
+  DEBUG    root:machine.py:27 TICK:   5,  PC:   4,  AR:   0,  MEM_OUT:  87,  TOS: [87]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK:   6,  PC:   5,  AR:   0,  MEM_OUT:  87,  TOS: []                    ,    push 104   // (static string, char: h)
+  DEBUG    root:machine.py:27 TICK:   7,  PC:   6,  AR:   0,  MEM_OUT:  87,  TOS: [104]                 ,    push 1    
+  DEBUG    root:machine.py:27 TICK:   8,  PC:   7,  AR:   0,  MEM_OUT:  87,  TOS: [1, 104]              ,    store     
+  DEBUG    root:machine.py:27 TICK:  10,  PC:   8,  AR:   1,  MEM_OUT: 104,  TOS: [104]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK:  11,  PC:   9,  AR:   1,  MEM_OUT: 104,  TOS: []                    ,    push 97    // (static string, char: a)
+  DEBUG    root:machine.py:27 TICK:  12,  PC:  10,  AR:   1,  MEM_OUT: 104,  TOS: [97]                  ,    push 2    
+  DEBUG    root:machine.py:27 TICK:  13,  PC:  11,  AR:   1,  MEM_OUT: 104,  TOS: [2, 97]               ,    store     
+  DEBUG    root:machine.py:27 TICK:  15,  PC:  12,  AR:   2,  MEM_OUT:  97,  TOS: [97]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK:  16,  PC:  13,  AR:   2,  MEM_OUT:  97,  TOS: []                    ,    push 116   // (static string, char: t)
+  DEBUG    root:machine.py:27 TICK:  17,  PC:  14,  AR:   2,  MEM_OUT:  97,  TOS: [116]                 ,    push 3    
+  DEBUG    root:machine.py:27 TICK:  18,  PC:  15,  AR:   2,  MEM_OUT:  97,  TOS: [3, 116]              ,    store     
+  DEBUG    root:machine.py:27 TICK:  20,  PC:  16,  AR:   3,  MEM_OUT: 116,  TOS: [116]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK:  21,  PC:  17,  AR:   3,  MEM_OUT: 116,  TOS: []                    ,    push 32    // (static string, char:  )
+  DEBUG    root:machine.py:27 TICK:  22,  PC:  18,  AR:   3,  MEM_OUT: 116,  TOS: [32]                  ,    push 4    
+  DEBUG    root:machine.py:27 TICK:  23,  PC:  19,  AR:   3,  MEM_OUT: 116,  TOS: [4, 32]               ,    store     
+  DEBUG    root:machine.py:27 TICK:  25,  PC:  20,  AR:   4,  MEM_OUT:  32,  TOS: [32]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK:  26,  PC:  21,  AR:   4,  MEM_OUT:  32,  TOS: []                    ,    push 105   // (static string, char: i)
+  DEBUG    root:machine.py:27 TICK:  27,  PC:  22,  AR:   4,  MEM_OUT:  32,  TOS: [105]                 ,    push 5    
+  DEBUG    root:machine.py:27 TICK:  28,  PC:  23,  AR:   4,  MEM_OUT:  32,  TOS: [5, 105]              ,    store     
+  DEBUG    root:machine.py:27 TICK:  30,  PC:  24,  AR:   5,  MEM_OUT: 105,  TOS: [105]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK:  31,  PC:  25,  AR:   5,  MEM_OUT: 105,  TOS: []                    ,    push 115   // (static string, char: s)
+  DEBUG    root:machine.py:27 TICK:  32,  PC:  26,  AR:   5,  MEM_OUT: 105,  TOS: [115]                 ,    push 6    
+  DEBUG    root:machine.py:27 TICK:  33,  PC:  27,  AR:   5,  MEM_OUT: 105,  TOS: [6, 115]              ,    store     
+  DEBUG    root:machine.py:27 TICK:  35,  PC:  28,  AR:   6,  MEM_OUT: 115,  TOS: [115]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK:  36,  PC:  29,  AR:   6,  MEM_OUT: 115,  TOS: []                    ,    push 32    // (static string, char:  )
+  DEBUG    root:machine.py:27 TICK:  37,  PC:  30,  AR:   6,  MEM_OUT: 115,  TOS: [32]                  ,    push 7    
+  DEBUG    root:machine.py:27 TICK:  38,  PC:  31,  AR:   6,  MEM_OUT: 115,  TOS: [7, 32]               ,    store     
+  DEBUG    root:machine.py:27 TICK:  40,  PC:  32,  AR:   7,  MEM_OUT:  32,  TOS: [32]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK:  41,  PC:  33,  AR:   7,  MEM_OUT:  32,  TOS: []                    ,    push 121   // (static string, char: y)
+  DEBUG    root:machine.py:27 TICK:  42,  PC:  34,  AR:   7,  MEM_OUT:  32,  TOS: [121]                 ,    push 8    
+  DEBUG    root:machine.py:27 TICK:  43,  PC:  35,  AR:   7,  MEM_OUT:  32,  TOS: [8, 121]              ,    store     
+  DEBUG    root:machine.py:27 TICK:  45,  PC:  36,  AR:   8,  MEM_OUT: 121,  TOS: [121]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK:  46,  PC:  37,  AR:   8,  MEM_OUT: 121,  TOS: []                    ,    push 111   // (static string, char: o)
+  DEBUG    root:machine.py:27 TICK:  47,  PC:  38,  AR:   8,  MEM_OUT: 121,  TOS: [111]                 ,    push 9    
+  DEBUG    root:machine.py:27 TICK:  48,  PC:  39,  AR:   8,  MEM_OUT: 121,  TOS: [9, 111]              ,    store     
+  DEBUG    root:machine.py:27 TICK:  50,  PC:  40,  AR:   9,  MEM_OUT: 111,  TOS: [111]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK:  51,  PC:  41,  AR:   9,  MEM_OUT: 111,  TOS: []                    ,    push 117   // (static string, char: u)
+  DEBUG    root:machine.py:27 TICK:  52,  PC:  42,  AR:   9,  MEM_OUT: 111,  TOS: [117]                 ,    push 10   
+  DEBUG    root:machine.py:27 TICK:  53,  PC:  43,  AR:   9,  MEM_OUT: 111,  TOS: [10, 117]             ,    store     
+  DEBUG    root:machine.py:27 TICK:  55,  PC:  44,  AR:  10,  MEM_OUT: 117,  TOS: [117]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK:  56,  PC:  45,  AR:  10,  MEM_OUT: 117,  TOS: []                    ,    push 114   // (static string, char: r)
+  DEBUG    root:machine.py:27 TICK:  57,  PC:  46,  AR:  10,  MEM_OUT: 117,  TOS: [114]                 ,    push 11   
+  DEBUG    root:machine.py:27 TICK:  58,  PC:  47,  AR:  10,  MEM_OUT: 117,  TOS: [11, 114]             ,    store     
+  DEBUG    root:machine.py:27 TICK:  60,  PC:  48,  AR:  11,  MEM_OUT: 114,  TOS: [114]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK:  61,  PC:  49,  AR:  11,  MEM_OUT: 114,  TOS: []                    ,    push 32    // (static string, char:  )
+  DEBUG    root:machine.py:27 TICK:  62,  PC:  50,  AR:  11,  MEM_OUT: 114,  TOS: [32]                  ,    push 12   
+  DEBUG    root:machine.py:27 TICK:  63,  PC:  51,  AR:  11,  MEM_OUT: 114,  TOS: [12, 32]              ,    store     
+  DEBUG    root:machine.py:27 TICK:  65,  PC:  52,  AR:  12,  MEM_OUT:  32,  TOS: [32]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK:  66,  PC:  53,  AR:  12,  MEM_OUT:  32,  TOS: []                    ,    push 110   // (static string, char: n)
+  DEBUG    root:machine.py:27 TICK:  67,  PC:  54,  AR:  12,  MEM_OUT:  32,  TOS: [110]                 ,    push 13   
+  DEBUG    root:machine.py:27 TICK:  68,  PC:  55,  AR:  12,  MEM_OUT:  32,  TOS: [13, 110]             ,    store     
+  DEBUG    root:machine.py:27 TICK:  70,  PC:  56,  AR:  13,  MEM_OUT: 110,  TOS: [110]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK:  71,  PC:  57,  AR:  13,  MEM_OUT: 110,  TOS: []                    ,    push 97    // (static string, char: a)
+  DEBUG    root:machine.py:27 TICK:  72,  PC:  58,  AR:  13,  MEM_OUT: 110,  TOS: [97]                  ,    push 14   
+  DEBUG    root:machine.py:27 TICK:  73,  PC:  59,  AR:  13,  MEM_OUT: 110,  TOS: [14, 97]              ,    store     
+  DEBUG    root:machine.py:27 TICK:  75,  PC:  60,  AR:  14,  MEM_OUT:  97,  TOS: [97]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK:  76,  PC:  61,  AR:  14,  MEM_OUT:  97,  TOS: []                    ,    push 109   // (static string, char: m)
+  DEBUG    root:machine.py:27 TICK:  77,  PC:  62,  AR:  14,  MEM_OUT:  97,  TOS: [109]                 ,    push 15   
+  DEBUG    root:machine.py:27 TICK:  78,  PC:  63,  AR:  14,  MEM_OUT:  97,  TOS: [15, 109]             ,    store     
+  DEBUG    root:machine.py:27 TICK:  80,  PC:  64,  AR:  15,  MEM_OUT: 109,  TOS: [109]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK:  81,  PC:  65,  AR:  15,  MEM_OUT: 109,  TOS: []                    ,    push 101   // (static string, char: e)
+  DEBUG    root:machine.py:27 TICK:  82,  PC:  66,  AR:  15,  MEM_OUT: 109,  TOS: [101]                 ,    push 16   
+  DEBUG    root:machine.py:27 TICK:  83,  PC:  67,  AR:  15,  MEM_OUT: 109,  TOS: [16, 101]             ,    store     
+  DEBUG    root:machine.py:27 TICK:  85,  PC:  68,  AR:  16,  MEM_OUT: 101,  TOS: [101]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK:  86,  PC:  69,  AR:  16,  MEM_OUT: 101,  TOS: []                    ,    push 63    // (static string, char: ?)
+  DEBUG    root:machine.py:27 TICK:  87,  PC:  70,  AR:  16,  MEM_OUT: 101,  TOS: [63]                  ,    push 17   
+  DEBUG    root:machine.py:27 TICK:  88,  PC:  71,  AR:  16,  MEM_OUT: 101,  TOS: [17, 63]              ,    store     
+  DEBUG    root:machine.py:27 TICK:  90,  PC:  72,  AR:  17,  MEM_OUT:  63,  TOS: [63]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK:  91,  PC:  73,  AR:  17,  MEM_OUT:  63,  TOS: []                    ,    push 0     // (static string, 0-termination)
+  DEBUG    root:machine.py:27 TICK:  92,  PC:  74,  AR:  17,  MEM_OUT:  63,  TOS: [0]                   ,    push 18   
+  DEBUG    root:machine.py:27 TICK:  93,  PC:  75,  AR:  17,  MEM_OUT:  63,  TOS: [18, 0]               ,    store     
+  DEBUG    root:machine.py:27 TICK:  95,  PC:  76,  AR:  18,  MEM_OUT:   0,  TOS: [0]                   ,    pop       
+  DEBUG    root:machine.py:27 TICK:  96,  PC:  77,  AR:  18,  MEM_OUT:   0,  TOS: []                    ,    push 10    // (static string, char: 
+  )
+  DEBUG    root:machine.py:27 TICK:  97,  PC:  78,  AR:  18,  MEM_OUT:   0,  TOS: [10]                  ,    push 19   
+  DEBUG    root:machine.py:27 TICK:  98,  PC:  79,  AR:  18,  MEM_OUT:   0,  TOS: [19, 10]              ,    store     
+  DEBUG    root:machine.py:27 TICK: 100,  PC:  80,  AR:  19,  MEM_OUT:  10,  TOS: [10]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK: 101,  PC:  81,  AR:  19,  MEM_OUT:  10,  TOS: []                    ,    push 72    // (static string, char: H)
+  DEBUG    root:machine.py:27 TICK: 102,  PC:  82,  AR:  19,  MEM_OUT:  10,  TOS: [72]                  ,    push 20   
+  DEBUG    root:machine.py:27 TICK: 103,  PC:  83,  AR:  19,  MEM_OUT:  10,  TOS: [20, 72]              ,    store     
+  DEBUG    root:machine.py:27 TICK: 105,  PC:  84,  AR:  20,  MEM_OUT:  72,  TOS: [72]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK: 106,  PC:  85,  AR:  20,  MEM_OUT:  72,  TOS: []                    ,    push 101   // (static string, char: e)
+  DEBUG    root:machine.py:27 TICK: 107,  PC:  86,  AR:  20,  MEM_OUT:  72,  TOS: [101]                 ,    push 21   
+  DEBUG    root:machine.py:27 TICK: 108,  PC:  87,  AR:  20,  MEM_OUT:  72,  TOS: [21, 101]             ,    store     
+  DEBUG    root:machine.py:27 TICK: 110,  PC:  88,  AR:  21,  MEM_OUT: 101,  TOS: [101]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK: 111,  PC:  89,  AR:  21,  MEM_OUT: 101,  TOS: []                    ,    push 108   // (static string, char: l)
+  DEBUG    root:machine.py:27 TICK: 112,  PC:  90,  AR:  21,  MEM_OUT: 101,  TOS: [108]                 ,    push 22   
+  DEBUG    root:machine.py:27 TICK: 113,  PC:  91,  AR:  21,  MEM_OUT: 101,  TOS: [22, 108]             ,    store     
+  DEBUG    root:machine.py:27 TICK: 115,  PC:  92,  AR:  22,  MEM_OUT: 108,  TOS: [108]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK: 116,  PC:  93,  AR:  22,  MEM_OUT: 108,  TOS: []                    ,    push 108   // (static string, char: l)
+  DEBUG    root:machine.py:27 TICK: 117,  PC:  94,  AR:  22,  MEM_OUT: 108,  TOS: [108]                 ,    push 23   
+  DEBUG    root:machine.py:27 TICK: 118,  PC:  95,  AR:  22,  MEM_OUT: 108,  TOS: [23, 108]             ,    store     
+  DEBUG    root:machine.py:27 TICK: 120,  PC:  96,  AR:  23,  MEM_OUT: 108,  TOS: [108]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK: 121,  PC:  97,  AR:  23,  MEM_OUT: 108,  TOS: []                    ,    push 111   // (static string, char: o)
+  DEBUG    root:machine.py:27 TICK: 122,  PC:  98,  AR:  23,  MEM_OUT: 108,  TOS: [111]                 ,    push 24   
+  DEBUG    root:machine.py:27 TICK: 123,  PC:  99,  AR:  23,  MEM_OUT: 108,  TOS: [24, 111]             ,    store     
+  DEBUG    root:machine.py:27 TICK: 125,  PC: 100,  AR:  24,  MEM_OUT: 111,  TOS: [111]                 ,    pop       
+  DEBUG    root:machine.py:27 TICK: 126,  PC: 101,  AR:  24,  MEM_OUT: 111,  TOS: []                    ,    push 44    // (static string, char: ,)
+  DEBUG    root:machine.py:27 TICK: 127,  PC: 102,  AR:  24,  MEM_OUT: 111,  TOS: [44]                  ,    push 25   
+  DEBUG    root:machine.py:27 TICK: 128,  PC: 103,  AR:  24,  MEM_OUT: 111,  TOS: [25, 44]              ,    store     
+  DEBUG    root:machine.py:27 TICK: 130,  PC: 104,  AR:  25,  MEM_OUT:  44,  TOS: [44]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK: 131,  PC: 105,  AR:  25,  MEM_OUT:  44,  TOS: []                    ,    push 32    // (static string, char:  )
+  DEBUG    root:machine.py:27 TICK: 132,  PC: 106,  AR:  25,  MEM_OUT:  44,  TOS: [32]                  ,    push 26   
+  DEBUG    root:machine.py:27 TICK: 133,  PC: 107,  AR:  25,  MEM_OUT:  44,  TOS: [26, 32]              ,    store     
+  DEBUG    root:machine.py:27 TICK: 135,  PC: 108,  AR:  26,  MEM_OUT:  32,  TOS: [32]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK: 136,  PC: 109,  AR:  26,  MEM_OUT:  32,  TOS: []                    ,    push 0     // (static string, 0-termination)
+  DEBUG    root:machine.py:27 TICK: 137,  PC: 110,  AR:  26,  MEM_OUT:  32,  TOS: [0]                   ,    push 27   
+  DEBUG    root:machine.py:27 TICK: 138,  PC: 111,  AR:  26,  MEM_OUT:  32,  TOS: [27, 0]               ,    store     
+  DEBUG    root:machine.py:27 TICK: 140,  PC: 112,  AR:  27,  MEM_OUT:   0,  TOS: [0]                   ,    pop       
+  DEBUG    root:machine.py:27 TICK: 141,  PC: 113,  AR:  27,  MEM_OUT:   0,  TOS: []                    ,    push 33    // (static string, char: !)
+  DEBUG    root:machine.py:27 TICK: 142,  PC: 114,  AR:  27,  MEM_OUT:   0,  TOS: [33]                  ,    push 28   
+  DEBUG    root:machine.py:27 TICK: 143,  PC: 115,  AR:  27,  MEM_OUT:   0,  TOS: [28, 33]              ,    store     
+  DEBUG    root:machine.py:27 TICK: 145,  PC: 116,  AR:  28,  MEM_OUT:  33,  TOS: [33]                  ,    pop       
+  DEBUG    root:machine.py:27 TICK: 146,  PC: 117,  AR:  28,  MEM_OUT:  33,  TOS: []                    ,    push 0     // (static string, 0-termination)
+  DEBUG    root:machine.py:27 TICK: 147,  PC: 118,  AR:  28,  MEM_OUT:  33,  TOS: [0]                   ,    push 29   
+  DEBUG    root:machine.py:27 TICK: 148,  PC: 119,  AR:  28,  MEM_OUT:  33,  TOS: [29, 0]               ,    store     
+  DEBUG    root:machine.py:27 TICK: 150,  PC: 120,  AR:  29,  MEM_OUT:   0,  TOS: [0]                   ,    pop       
+  DEBUG    root:machine.py:27 TICK: 151,  PC: 121,  AR:  29,  MEM_OUT:   0,  TOS: []                    ,    push 0     // (static string)
+  DEBUG    root:machine.py:27 TICK: 152,  PC: 122,  AR:  29,  MEM_OUT:   0,  TOS: [0]                   ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 153,  PC: 123,  AR:  29,  MEM_OUT:   0,  TOS: [0, 0]                ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 155,  PC: 124,  AR:   0,  MEM_OUT:  87,  TOS: [87, 0]               ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 156,  PC: 125,  AR:   0,  MEM_OUT:  87,  TOS: [87, 0]               ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 157,  PC: 126,  AR:   0,  MEM_OUT:  87,  TOS: [87, 0]               ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: W
+  DEBUG    root:machine.py:27 TICK: 158,  PC: 127,  AR:   0,  MEM_OUT:  87,  TOS: [0]                   ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 159,  PC: 128,  AR:   0,  MEM_OUT:  87,  TOS: [1]                   ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 160,  PC: 122,  AR:   0,  MEM_OUT:  87,  TOS: [1]                   ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 161,  PC: 123,  AR:   0,  MEM_OUT:  87,  TOS: [1, 1]                ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 163,  PC: 124,  AR:   1,  MEM_OUT: 104,  TOS: [104, 1]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 164,  PC: 125,  AR:   1,  MEM_OUT: 104,  TOS: [104, 1]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 165,  PC: 126,  AR:   1,  MEM_OUT: 104,  TOS: [104, 1]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: h
+  DEBUG    root:machine.py:27 TICK: 166,  PC: 127,  AR:   1,  MEM_OUT: 104,  TOS: [1]                   ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 167,  PC: 128,  AR:   1,  MEM_OUT: 104,  TOS: [2]                   ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 168,  PC: 122,  AR:   1,  MEM_OUT: 104,  TOS: [2]                   ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 169,  PC: 123,  AR:   1,  MEM_OUT: 104,  TOS: [2, 2]                ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 171,  PC: 124,  AR:   2,  MEM_OUT:  97,  TOS: [97, 2]               ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 172,  PC: 125,  AR:   2,  MEM_OUT:  97,  TOS: [97, 2]               ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 173,  PC: 126,  AR:   2,  MEM_OUT:  97,  TOS: [97, 2]               ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: a
+  DEBUG    root:machine.py:27 TICK: 174,  PC: 127,  AR:   2,  MEM_OUT:  97,  TOS: [2]                   ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 175,  PC: 128,  AR:   2,  MEM_OUT:  97,  TOS: [3]                   ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 176,  PC: 122,  AR:   2,  MEM_OUT:  97,  TOS: [3]                   ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 177,  PC: 123,  AR:   2,  MEM_OUT:  97,  TOS: [3, 3]                ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 179,  PC: 124,  AR:   3,  MEM_OUT: 116,  TOS: [116, 3]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 180,  PC: 125,  AR:   3,  MEM_OUT: 116,  TOS: [116, 3]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 181,  PC: 126,  AR:   3,  MEM_OUT: 116,  TOS: [116, 3]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: t
+  DEBUG    root:machine.py:27 TICK: 182,  PC: 127,  AR:   3,  MEM_OUT: 116,  TOS: [3]                   ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 183,  PC: 128,  AR:   3,  MEM_OUT: 116,  TOS: [4]                   ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 184,  PC: 122,  AR:   3,  MEM_OUT: 116,  TOS: [4]                   ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 185,  PC: 123,  AR:   3,  MEM_OUT: 116,  TOS: [4, 4]                ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 187,  PC: 124,  AR:   4,  MEM_OUT:  32,  TOS: [32, 4]               ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 188,  PC: 125,  AR:   4,  MEM_OUT:  32,  TOS: [32, 4]               ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 189,  PC: 126,  AR:   4,  MEM_OUT:  32,  TOS: [32, 4]               ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:machine.py:27 TICK: 190,  PC: 127,  AR:   4,  MEM_OUT:  32,  TOS: [4]                   ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 191,  PC: 128,  AR:   4,  MEM_OUT:  32,  TOS: [5]                   ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 192,  PC: 122,  AR:   4,  MEM_OUT:  32,  TOS: [5]                   ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 193,  PC: 123,  AR:   4,  MEM_OUT:  32,  TOS: [5, 5]                ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 195,  PC: 124,  AR:   5,  MEM_OUT: 105,  TOS: [105, 5]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 196,  PC: 125,  AR:   5,  MEM_OUT: 105,  TOS: [105, 5]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 197,  PC: 126,  AR:   5,  MEM_OUT: 105,  TOS: [105, 5]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: i
+  DEBUG    root:machine.py:27 TICK: 198,  PC: 127,  AR:   5,  MEM_OUT: 105,  TOS: [5]                   ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 199,  PC: 128,  AR:   5,  MEM_OUT: 105,  TOS: [6]                   ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 200,  PC: 122,  AR:   5,  MEM_OUT: 105,  TOS: [6]                   ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 201,  PC: 123,  AR:   5,  MEM_OUT: 105,  TOS: [6, 6]                ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 203,  PC: 124,  AR:   6,  MEM_OUT: 115,  TOS: [115, 6]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 204,  PC: 125,  AR:   6,  MEM_OUT: 115,  TOS: [115, 6]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 205,  PC: 126,  AR:   6,  MEM_OUT: 115,  TOS: [115, 6]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: s
+  DEBUG    root:machine.py:27 TICK: 206,  PC: 127,  AR:   6,  MEM_OUT: 115,  TOS: [6]                   ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 207,  PC: 128,  AR:   6,  MEM_OUT: 115,  TOS: [7]                   ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 208,  PC: 122,  AR:   6,  MEM_OUT: 115,  TOS: [7]                   ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 209,  PC: 123,  AR:   6,  MEM_OUT: 115,  TOS: [7, 7]                ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 211,  PC: 124,  AR:   7,  MEM_OUT:  32,  TOS: [32, 7]               ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 212,  PC: 125,  AR:   7,  MEM_OUT:  32,  TOS: [32, 7]               ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 213,  PC: 126,  AR:   7,  MEM_OUT:  32,  TOS: [32, 7]               ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:machine.py:27 TICK: 214,  PC: 127,  AR:   7,  MEM_OUT:  32,  TOS: [7]                   ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 215,  PC: 128,  AR:   7,  MEM_OUT:  32,  TOS: [8]                   ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 216,  PC: 122,  AR:   7,  MEM_OUT:  32,  TOS: [8]                   ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 217,  PC: 123,  AR:   7,  MEM_OUT:  32,  TOS: [8, 8]                ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 219,  PC: 124,  AR:   8,  MEM_OUT: 121,  TOS: [121, 8]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 220,  PC: 125,  AR:   8,  MEM_OUT: 121,  TOS: [121, 8]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 221,  PC: 126,  AR:   8,  MEM_OUT: 121,  TOS: [121, 8]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: y
+  DEBUG    root:machine.py:27 TICK: 222,  PC: 127,  AR:   8,  MEM_OUT: 121,  TOS: [8]                   ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 223,  PC: 128,  AR:   8,  MEM_OUT: 121,  TOS: [9]                   ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 224,  PC: 122,  AR:   8,  MEM_OUT: 121,  TOS: [9]                   ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 225,  PC: 123,  AR:   8,  MEM_OUT: 121,  TOS: [9, 9]                ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 227,  PC: 124,  AR:   9,  MEM_OUT: 111,  TOS: [111, 9]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 228,  PC: 125,  AR:   9,  MEM_OUT: 111,  TOS: [111, 9]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 229,  PC: 126,  AR:   9,  MEM_OUT: 111,  TOS: [111, 9]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: o
+  DEBUG    root:machine.py:27 TICK: 230,  PC: 127,  AR:   9,  MEM_OUT: 111,  TOS: [9]                   ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 231,  PC: 128,  AR:   9,  MEM_OUT: 111,  TOS: [10]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 232,  PC: 122,  AR:   9,  MEM_OUT: 111,  TOS: [10]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 233,  PC: 123,  AR:   9,  MEM_OUT: 111,  TOS: [10, 10]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 235,  PC: 124,  AR:  10,  MEM_OUT: 117,  TOS: [117, 10]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 236,  PC: 125,  AR:  10,  MEM_OUT: 117,  TOS: [117, 10]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 237,  PC: 126,  AR:  10,  MEM_OUT: 117,  TOS: [117, 10]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: u
+  DEBUG    root:machine.py:27 TICK: 238,  PC: 127,  AR:  10,  MEM_OUT: 117,  TOS: [10]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 239,  PC: 128,  AR:  10,  MEM_OUT: 117,  TOS: [11]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 240,  PC: 122,  AR:  10,  MEM_OUT: 117,  TOS: [11]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 241,  PC: 123,  AR:  10,  MEM_OUT: 117,  TOS: [11, 11]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 243,  PC: 124,  AR:  11,  MEM_OUT: 114,  TOS: [114, 11]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 244,  PC: 125,  AR:  11,  MEM_OUT: 114,  TOS: [114, 11]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 245,  PC: 126,  AR:  11,  MEM_OUT: 114,  TOS: [114, 11]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: r
+  DEBUG    root:machine.py:27 TICK: 246,  PC: 127,  AR:  11,  MEM_OUT: 114,  TOS: [11]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 247,  PC: 128,  AR:  11,  MEM_OUT: 114,  TOS: [12]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 248,  PC: 122,  AR:  11,  MEM_OUT: 114,  TOS: [12]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 249,  PC: 123,  AR:  11,  MEM_OUT: 114,  TOS: [12, 12]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 251,  PC: 124,  AR:  12,  MEM_OUT:  32,  TOS: [32, 12]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 252,  PC: 125,  AR:  12,  MEM_OUT:  32,  TOS: [32, 12]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 253,  PC: 126,  AR:  12,  MEM_OUT:  32,  TOS: [32, 12]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:machine.py:27 TICK: 254,  PC: 127,  AR:  12,  MEM_OUT:  32,  TOS: [12]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 255,  PC: 128,  AR:  12,  MEM_OUT:  32,  TOS: [13]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 256,  PC: 122,  AR:  12,  MEM_OUT:  32,  TOS: [13]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 257,  PC: 123,  AR:  12,  MEM_OUT:  32,  TOS: [13, 13]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 259,  PC: 124,  AR:  13,  MEM_OUT: 110,  TOS: [110, 13]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 260,  PC: 125,  AR:  13,  MEM_OUT: 110,  TOS: [110, 13]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 261,  PC: 126,  AR:  13,  MEM_OUT: 110,  TOS: [110, 13]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: n
+  DEBUG    root:machine.py:27 TICK: 262,  PC: 127,  AR:  13,  MEM_OUT: 110,  TOS: [13]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 263,  PC: 128,  AR:  13,  MEM_OUT: 110,  TOS: [14]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 264,  PC: 122,  AR:  13,  MEM_OUT: 110,  TOS: [14]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 265,  PC: 123,  AR:  13,  MEM_OUT: 110,  TOS: [14, 14]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 267,  PC: 124,  AR:  14,  MEM_OUT:  97,  TOS: [97, 14]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 268,  PC: 125,  AR:  14,  MEM_OUT:  97,  TOS: [97, 14]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 269,  PC: 126,  AR:  14,  MEM_OUT:  97,  TOS: [97, 14]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: a
+  DEBUG    root:machine.py:27 TICK: 270,  PC: 127,  AR:  14,  MEM_OUT:  97,  TOS: [14]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 271,  PC: 128,  AR:  14,  MEM_OUT:  97,  TOS: [15]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 272,  PC: 122,  AR:  14,  MEM_OUT:  97,  TOS: [15]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 273,  PC: 123,  AR:  14,  MEM_OUT:  97,  TOS: [15, 15]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 275,  PC: 124,  AR:  15,  MEM_OUT: 109,  TOS: [109, 15]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 276,  PC: 125,  AR:  15,  MEM_OUT: 109,  TOS: [109, 15]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 277,  PC: 126,  AR:  15,  MEM_OUT: 109,  TOS: [109, 15]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: m
+  DEBUG    root:machine.py:27 TICK: 278,  PC: 127,  AR:  15,  MEM_OUT: 109,  TOS: [15]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 279,  PC: 128,  AR:  15,  MEM_OUT: 109,  TOS: [16]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 280,  PC: 122,  AR:  15,  MEM_OUT: 109,  TOS: [16]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 281,  PC: 123,  AR:  15,  MEM_OUT: 109,  TOS: [16, 16]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 283,  PC: 124,  AR:  16,  MEM_OUT: 101,  TOS: [101, 16]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 284,  PC: 125,  AR:  16,  MEM_OUT: 101,  TOS: [101, 16]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 285,  PC: 126,  AR:  16,  MEM_OUT: 101,  TOS: [101, 16]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: e
+  DEBUG    root:machine.py:27 TICK: 286,  PC: 127,  AR:  16,  MEM_OUT: 101,  TOS: [16]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 287,  PC: 128,  AR:  16,  MEM_OUT: 101,  TOS: [17]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 288,  PC: 122,  AR:  16,  MEM_OUT: 101,  TOS: [17]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 289,  PC: 123,  AR:  16,  MEM_OUT: 101,  TOS: [17, 17]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 291,  PC: 124,  AR:  17,  MEM_OUT:  63,  TOS: [63, 17]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 292,  PC: 125,  AR:  17,  MEM_OUT:  63,  TOS: [63, 17]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 293,  PC: 126,  AR:  17,  MEM_OUT:  63,  TOS: [63, 17]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: ?
+  DEBUG    root:machine.py:27 TICK: 294,  PC: 127,  AR:  17,  MEM_OUT:  63,  TOS: [17]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 295,  PC: 128,  AR:  17,  MEM_OUT:  63,  TOS: [18]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 296,  PC: 122,  AR:  17,  MEM_OUT:  63,  TOS: [18]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 297,  PC: 123,  AR:  17,  MEM_OUT:  63,  TOS: [18, 18]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 299,  PC: 124,  AR:  18,  MEM_OUT:   0,  TOS: [0, 18]               ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 300,  PC: 125,  AR:  18,  MEM_OUT:   0,  TOS: [0, 18]               ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 301,  PC: 129,  AR:  18,  MEM_OUT:   0,  TOS: [0, 18]               ,    pop        // print_str
+  DEBUG    root:machine.py:27 TICK: 302,  PC: 130,  AR:  18,  MEM_OUT:   0,  TOS: [18]                  ,    pop        // (top-level expression)
+  DEBUG    root:machine.py:27 TICK: 303,  PC: 131,  AR:  18,  MEM_OUT:   0,  TOS: []                    ,    push 19    // (static string)
+  DEBUG    root:machine.py:27 TICK: 304,  PC: 132,  AR:  18,  MEM_OUT:   0,  TOS: [19]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 305,  PC: 133,  AR:  18,  MEM_OUT:   0,  TOS: [19, 19]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 307,  PC: 134,  AR:  19,  MEM_OUT:  10,  TOS: [10, 19]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 308,  PC: 135,  AR:  19,  MEM_OUT:  10,  TOS: [10, 19]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 309,  PC: 136,  AR:  19,  MEM_OUT:  10,  TOS: [10, 19]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: 
+
+  DEBUG    root:machine.py:27 TICK: 310,  PC: 137,  AR:  19,  MEM_OUT:  10,  TOS: [19]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 311,  PC: 138,  AR:  19,  MEM_OUT:  10,  TOS: [20]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 312,  PC: 132,  AR:  19,  MEM_OUT:  10,  TOS: [20]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 313,  PC: 133,  AR:  19,  MEM_OUT:  10,  TOS: [20, 20]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 315,  PC: 134,  AR:  20,  MEM_OUT:  72,  TOS: [72, 20]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 316,  PC: 135,  AR:  20,  MEM_OUT:  72,  TOS: [72, 20]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 317,  PC: 136,  AR:  20,  MEM_OUT:  72,  TOS: [72, 20]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: H
+  DEBUG    root:machine.py:27 TICK: 318,  PC: 137,  AR:  20,  MEM_OUT:  72,  TOS: [20]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 319,  PC: 138,  AR:  20,  MEM_OUT:  72,  TOS: [21]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 320,  PC: 132,  AR:  20,  MEM_OUT:  72,  TOS: [21]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 321,  PC: 133,  AR:  20,  MEM_OUT:  72,  TOS: [21, 21]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 323,  PC: 134,  AR:  21,  MEM_OUT: 101,  TOS: [101, 21]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 324,  PC: 135,  AR:  21,  MEM_OUT: 101,  TOS: [101, 21]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 325,  PC: 136,  AR:  21,  MEM_OUT: 101,  TOS: [101, 21]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: e
+  DEBUG    root:machine.py:27 TICK: 326,  PC: 137,  AR:  21,  MEM_OUT: 101,  TOS: [21]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 327,  PC: 138,  AR:  21,  MEM_OUT: 101,  TOS: [22]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 328,  PC: 132,  AR:  21,  MEM_OUT: 101,  TOS: [22]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 329,  PC: 133,  AR:  21,  MEM_OUT: 101,  TOS: [22, 22]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 331,  PC: 134,  AR:  22,  MEM_OUT: 108,  TOS: [108, 22]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 332,  PC: 135,  AR:  22,  MEM_OUT: 108,  TOS: [108, 22]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 333,  PC: 136,  AR:  22,  MEM_OUT: 108,  TOS: [108, 22]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: l
+  DEBUG    root:machine.py:27 TICK: 334,  PC: 137,  AR:  22,  MEM_OUT: 108,  TOS: [22]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 335,  PC: 138,  AR:  22,  MEM_OUT: 108,  TOS: [23]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 336,  PC: 132,  AR:  22,  MEM_OUT: 108,  TOS: [23]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 337,  PC: 133,  AR:  22,  MEM_OUT: 108,  TOS: [23, 23]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 339,  PC: 134,  AR:  23,  MEM_OUT: 108,  TOS: [108, 23]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 340,  PC: 135,  AR:  23,  MEM_OUT: 108,  TOS: [108, 23]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 341,  PC: 136,  AR:  23,  MEM_OUT: 108,  TOS: [108, 23]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: l
+  DEBUG    root:machine.py:27 TICK: 342,  PC: 137,  AR:  23,  MEM_OUT: 108,  TOS: [23]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 343,  PC: 138,  AR:  23,  MEM_OUT: 108,  TOS: [24]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 344,  PC: 132,  AR:  23,  MEM_OUT: 108,  TOS: [24]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 345,  PC: 133,  AR:  23,  MEM_OUT: 108,  TOS: [24, 24]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 347,  PC: 134,  AR:  24,  MEM_OUT: 111,  TOS: [111, 24]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 348,  PC: 135,  AR:  24,  MEM_OUT: 111,  TOS: [111, 24]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 349,  PC: 136,  AR:  24,  MEM_OUT: 111,  TOS: [111, 24]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: o
+  DEBUG    root:machine.py:27 TICK: 350,  PC: 137,  AR:  24,  MEM_OUT: 111,  TOS: [24]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 351,  PC: 138,  AR:  24,  MEM_OUT: 111,  TOS: [25]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 352,  PC: 132,  AR:  24,  MEM_OUT: 111,  TOS: [25]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 353,  PC: 133,  AR:  24,  MEM_OUT: 111,  TOS: [25, 25]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 355,  PC: 134,  AR:  25,  MEM_OUT:  44,  TOS: [44, 25]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 356,  PC: 135,  AR:  25,  MEM_OUT:  44,  TOS: [44, 25]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 357,  PC: 136,  AR:  25,  MEM_OUT:  44,  TOS: [44, 25]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: ,
+  DEBUG    root:machine.py:27 TICK: 358,  PC: 137,  AR:  25,  MEM_OUT:  44,  TOS: [25]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 359,  PC: 138,  AR:  25,  MEM_OUT:  44,  TOS: [26]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 360,  PC: 132,  AR:  25,  MEM_OUT:  44,  TOS: [26]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 361,  PC: 133,  AR:  25,  MEM_OUT:  44,  TOS: [26, 26]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 363,  PC: 134,  AR:  26,  MEM_OUT:  32,  TOS: [32, 26]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 364,  PC: 135,  AR:  26,  MEM_OUT:  32,  TOS: [32, 26]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 365,  PC: 136,  AR:  26,  MEM_OUT:  32,  TOS: [32, 26]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:machine.py:27 TICK: 366,  PC: 137,  AR:  26,  MEM_OUT:  32,  TOS: [26]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 367,  PC: 138,  AR:  26,  MEM_OUT:  32,  TOS: [27]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 368,  PC: 132,  AR:  26,  MEM_OUT:  32,  TOS: [27]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 369,  PC: 133,  AR:  26,  MEM_OUT:  32,  TOS: [27, 27]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 371,  PC: 134,  AR:  27,  MEM_OUT:   0,  TOS: [0, 27]               ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 372,  PC: 135,  AR:  27,  MEM_OUT:   0,  TOS: [0, 27]               ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 373,  PC: 139,  AR:  27,  MEM_OUT:   0,  TOS: [0, 27]               ,    pop        // print_str
+  DEBUG    root:machine.py:27 TICK: 374,  PC: 140,  AR:  27,  MEM_OUT:   0,  TOS: [27]                  ,    pop        // print_str
+  DEBUG    root:machine.py:27 TICK: 375,  PC: 141,  AR:  27,  MEM_OUT:   0,  TOS: []                    ,    push 30    // read_str
+  DEBUG    root:machine.py:27 TICK: 376,  PC: 142,  AR:  27,  MEM_OUT:   0,  TOS: [30]                  ,    dup        // read_str
+  DEBUG    root:machine.py:27 TICK: 377,  PC: 143,  AR:  27,  MEM_OUT:   0,  TOS: [30, 30]              ,    read 0     // read_str
+  DEBUG    root:data_path.py:34 ввод: V
+  DEBUG    root:machine.py:27 TICK: 378,  PC: 144,  AR:  27,  MEM_OUT:   0,  TOS: [86, 30, 30]          ,    flags      // read_str
+  DEBUG    root:machine.py:27 TICK: 379,  PC: 145,  AR:  27,  MEM_OUT:   0,  TOS: [86, 30, 30]          ,    swap       // read_str
+  DEBUG    root:machine.py:27 TICK: 380,  PC: 146,  AR:  27,  MEM_OUT:   0,  TOS: [30, 86, 30]          ,    store      // read_str
+  DEBUG    root:machine.py:27 TICK: 382,  PC: 147,  AR:  30,  MEM_OUT:  86,  TOS: [86, 30]              ,    pop        // read_str
+  DEBUG    root:machine.py:27 TICK: 383,  PC: 148,  AR:  30,  MEM_OUT:  86,  TOS: [30]                  ,    inc        // read_str
+  DEBUG    root:machine.py:27 TICK: 384,  PC: 149,  AR:  30,  MEM_OUT:  86,  TOS: [31]                  ,    jump_non_zero -8 // read_str
+  DEBUG    root:machine.py:27 TICK: 385,  PC: 142,  AR:  30,  MEM_OUT:  86,  TOS: [31]                  ,    dup        // read_str
+  DEBUG    root:machine.py:27 TICK: 386,  PC: 143,  AR:  30,  MEM_OUT:  86,  TOS: [31, 31]              ,    read 0     // read_str
+  DEBUG    root:data_path.py:34 ввод: a
+  DEBUG    root:machine.py:27 TICK: 387,  PC: 144,  AR:  30,  MEM_OUT:  86,  TOS: [97, 31, 31]          ,    flags      // read_str
+  DEBUG    root:machine.py:27 TICK: 388,  PC: 145,  AR:  30,  MEM_OUT:  86,  TOS: [97, 31, 31]          ,    swap       // read_str
+  DEBUG    root:machine.py:27 TICK: 389,  PC: 146,  AR:  30,  MEM_OUT:  86,  TOS: [31, 97, 31]          ,    store      // read_str
+  DEBUG    root:machine.py:27 TICK: 391,  PC: 147,  AR:  31,  MEM_OUT:  97,  TOS: [97, 31]              ,    pop        // read_str
+  DEBUG    root:machine.py:27 TICK: 392,  PC: 148,  AR:  31,  MEM_OUT:  97,  TOS: [31]                  ,    inc        // read_str
+  DEBUG    root:machine.py:27 TICK: 393,  PC: 149,  AR:  31,  MEM_OUT:  97,  TOS: [32]                  ,    jump_non_zero -8 // read_str
+  DEBUG    root:machine.py:27 TICK: 394,  PC: 142,  AR:  31,  MEM_OUT:  97,  TOS: [32]                  ,    dup        // read_str
+  DEBUG    root:machine.py:27 TICK: 395,  PC: 143,  AR:  31,  MEM_OUT:  97,  TOS: [32, 32]              ,    read 0     // read_str
+  DEBUG    root:data_path.py:34 ввод: d
+  DEBUG    root:machine.py:27 TICK: 396,  PC: 144,  AR:  31,  MEM_OUT:  97,  TOS: [100, 32, 32]         ,    flags      // read_str
+  DEBUG    root:machine.py:27 TICK: 397,  PC: 145,  AR:  31,  MEM_OUT:  97,  TOS: [100, 32, 32]         ,    swap       // read_str
+  DEBUG    root:machine.py:27 TICK: 398,  PC: 146,  AR:  31,  MEM_OUT:  97,  TOS: [32, 100, 32]         ,    store      // read_str
+  DEBUG    root:machine.py:27 TICK: 400,  PC: 147,  AR:  32,  MEM_OUT: 100,  TOS: [100, 32]             ,    pop        // read_str
+  DEBUG    root:machine.py:27 TICK: 401,  PC: 148,  AR:  32,  MEM_OUT: 100,  TOS: [32]                  ,    inc        // read_str
+  DEBUG    root:machine.py:27 TICK: 402,  PC: 149,  AR:  32,  MEM_OUT: 100,  TOS: [33]                  ,    jump_non_zero -8 // read_str
+  DEBUG    root:machine.py:27 TICK: 403,  PC: 142,  AR:  32,  MEM_OUT: 100,  TOS: [33]                  ,    dup        // read_str
+  DEBUG    root:machine.py:27 TICK: 404,  PC: 143,  AR:  32,  MEM_OUT: 100,  TOS: [33, 33]              ,    read 0     // read_str
+  DEBUG    root:data_path.py:34 ввод: i
+  DEBUG    root:machine.py:27 TICK: 405,  PC: 144,  AR:  32,  MEM_OUT: 100,  TOS: [105, 33, 33]         ,    flags      // read_str
+  DEBUG    root:machine.py:27 TICK: 406,  PC: 145,  AR:  32,  MEM_OUT: 100,  TOS: [105, 33, 33]         ,    swap       // read_str
+  DEBUG    root:machine.py:27 TICK: 407,  PC: 146,  AR:  32,  MEM_OUT: 100,  TOS: [33, 105, 33]         ,    store      // read_str
+  DEBUG    root:machine.py:27 TICK: 409,  PC: 147,  AR:  33,  MEM_OUT: 105,  TOS: [105, 33]             ,    pop        // read_str
+  DEBUG    root:machine.py:27 TICK: 410,  PC: 148,  AR:  33,  MEM_OUT: 105,  TOS: [33]                  ,    inc        // read_str
+  DEBUG    root:machine.py:27 TICK: 411,  PC: 149,  AR:  33,  MEM_OUT: 105,  TOS: [34]                  ,    jump_non_zero -8 // read_str
+  DEBUG    root:machine.py:27 TICK: 412,  PC: 142,  AR:  33,  MEM_OUT: 105,  TOS: [34]                  ,    dup        // read_str
+  DEBUG    root:machine.py:27 TICK: 413,  PC: 143,  AR:  33,  MEM_OUT: 105,  TOS: [34, 34]              ,    read 0     // read_str
+  DEBUG    root:data_path.py:34 ввод: m
+  DEBUG    root:machine.py:27 TICK: 414,  PC: 144,  AR:  33,  MEM_OUT: 105,  TOS: [109, 34, 34]         ,    flags      // read_str
+  DEBUG    root:machine.py:27 TICK: 415,  PC: 145,  AR:  33,  MEM_OUT: 105,  TOS: [109, 34, 34]         ,    swap       // read_str
+  DEBUG    root:machine.py:27 TICK: 416,  PC: 146,  AR:  33,  MEM_OUT: 105,  TOS: [34, 109, 34]         ,    store      // read_str
+  DEBUG    root:machine.py:27 TICK: 418,  PC: 147,  AR:  34,  MEM_OUT: 109,  TOS: [109, 34]             ,    pop        // read_str
+  DEBUG    root:machine.py:27 TICK: 419,  PC: 148,  AR:  34,  MEM_OUT: 109,  TOS: [34]                  ,    inc        // read_str
+  DEBUG    root:machine.py:27 TICK: 420,  PC: 149,  AR:  34,  MEM_OUT: 109,  TOS: [35]                  ,    jump_non_zero -8 // read_str
+  DEBUG    root:machine.py:27 TICK: 421,  PC: 142,  AR:  34,  MEM_OUT: 109,  TOS: [35]                  ,    dup        // read_str
+  DEBUG    root:machine.py:27 TICK: 422,  PC: 143,  AR:  34,  MEM_OUT: 109,  TOS: [35, 35]              ,    read 0     // read_str
+  DEBUG    root:data_path.py:34 ввод: \0
+  DEBUG    root:machine.py:27 TICK: 423,  PC: 144,  AR:  34,  MEM_OUT: 109,  TOS: [0, 35, 35]           ,    flags      // read_str
+  DEBUG    root:machine.py:27 TICK: 424,  PC: 145,  AR:  34,  MEM_OUT: 109,  TOS: [0, 35, 35]           ,    swap       // read_str
+  DEBUG    root:machine.py:27 TICK: 425,  PC: 146,  AR:  34,  MEM_OUT: 109,  TOS: [35, 0, 35]           ,    store      // read_str
+  DEBUG    root:machine.py:27 TICK: 427,  PC: 147,  AR:  35,  MEM_OUT:   0,  TOS: [0, 35]               ,    pop        // read_str
+  DEBUG    root:machine.py:27 TICK: 428,  PC: 148,  AR:  35,  MEM_OUT:   0,  TOS: [35]                  ,    inc        // read_str
+  DEBUG    root:machine.py:27 TICK: 429,  PC: 149,  AR:  35,  MEM_OUT:   0,  TOS: [36]                  ,    jump_non_zero -8 // read_str
+  DEBUG    root:machine.py:27 TICK: 430,  PC: 150,  AR:  35,  MEM_OUT:   0,  TOS: [36]                  ,    pop        // read_str
+  DEBUG    root:machine.py:27 TICK: 431,  PC: 151,  AR:  35,  MEM_OUT:   0,  TOS: []                    ,    push 30    // read_str
+  DEBUG    root:machine.py:27 TICK: 432,  PC: 152,  AR:  35,  MEM_OUT:   0,  TOS: [30]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 433,  PC: 153,  AR:  35,  MEM_OUT:   0,  TOS: [30, 30]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 435,  PC: 154,  AR:  30,  MEM_OUT:  86,  TOS: [86, 30]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 436,  PC: 155,  AR:  30,  MEM_OUT:  86,  TOS: [86, 30]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 437,  PC: 156,  AR:  30,  MEM_OUT:  86,  TOS: [86, 30]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: V
+  DEBUG    root:machine.py:27 TICK: 438,  PC: 157,  AR:  30,  MEM_OUT:  86,  TOS: [30]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 439,  PC: 158,  AR:  30,  MEM_OUT:  86,  TOS: [31]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 440,  PC: 152,  AR:  30,  MEM_OUT:  86,  TOS: [31]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 441,  PC: 153,  AR:  30,  MEM_OUT:  86,  TOS: [31, 31]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 443,  PC: 154,  AR:  31,  MEM_OUT:  97,  TOS: [97, 31]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 444,  PC: 155,  AR:  31,  MEM_OUT:  97,  TOS: [97, 31]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 445,  PC: 156,  AR:  31,  MEM_OUT:  97,  TOS: [97, 31]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: a
+  DEBUG    root:machine.py:27 TICK: 446,  PC: 157,  AR:  31,  MEM_OUT:  97,  TOS: [31]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 447,  PC: 158,  AR:  31,  MEM_OUT:  97,  TOS: [32]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 448,  PC: 152,  AR:  31,  MEM_OUT:  97,  TOS: [32]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 449,  PC: 153,  AR:  31,  MEM_OUT:  97,  TOS: [32, 32]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 451,  PC: 154,  AR:  32,  MEM_OUT: 100,  TOS: [100, 32]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 452,  PC: 155,  AR:  32,  MEM_OUT: 100,  TOS: [100, 32]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 453,  PC: 156,  AR:  32,  MEM_OUT: 100,  TOS: [100, 32]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: d
+  DEBUG    root:machine.py:27 TICK: 454,  PC: 157,  AR:  32,  MEM_OUT: 100,  TOS: [32]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 455,  PC: 158,  AR:  32,  MEM_OUT: 100,  TOS: [33]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 456,  PC: 152,  AR:  32,  MEM_OUT: 100,  TOS: [33]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 457,  PC: 153,  AR:  32,  MEM_OUT: 100,  TOS: [33, 33]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 459,  PC: 154,  AR:  33,  MEM_OUT: 105,  TOS: [105, 33]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 460,  PC: 155,  AR:  33,  MEM_OUT: 105,  TOS: [105, 33]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 461,  PC: 156,  AR:  33,  MEM_OUT: 105,  TOS: [105, 33]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: i
+  DEBUG    root:machine.py:27 TICK: 462,  PC: 157,  AR:  33,  MEM_OUT: 105,  TOS: [33]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 463,  PC: 158,  AR:  33,  MEM_OUT: 105,  TOS: [34]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 464,  PC: 152,  AR:  33,  MEM_OUT: 105,  TOS: [34]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 465,  PC: 153,  AR:  33,  MEM_OUT: 105,  TOS: [34, 34]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 467,  PC: 154,  AR:  34,  MEM_OUT: 109,  TOS: [109, 34]             ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 468,  PC: 155,  AR:  34,  MEM_OUT: 109,  TOS: [109, 34]             ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 469,  PC: 156,  AR:  34,  MEM_OUT: 109,  TOS: [109, 34]             ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: m
+  DEBUG    root:machine.py:27 TICK: 470,  PC: 157,  AR:  34,  MEM_OUT: 109,  TOS: [34]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 471,  PC: 158,  AR:  34,  MEM_OUT: 109,  TOS: [35]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 472,  PC: 152,  AR:  34,  MEM_OUT: 109,  TOS: [35]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 473,  PC: 153,  AR:  34,  MEM_OUT: 109,  TOS: [35, 35]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 475,  PC: 154,  AR:  35,  MEM_OUT:   0,  TOS: [0, 35]               ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 476,  PC: 155,  AR:  35,  MEM_OUT:   0,  TOS: [0, 35]               ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 477,  PC: 159,  AR:  35,  MEM_OUT:   0,  TOS: [0, 35]               ,    pop        // print_str
+  DEBUG    root:machine.py:27 TICK: 478,  PC: 160,  AR:  35,  MEM_OUT:   0,  TOS: [35]                  ,    pop        // print_str
+  DEBUG    root:machine.py:27 TICK: 479,  PC: 161,  AR:  35,  MEM_OUT:   0,  TOS: []                    ,    push 28    // (static string)
+  DEBUG    root:machine.py:27 TICK: 480,  PC: 162,  AR:  35,  MEM_OUT:   0,  TOS: [28]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 481,  PC: 163,  AR:  35,  MEM_OUT:   0,  TOS: [28, 28]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 483,  PC: 164,  AR:  28,  MEM_OUT:  33,  TOS: [33, 28]              ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 484,  PC: 165,  AR:  28,  MEM_OUT:  33,  TOS: [33, 28]              ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 485,  PC: 166,  AR:  28,  MEM_OUT:  33,  TOS: [33, 28]              ,    write 0    // print_str
+  DEBUG    root:control_unit.py:80 вывод: !
+  DEBUG    root:machine.py:27 TICK: 486,  PC: 167,  AR:  28,  MEM_OUT:  33,  TOS: [28]                  ,    inc        // print_str
+  DEBUG    root:machine.py:27 TICK: 487,  PC: 168,  AR:  28,  MEM_OUT:  33,  TOS: [29]                  ,    jump -7    // print_str
+  DEBUG    root:machine.py:27 TICK: 488,  PC: 162,  AR:  28,  MEM_OUT:  33,  TOS: [29]                  ,    dup        // print_str
+  DEBUG    root:machine.py:27 TICK: 489,  PC: 163,  AR:  28,  MEM_OUT:  33,  TOS: [29, 29]              ,    load       // print_str
+  DEBUG    root:machine.py:27 TICK: 491,  PC: 164,  AR:  29,  MEM_OUT:   0,  TOS: [0, 29]               ,    flags      // print_str
+  DEBUG    root:machine.py:27 TICK: 492,  PC: 165,  AR:  29,  MEM_OUT:   0,  TOS: [0, 29]               ,    jump_zero 3 // print_str
+  DEBUG    root:machine.py:27 TICK: 493,  PC: 169,  AR:  29,  MEM_OUT:   0,  TOS: [0, 29]               ,    pop        // print_str
+  DEBUG    root:machine.py:27 TICK: 494,  PC: 170,  AR:  29,  MEM_OUT:   0,  TOS: [29]                  ,    pop        // (top-level expression)
+  DEBUG    root:machine.py:27 TICK: 495,  PC: 171,  AR:  29,  MEM_OUT:   0,  TOS: []                    ,    halt      
