@@ -15,13 +15,13 @@ out_stdout: |
 out_code: |-
   [
     {
-      "index": 19,
+      "index": 0,
       "opcode": "jump",
       "arg": 0,
       "term": null
     },
     {
-      "index": 1,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "defvar"
@@ -33,103 +33,103 @@ out_code: |-
       "term": "defvar"
     },
     {
-      "index": 2,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "defvar"
     },
     {
-      "index": 3,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 5,
+      "index": 0,
       "opcode": "read",
       "arg": 0,
       "term": "read_char"
     },
     {
-      "index": 4,
+      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "setq"
     },
     {
-      "index": 6,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "setq"
     },
     {
-      "index": 12,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 13,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 14,
+      "index": 0,
       "opcode": "jump_zero",
       "arg": 6,
       "term": "loop_while"
     },
     {
-      "index": 7,
+      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "(variable: a)"
     },
     {
-      "index": 8,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: a)"
     },
     {
-      "index": 9,
+      "index": 0,
       "opcode": "dup",
       "arg": null,
       "term": "print_char"
     },
     {
-      "index": 10,
+      "index": 0,
       "opcode": "write",
       "arg": 0,
       "term": "print_char"
     },
     {
-      "index": 11,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 15,
+      "index": 0,
       "opcode": "jump",
       "arg": -12,
       "term": "loop_while"
     },
     {
-      "index": 16,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "loop_while"
     },
     {
-      "index": 17,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 18,
+      "index": 0,
       "opcode": "halt",
       "arg": null,
       "term": null
