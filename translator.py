@@ -19,7 +19,7 @@ class Instr:
     count = 0 #todo сделать с этим что то
     def __init__(self, opcode: Opcode, arg=None, term=None):
         self.opcode = opcode
-        self.index = Instr.count
+        self.index = 0
         Instr.count += 1
         self.arg = arg
         self.term = term

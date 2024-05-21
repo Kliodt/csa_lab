@@ -15,1033 +15,1033 @@ out_stdout: |
 out_code: |-
   [
     {
-      "index": 193,
+      "index": 0,
       "opcode": "jump",
       "arg": 0,
       "term": null
     },
     {
-      "index": 20,
+      "index": 0,
       "opcode": "push",
       "arg": 87,
       "term": "(static string, char: W)"
     },
     {
-      "index": 21,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": null
     },
     {
-      "index": 22,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 23,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 24,
+      "index": 0,
       "opcode": "push",
       "arg": 104,
       "term": "(static string, char: h)"
     },
     {
-      "index": 25,
+      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": null
     },
     {
-      "index": 26,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 27,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 28,
+      "index": 0,
       "opcode": "push",
       "arg": 97,
       "term": "(static string, char: a)"
     },
     {
-      "index": 29,
+      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": null
     },
     {
-      "index": 30,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 31,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 32,
+      "index": 0,
       "opcode": "push",
       "arg": 116,
       "term": "(static string, char: t)"
     },
     {
-      "index": 33,
+      "index": 0,
       "opcode": "push",
       "arg": 3,
       "term": null
     },
     {
-      "index": 34,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 35,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 36,
+      "index": 0,
       "opcode": "push",
       "arg": 32,
       "term": "(static string, char:  )"
     },
     {
-      "index": 37,
+      "index": 0,
       "opcode": "push",
       "arg": 4,
       "term": null
     },
     {
-      "index": 38,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 39,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 40,
+      "index": 0,
       "opcode": "push",
       "arg": 105,
       "term": "(static string, char: i)"
     },
     {
-      "index": 41,
+      "index": 0,
       "opcode": "push",
       "arg": 5,
       "term": null
     },
     {
-      "index": 42,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 43,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 44,
+      "index": 0,
       "opcode": "push",
       "arg": 115,
       "term": "(static string, char: s)"
     },
     {
-      "index": 45,
+      "index": 0,
       "opcode": "push",
       "arg": 6,
       "term": null
     },
     {
-      "index": 46,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 47,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 48,
+      "index": 0,
       "opcode": "push",
       "arg": 32,
       "term": "(static string, char:  )"
     },
     {
-      "index": 49,
+      "index": 0,
       "opcode": "push",
       "arg": 7,
       "term": null
     },
     {
-      "index": 50,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 51,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 52,
+      "index": 0,
       "opcode": "push",
       "arg": 121,
       "term": "(static string, char: y)"
     },
     {
-      "index": 53,
+      "index": 0,
       "opcode": "push",
       "arg": 8,
       "term": null
     },
     {
-      "index": 54,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 55,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 56,
+      "index": 0,
       "opcode": "push",
       "arg": 111,
       "term": "(static string, char: o)"
     },
     {
-      "index": 57,
+      "index": 0,
       "opcode": "push",
       "arg": 9,
       "term": null
     },
     {
-      "index": 58,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 59,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 60,
+      "index": 0,
       "opcode": "push",
       "arg": 117,
       "term": "(static string, char: u)"
     },
     {
-      "index": 61,
+      "index": 0,
       "opcode": "push",
       "arg": 10,
       "term": null
     },
     {
-      "index": 62,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 63,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 64,
+      "index": 0,
       "opcode": "push",
       "arg": 114,
       "term": "(static string, char: r)"
     },
     {
-      "index": 65,
+      "index": 0,
       "opcode": "push",
       "arg": 11,
       "term": null
     },
     {
-      "index": 66,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 67,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 68,
+      "index": 0,
       "opcode": "push",
       "arg": 32,
       "term": "(static string, char:  )"
     },
     {
-      "index": 69,
+      "index": 0,
       "opcode": "push",
       "arg": 12,
       "term": null
     },
     {
-      "index": 70,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 71,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 72,
+      "index": 0,
       "opcode": "push",
       "arg": 110,
       "term": "(static string, char: n)"
     },
     {
-      "index": 73,
+      "index": 0,
       "opcode": "push",
       "arg": 13,
       "term": null
     },
     {
-      "index": 74,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 75,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 76,
+      "index": 0,
       "opcode": "push",
       "arg": 97,
       "term": "(static string, char: a)"
     },
     {
-      "index": 77,
+      "index": 0,
       "opcode": "push",
       "arg": 14,
       "term": null
     },
     {
-      "index": 78,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 79,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 80,
+      "index": 0,
       "opcode": "push",
       "arg": 109,
       "term": "(static string, char: m)"
     },
     {
-      "index": 81,
+      "index": 0,
       "opcode": "push",
       "arg": 15,
       "term": null
     },
     {
-      "index": 82,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 83,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 84,
+      "index": 0,
       "opcode": "push",
       "arg": 101,
       "term": "(static string, char: e)"
     },
     {
-      "index": 85,
+      "index": 0,
       "opcode": "push",
       "arg": 16,
       "term": null
     },
     {
-      "index": 86,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 87,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 88,
+      "index": 0,
       "opcode": "push",
       "arg": 63,
       "term": "(static string, char: ?)"
     },
     {
-      "index": 89,
+      "index": 0,
       "opcode": "push",
       "arg": 17,
       "term": null
     },
     {
-      "index": 90,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 91,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 92,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "(static string, 0-termination)"
     },
     {
-      "index": 93,
+      "index": 0,
       "opcode": "push",
       "arg": 18,
       "term": null
     },
     {
-      "index": 94,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 95,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 96,
+      "index": 0,
       "opcode": "push",
       "arg": 10,
       "term": "(static string, char: \n)"
     },
     {
-      "index": 97,
+      "index": 0,
       "opcode": "push",
       "arg": 19,
       "term": null
     },
     {
-      "index": 98,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 99,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 100,
+      "index": 0,
       "opcode": "push",
       "arg": 72,
       "term": "(static string, char: H)"
     },
     {
-      "index": 101,
+      "index": 0,
       "opcode": "push",
       "arg": 20,
       "term": null
     },
     {
-      "index": 102,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 103,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 104,
+      "index": 0,
       "opcode": "push",
       "arg": 101,
       "term": "(static string, char: e)"
     },
     {
-      "index": 105,
+      "index": 0,
       "opcode": "push",
       "arg": 21,
       "term": null
     },
     {
-      "index": 106,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 107,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 108,
+      "index": 0,
       "opcode": "push",
       "arg": 108,
       "term": "(static string, char: l)"
     },
     {
-      "index": 109,
+      "index": 0,
       "opcode": "push",
       "arg": 22,
       "term": null
     },
     {
-      "index": 110,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 111,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 112,
+      "index": 0,
       "opcode": "push",
       "arg": 108,
       "term": "(static string, char: l)"
     },
     {
-      "index": 113,
+      "index": 0,
       "opcode": "push",
       "arg": 23,
       "term": null
     },
     {
-      "index": 114,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 115,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 116,
+      "index": 0,
       "opcode": "push",
       "arg": 111,
       "term": "(static string, char: o)"
     },
     {
-      "index": 117,
+      "index": 0,
       "opcode": "push",
       "arg": 24,
       "term": null
     },
     {
-      "index": 118,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 119,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 120,
+      "index": 0,
       "opcode": "push",
       "arg": 44,
       "term": "(static string, char: ,)"
     },
     {
-      "index": 121,
+      "index": 0,
       "opcode": "push",
       "arg": 25,
       "term": null
     },
     {
-      "index": 122,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 123,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 124,
+      "index": 0,
       "opcode": "push",
       "arg": 32,
       "term": "(static string, char:  )"
     },
     {
-      "index": 125,
+      "index": 0,
       "opcode": "push",
       "arg": 26,
       "term": null
     },
     {
-      "index": 126,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 127,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 128,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "(static string, 0-termination)"
     },
     {
-      "index": 129,
+      "index": 0,
       "opcode": "push",
       "arg": 27,
       "term": null
     },
     {
-      "index": 130,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 131,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 132,
+      "index": 0,
       "opcode": "push",
       "arg": 33,
       "term": "(static string, char: !)"
     },
     {
-      "index": 133,
+      "index": 0,
       "opcode": "push",
       "arg": 28,
       "term": null
     },
     {
-      "index": 134,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 135,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 136,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "(static string, 0-termination)"
     },
     {
-      "index": 137,
+      "index": 0,
       "opcode": "push",
       "arg": 29,
       "term": null
     },
     {
-      "index": 138,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": null
     },
     {
-      "index": 139,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": null
     },
     {
-      "index": 140,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "(static string)"
     },
     {
-      "index": 141,
+      "index": 0,
       "opcode": "dup",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 142,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 143,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 144,
+      "index": 0,
       "opcode": "jump_zero",
       "arg": 3,
       "term": "print_str"
     },
     {
-      "index": 145,
+      "index": 0,
       "opcode": "write",
       "arg": 0,
       "term": "print_str"
     },
     {
-      "index": 146,
+      "index": 0,
       "opcode": "inc",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 147,
+      "index": 0,
       "opcode": "jump",
       "arg": -7,
       "term": "print_str"
     },
     {
-      "index": 148,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 150,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 151,
+      "index": 0,
       "opcode": "push",
       "arg": 19,
       "term": "(static string)"
     },
     {
-      "index": 164,
+      "index": 0,
       "opcode": "dup",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 165,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 166,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 167,
+      "index": 0,
       "opcode": "jump_zero",
       "arg": 3,
       "term": "print_str"
     },
     {
-      "index": 168,
+      "index": 0,
       "opcode": "write",
       "arg": 0,
       "term": "print_str"
     },
     {
-      "index": 169,
+      "index": 0,
       "opcode": "inc",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 170,
+      "index": 0,
       "opcode": "jump",
       "arg": -7,
       "term": "print_str"
     },
     {
-      "index": 171,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 172,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 152,
+      "index": 0,
       "opcode": "push",
       "arg": 30,
       "term": "read_str"
     },
     {
-      "index": 153,
+      "index": 0,
       "opcode": "dup",
       "arg": null,
       "term": "read_str"
     },
     {
-      "index": 154,
+      "index": 0,
       "opcode": "read",
       "arg": 0,
       "term": "read_str"
     },
     {
-      "index": 155,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "read_str"
     },
     {
-      "index": 156,
+      "index": 0,
       "opcode": "swap",
       "arg": null,
       "term": "read_str"
     },
     {
-      "index": 157,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "read_str"
     },
     {
-      "index": 158,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "read_str"
     },
     {
-      "index": 159,
+      "index": 0,
       "opcode": "inc",
       "arg": null,
       "term": "read_str"
     },
     {
-      "index": 160,
+      "index": 0,
       "opcode": "jump_non_zero",
       "arg": -8,
       "term": "read_str"
     },
     {
-      "index": 161,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "read_str"
     },
     {
-      "index": 162,
+      "index": 0,
       "opcode": "push",
       "arg": 30,
       "term": "read_str"
     },
     {
-      "index": 173,
+      "index": 0,
       "opcode": "dup",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 174,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 175,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 176,
+      "index": 0,
       "opcode": "jump_zero",
       "arg": 3,
       "term": "print_str"
     },
     {
-      "index": 177,
+      "index": 0,
       "opcode": "write",
       "arg": 0,
       "term": "print_str"
     },
     {
-      "index": 178,
+      "index": 0,
       "opcode": "inc",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 179,
+      "index": 0,
       "opcode": "jump",
       "arg": -7,
       "term": "print_str"
     },
     {
-      "index": 180,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 181,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 163,
+      "index": 0,
       "opcode": "push",
       "arg": 28,
       "term": "(static string)"
     },
     {
-      "index": 182,
+      "index": 0,
       "opcode": "dup",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 183,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 184,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 185,
+      "index": 0,
       "opcode": "jump_zero",
       "arg": 3,
       "term": "print_str"
     },
     {
-      "index": 186,
+      "index": 0,
       "opcode": "write",
       "arg": 0,
       "term": "print_str"
     },
     {
-      "index": 187,
+      "index": 0,
       "opcode": "inc",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 188,
+      "index": 0,
       "opcode": "jump",
       "arg": -7,
       "term": "print_str"
     },
     {
-      "index": 189,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "print_str"
     },
     {
-      "index": 191,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 192,
+      "index": 0,
       "opcode": "halt",
       "arg": null,
       "term": null
@@ -1178,7 +1178,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 155,  PC: 124,  AR:   0,  MEM_OUT:  87,  TOS: [87, 0]               ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 156,  PC: 125,  AR:   0,  MEM_OUT:  87,  TOS: [87, 0]               ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 157,  PC: 126,  AR:   0,  MEM_OUT:  87,  TOS: [87, 0]               ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: W
+  DEBUG    root:control_unit.py:79 вывод: W
   DEBUG    root:machine.py:27 TICK: 158,  PC: 127,  AR:   0,  MEM_OUT:  87,  TOS: [0]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 159,  PC: 128,  AR:   0,  MEM_OUT:  87,  TOS: [1]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 160,  PC: 122,  AR:   0,  MEM_OUT:  87,  TOS: [1]                   ,    dup        // print_str
@@ -1186,7 +1186,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 163,  PC: 124,  AR:   1,  MEM_OUT: 104,  TOS: [104, 1]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 164,  PC: 125,  AR:   1,  MEM_OUT: 104,  TOS: [104, 1]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 165,  PC: 126,  AR:   1,  MEM_OUT: 104,  TOS: [104, 1]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: h
+  DEBUG    root:control_unit.py:79 вывод: h
   DEBUG    root:machine.py:27 TICK: 166,  PC: 127,  AR:   1,  MEM_OUT: 104,  TOS: [1]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 167,  PC: 128,  AR:   1,  MEM_OUT: 104,  TOS: [2]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 168,  PC: 122,  AR:   1,  MEM_OUT: 104,  TOS: [2]                   ,    dup        // print_str
@@ -1194,7 +1194,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 171,  PC: 124,  AR:   2,  MEM_OUT:  97,  TOS: [97, 2]               ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 172,  PC: 125,  AR:   2,  MEM_OUT:  97,  TOS: [97, 2]               ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 173,  PC: 126,  AR:   2,  MEM_OUT:  97,  TOS: [97, 2]               ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: a
+  DEBUG    root:control_unit.py:79 вывод: a
   DEBUG    root:machine.py:27 TICK: 174,  PC: 127,  AR:   2,  MEM_OUT:  97,  TOS: [2]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 175,  PC: 128,  AR:   2,  MEM_OUT:  97,  TOS: [3]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 176,  PC: 122,  AR:   2,  MEM_OUT:  97,  TOS: [3]                   ,    dup        // print_str
@@ -1202,7 +1202,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 179,  PC: 124,  AR:   3,  MEM_OUT: 116,  TOS: [116, 3]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 180,  PC: 125,  AR:   3,  MEM_OUT: 116,  TOS: [116, 3]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 181,  PC: 126,  AR:   3,  MEM_OUT: 116,  TOS: [116, 3]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: t
+  DEBUG    root:control_unit.py:79 вывод: t
   DEBUG    root:machine.py:27 TICK: 182,  PC: 127,  AR:   3,  MEM_OUT: 116,  TOS: [3]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 183,  PC: 128,  AR:   3,  MEM_OUT: 116,  TOS: [4]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 184,  PC: 122,  AR:   3,  MEM_OUT: 116,  TOS: [4]                   ,    dup        // print_str
@@ -1210,7 +1210,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 187,  PC: 124,  AR:   4,  MEM_OUT:  32,  TOS: [32, 4]               ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 188,  PC: 125,  AR:   4,  MEM_OUT:  32,  TOS: [32, 4]               ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 189,  PC: 126,  AR:   4,  MEM_OUT:  32,  TOS: [32, 4]               ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:control_unit.py:79 вывод:  
   DEBUG    root:machine.py:27 TICK: 190,  PC: 127,  AR:   4,  MEM_OUT:  32,  TOS: [4]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 191,  PC: 128,  AR:   4,  MEM_OUT:  32,  TOS: [5]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 192,  PC: 122,  AR:   4,  MEM_OUT:  32,  TOS: [5]                   ,    dup        // print_str
@@ -1218,7 +1218,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 195,  PC: 124,  AR:   5,  MEM_OUT: 105,  TOS: [105, 5]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 196,  PC: 125,  AR:   5,  MEM_OUT: 105,  TOS: [105, 5]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 197,  PC: 126,  AR:   5,  MEM_OUT: 105,  TOS: [105, 5]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: i
+  DEBUG    root:control_unit.py:79 вывод: i
   DEBUG    root:machine.py:27 TICK: 198,  PC: 127,  AR:   5,  MEM_OUT: 105,  TOS: [5]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 199,  PC: 128,  AR:   5,  MEM_OUT: 105,  TOS: [6]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 200,  PC: 122,  AR:   5,  MEM_OUT: 105,  TOS: [6]                   ,    dup        // print_str
@@ -1226,7 +1226,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 203,  PC: 124,  AR:   6,  MEM_OUT: 115,  TOS: [115, 6]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 204,  PC: 125,  AR:   6,  MEM_OUT: 115,  TOS: [115, 6]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 205,  PC: 126,  AR:   6,  MEM_OUT: 115,  TOS: [115, 6]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: s
+  DEBUG    root:control_unit.py:79 вывод: s
   DEBUG    root:machine.py:27 TICK: 206,  PC: 127,  AR:   6,  MEM_OUT: 115,  TOS: [6]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 207,  PC: 128,  AR:   6,  MEM_OUT: 115,  TOS: [7]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 208,  PC: 122,  AR:   6,  MEM_OUT: 115,  TOS: [7]                   ,    dup        // print_str
@@ -1234,7 +1234,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 211,  PC: 124,  AR:   7,  MEM_OUT:  32,  TOS: [32, 7]               ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 212,  PC: 125,  AR:   7,  MEM_OUT:  32,  TOS: [32, 7]               ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 213,  PC: 126,  AR:   7,  MEM_OUT:  32,  TOS: [32, 7]               ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:control_unit.py:79 вывод:  
   DEBUG    root:machine.py:27 TICK: 214,  PC: 127,  AR:   7,  MEM_OUT:  32,  TOS: [7]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 215,  PC: 128,  AR:   7,  MEM_OUT:  32,  TOS: [8]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 216,  PC: 122,  AR:   7,  MEM_OUT:  32,  TOS: [8]                   ,    dup        // print_str
@@ -1242,7 +1242,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 219,  PC: 124,  AR:   8,  MEM_OUT: 121,  TOS: [121, 8]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 220,  PC: 125,  AR:   8,  MEM_OUT: 121,  TOS: [121, 8]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 221,  PC: 126,  AR:   8,  MEM_OUT: 121,  TOS: [121, 8]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: y
+  DEBUG    root:control_unit.py:79 вывод: y
   DEBUG    root:machine.py:27 TICK: 222,  PC: 127,  AR:   8,  MEM_OUT: 121,  TOS: [8]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 223,  PC: 128,  AR:   8,  MEM_OUT: 121,  TOS: [9]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 224,  PC: 122,  AR:   8,  MEM_OUT: 121,  TOS: [9]                   ,    dup        // print_str
@@ -1250,7 +1250,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 227,  PC: 124,  AR:   9,  MEM_OUT: 111,  TOS: [111, 9]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 228,  PC: 125,  AR:   9,  MEM_OUT: 111,  TOS: [111, 9]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 229,  PC: 126,  AR:   9,  MEM_OUT: 111,  TOS: [111, 9]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: o
+  DEBUG    root:control_unit.py:79 вывод: o
   DEBUG    root:machine.py:27 TICK: 230,  PC: 127,  AR:   9,  MEM_OUT: 111,  TOS: [9]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 231,  PC: 128,  AR:   9,  MEM_OUT: 111,  TOS: [10]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 232,  PC: 122,  AR:   9,  MEM_OUT: 111,  TOS: [10]                  ,    dup        // print_str
@@ -1258,7 +1258,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 235,  PC: 124,  AR:  10,  MEM_OUT: 117,  TOS: [117, 10]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 236,  PC: 125,  AR:  10,  MEM_OUT: 117,  TOS: [117, 10]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 237,  PC: 126,  AR:  10,  MEM_OUT: 117,  TOS: [117, 10]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: u
+  DEBUG    root:control_unit.py:79 вывод: u
   DEBUG    root:machine.py:27 TICK: 238,  PC: 127,  AR:  10,  MEM_OUT: 117,  TOS: [10]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 239,  PC: 128,  AR:  10,  MEM_OUT: 117,  TOS: [11]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 240,  PC: 122,  AR:  10,  MEM_OUT: 117,  TOS: [11]                  ,    dup        // print_str
@@ -1266,7 +1266,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 243,  PC: 124,  AR:  11,  MEM_OUT: 114,  TOS: [114, 11]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 244,  PC: 125,  AR:  11,  MEM_OUT: 114,  TOS: [114, 11]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 245,  PC: 126,  AR:  11,  MEM_OUT: 114,  TOS: [114, 11]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: r
+  DEBUG    root:control_unit.py:79 вывод: r
   DEBUG    root:machine.py:27 TICK: 246,  PC: 127,  AR:  11,  MEM_OUT: 114,  TOS: [11]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 247,  PC: 128,  AR:  11,  MEM_OUT: 114,  TOS: [12]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 248,  PC: 122,  AR:  11,  MEM_OUT: 114,  TOS: [12]                  ,    dup        // print_str
@@ -1274,7 +1274,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 251,  PC: 124,  AR:  12,  MEM_OUT:  32,  TOS: [32, 12]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 252,  PC: 125,  AR:  12,  MEM_OUT:  32,  TOS: [32, 12]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 253,  PC: 126,  AR:  12,  MEM_OUT:  32,  TOS: [32, 12]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:control_unit.py:79 вывод:  
   DEBUG    root:machine.py:27 TICK: 254,  PC: 127,  AR:  12,  MEM_OUT:  32,  TOS: [12]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 255,  PC: 128,  AR:  12,  MEM_OUT:  32,  TOS: [13]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 256,  PC: 122,  AR:  12,  MEM_OUT:  32,  TOS: [13]                  ,    dup        // print_str
@@ -1282,7 +1282,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 259,  PC: 124,  AR:  13,  MEM_OUT: 110,  TOS: [110, 13]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 260,  PC: 125,  AR:  13,  MEM_OUT: 110,  TOS: [110, 13]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 261,  PC: 126,  AR:  13,  MEM_OUT: 110,  TOS: [110, 13]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: n
+  DEBUG    root:control_unit.py:79 вывод: n
   DEBUG    root:machine.py:27 TICK: 262,  PC: 127,  AR:  13,  MEM_OUT: 110,  TOS: [13]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 263,  PC: 128,  AR:  13,  MEM_OUT: 110,  TOS: [14]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 264,  PC: 122,  AR:  13,  MEM_OUT: 110,  TOS: [14]                  ,    dup        // print_str
@@ -1290,7 +1290,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 267,  PC: 124,  AR:  14,  MEM_OUT:  97,  TOS: [97, 14]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 268,  PC: 125,  AR:  14,  MEM_OUT:  97,  TOS: [97, 14]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 269,  PC: 126,  AR:  14,  MEM_OUT:  97,  TOS: [97, 14]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: a
+  DEBUG    root:control_unit.py:79 вывод: a
   DEBUG    root:machine.py:27 TICK: 270,  PC: 127,  AR:  14,  MEM_OUT:  97,  TOS: [14]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 271,  PC: 128,  AR:  14,  MEM_OUT:  97,  TOS: [15]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 272,  PC: 122,  AR:  14,  MEM_OUT:  97,  TOS: [15]                  ,    dup        // print_str
@@ -1298,7 +1298,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 275,  PC: 124,  AR:  15,  MEM_OUT: 109,  TOS: [109, 15]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 276,  PC: 125,  AR:  15,  MEM_OUT: 109,  TOS: [109, 15]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 277,  PC: 126,  AR:  15,  MEM_OUT: 109,  TOS: [109, 15]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: m
+  DEBUG    root:control_unit.py:79 вывод: m
   DEBUG    root:machine.py:27 TICK: 278,  PC: 127,  AR:  15,  MEM_OUT: 109,  TOS: [15]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 279,  PC: 128,  AR:  15,  MEM_OUT: 109,  TOS: [16]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 280,  PC: 122,  AR:  15,  MEM_OUT: 109,  TOS: [16]                  ,    dup        // print_str
@@ -1306,7 +1306,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 283,  PC: 124,  AR:  16,  MEM_OUT: 101,  TOS: [101, 16]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 284,  PC: 125,  AR:  16,  MEM_OUT: 101,  TOS: [101, 16]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 285,  PC: 126,  AR:  16,  MEM_OUT: 101,  TOS: [101, 16]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: e
+  DEBUG    root:control_unit.py:79 вывод: e
   DEBUG    root:machine.py:27 TICK: 286,  PC: 127,  AR:  16,  MEM_OUT: 101,  TOS: [16]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 287,  PC: 128,  AR:  16,  MEM_OUT: 101,  TOS: [17]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 288,  PC: 122,  AR:  16,  MEM_OUT: 101,  TOS: [17]                  ,    dup        // print_str
@@ -1314,7 +1314,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 291,  PC: 124,  AR:  17,  MEM_OUT:  63,  TOS: [63, 17]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 292,  PC: 125,  AR:  17,  MEM_OUT:  63,  TOS: [63, 17]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 293,  PC: 126,  AR:  17,  MEM_OUT:  63,  TOS: [63, 17]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: ?
+  DEBUG    root:control_unit.py:79 вывод: ?
   DEBUG    root:machine.py:27 TICK: 294,  PC: 127,  AR:  17,  MEM_OUT:  63,  TOS: [17]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 295,  PC: 128,  AR:  17,  MEM_OUT:  63,  TOS: [18]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 296,  PC: 122,  AR:  17,  MEM_OUT:  63,  TOS: [18]                  ,    dup        // print_str
@@ -1329,7 +1329,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 307,  PC: 134,  AR:  19,  MEM_OUT:  10,  TOS: [10, 19]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 308,  PC: 135,  AR:  19,  MEM_OUT:  10,  TOS: [10, 19]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 309,  PC: 136,  AR:  19,  MEM_OUT:  10,  TOS: [10, 19]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: 
+  DEBUG    root:control_unit.py:79 вывод: 
 
   DEBUG    root:machine.py:27 TICK: 310,  PC: 137,  AR:  19,  MEM_OUT:  10,  TOS: [19]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 311,  PC: 138,  AR:  19,  MEM_OUT:  10,  TOS: [20]                  ,    jump -7    // print_str
@@ -1338,7 +1338,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 315,  PC: 134,  AR:  20,  MEM_OUT:  72,  TOS: [72, 20]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 316,  PC: 135,  AR:  20,  MEM_OUT:  72,  TOS: [72, 20]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 317,  PC: 136,  AR:  20,  MEM_OUT:  72,  TOS: [72, 20]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: H
+  DEBUG    root:control_unit.py:79 вывод: H
   DEBUG    root:machine.py:27 TICK: 318,  PC: 137,  AR:  20,  MEM_OUT:  72,  TOS: [20]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 319,  PC: 138,  AR:  20,  MEM_OUT:  72,  TOS: [21]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 320,  PC: 132,  AR:  20,  MEM_OUT:  72,  TOS: [21]                  ,    dup        // print_str
@@ -1346,7 +1346,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 323,  PC: 134,  AR:  21,  MEM_OUT: 101,  TOS: [101, 21]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 324,  PC: 135,  AR:  21,  MEM_OUT: 101,  TOS: [101, 21]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 325,  PC: 136,  AR:  21,  MEM_OUT: 101,  TOS: [101, 21]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: e
+  DEBUG    root:control_unit.py:79 вывод: e
   DEBUG    root:machine.py:27 TICK: 326,  PC: 137,  AR:  21,  MEM_OUT: 101,  TOS: [21]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 327,  PC: 138,  AR:  21,  MEM_OUT: 101,  TOS: [22]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 328,  PC: 132,  AR:  21,  MEM_OUT: 101,  TOS: [22]                  ,    dup        // print_str
@@ -1354,7 +1354,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 331,  PC: 134,  AR:  22,  MEM_OUT: 108,  TOS: [108, 22]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 332,  PC: 135,  AR:  22,  MEM_OUT: 108,  TOS: [108, 22]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 333,  PC: 136,  AR:  22,  MEM_OUT: 108,  TOS: [108, 22]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: l
+  DEBUG    root:control_unit.py:79 вывод: l
   DEBUG    root:machine.py:27 TICK: 334,  PC: 137,  AR:  22,  MEM_OUT: 108,  TOS: [22]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 335,  PC: 138,  AR:  22,  MEM_OUT: 108,  TOS: [23]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 336,  PC: 132,  AR:  22,  MEM_OUT: 108,  TOS: [23]                  ,    dup        // print_str
@@ -1362,7 +1362,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 339,  PC: 134,  AR:  23,  MEM_OUT: 108,  TOS: [108, 23]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 340,  PC: 135,  AR:  23,  MEM_OUT: 108,  TOS: [108, 23]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 341,  PC: 136,  AR:  23,  MEM_OUT: 108,  TOS: [108, 23]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: l
+  DEBUG    root:control_unit.py:79 вывод: l
   DEBUG    root:machine.py:27 TICK: 342,  PC: 137,  AR:  23,  MEM_OUT: 108,  TOS: [23]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 343,  PC: 138,  AR:  23,  MEM_OUT: 108,  TOS: [24]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 344,  PC: 132,  AR:  23,  MEM_OUT: 108,  TOS: [24]                  ,    dup        // print_str
@@ -1370,7 +1370,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 347,  PC: 134,  AR:  24,  MEM_OUT: 111,  TOS: [111, 24]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 348,  PC: 135,  AR:  24,  MEM_OUT: 111,  TOS: [111, 24]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 349,  PC: 136,  AR:  24,  MEM_OUT: 111,  TOS: [111, 24]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: o
+  DEBUG    root:control_unit.py:79 вывод: o
   DEBUG    root:machine.py:27 TICK: 350,  PC: 137,  AR:  24,  MEM_OUT: 111,  TOS: [24]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 351,  PC: 138,  AR:  24,  MEM_OUT: 111,  TOS: [25]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 352,  PC: 132,  AR:  24,  MEM_OUT: 111,  TOS: [25]                  ,    dup        // print_str
@@ -1378,7 +1378,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 355,  PC: 134,  AR:  25,  MEM_OUT:  44,  TOS: [44, 25]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 356,  PC: 135,  AR:  25,  MEM_OUT:  44,  TOS: [44, 25]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 357,  PC: 136,  AR:  25,  MEM_OUT:  44,  TOS: [44, 25]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: ,
+  DEBUG    root:control_unit.py:79 вывод: ,
   DEBUG    root:machine.py:27 TICK: 358,  PC: 137,  AR:  25,  MEM_OUT:  44,  TOS: [25]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 359,  PC: 138,  AR:  25,  MEM_OUT:  44,  TOS: [26]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 360,  PC: 132,  AR:  25,  MEM_OUT:  44,  TOS: [26]                  ,    dup        // print_str
@@ -1386,7 +1386,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 363,  PC: 134,  AR:  26,  MEM_OUT:  32,  TOS: [32, 26]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 364,  PC: 135,  AR:  26,  MEM_OUT:  32,  TOS: [32, 26]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 365,  PC: 136,  AR:  26,  MEM_OUT:  32,  TOS: [32, 26]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:control_unit.py:79 вывод:  
   DEBUG    root:machine.py:27 TICK: 366,  PC: 137,  AR:  26,  MEM_OUT:  32,  TOS: [26]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 367,  PC: 138,  AR:  26,  MEM_OUT:  32,  TOS: [27]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 368,  PC: 132,  AR:  26,  MEM_OUT:  32,  TOS: [27]                  ,    dup        // print_str
@@ -1457,7 +1457,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 435,  PC: 154,  AR:  30,  MEM_OUT:  86,  TOS: [86, 30]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 436,  PC: 155,  AR:  30,  MEM_OUT:  86,  TOS: [86, 30]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 437,  PC: 156,  AR:  30,  MEM_OUT:  86,  TOS: [86, 30]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: V
+  DEBUG    root:control_unit.py:79 вывод: V
   DEBUG    root:machine.py:27 TICK: 438,  PC: 157,  AR:  30,  MEM_OUT:  86,  TOS: [30]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 439,  PC: 158,  AR:  30,  MEM_OUT:  86,  TOS: [31]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 440,  PC: 152,  AR:  30,  MEM_OUT:  86,  TOS: [31]                  ,    dup        // print_str
@@ -1465,7 +1465,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 443,  PC: 154,  AR:  31,  MEM_OUT:  97,  TOS: [97, 31]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 444,  PC: 155,  AR:  31,  MEM_OUT:  97,  TOS: [97, 31]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 445,  PC: 156,  AR:  31,  MEM_OUT:  97,  TOS: [97, 31]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: a
+  DEBUG    root:control_unit.py:79 вывод: a
   DEBUG    root:machine.py:27 TICK: 446,  PC: 157,  AR:  31,  MEM_OUT:  97,  TOS: [31]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 447,  PC: 158,  AR:  31,  MEM_OUT:  97,  TOS: [32]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 448,  PC: 152,  AR:  31,  MEM_OUT:  97,  TOS: [32]                  ,    dup        // print_str
@@ -1473,7 +1473,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 451,  PC: 154,  AR:  32,  MEM_OUT: 100,  TOS: [100, 32]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 452,  PC: 155,  AR:  32,  MEM_OUT: 100,  TOS: [100, 32]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 453,  PC: 156,  AR:  32,  MEM_OUT: 100,  TOS: [100, 32]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: d
+  DEBUG    root:control_unit.py:79 вывод: d
   DEBUG    root:machine.py:27 TICK: 454,  PC: 157,  AR:  32,  MEM_OUT: 100,  TOS: [32]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 455,  PC: 158,  AR:  32,  MEM_OUT: 100,  TOS: [33]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 456,  PC: 152,  AR:  32,  MEM_OUT: 100,  TOS: [33]                  ,    dup        // print_str
@@ -1481,7 +1481,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 459,  PC: 154,  AR:  33,  MEM_OUT: 105,  TOS: [105, 33]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 460,  PC: 155,  AR:  33,  MEM_OUT: 105,  TOS: [105, 33]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 461,  PC: 156,  AR:  33,  MEM_OUT: 105,  TOS: [105, 33]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: i
+  DEBUG    root:control_unit.py:79 вывод: i
   DEBUG    root:machine.py:27 TICK: 462,  PC: 157,  AR:  33,  MEM_OUT: 105,  TOS: [33]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 463,  PC: 158,  AR:  33,  MEM_OUT: 105,  TOS: [34]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 464,  PC: 152,  AR:  33,  MEM_OUT: 105,  TOS: [34]                  ,    dup        // print_str
@@ -1489,7 +1489,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 467,  PC: 154,  AR:  34,  MEM_OUT: 109,  TOS: [109, 34]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 468,  PC: 155,  AR:  34,  MEM_OUT: 109,  TOS: [109, 34]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 469,  PC: 156,  AR:  34,  MEM_OUT: 109,  TOS: [109, 34]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: m
+  DEBUG    root:control_unit.py:79 вывод: m
   DEBUG    root:machine.py:27 TICK: 470,  PC: 157,  AR:  34,  MEM_OUT: 109,  TOS: [34]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 471,  PC: 158,  AR:  34,  MEM_OUT: 109,  TOS: [35]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 472,  PC: 152,  AR:  34,  MEM_OUT: 109,  TOS: [35]                  ,    dup        // print_str
@@ -1504,7 +1504,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 483,  PC: 164,  AR:  28,  MEM_OUT:  33,  TOS: [33, 28]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 484,  PC: 165,  AR:  28,  MEM_OUT:  33,  TOS: [33, 28]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 485,  PC: 166,  AR:  28,  MEM_OUT:  33,  TOS: [33, 28]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: !
+  DEBUG    root:control_unit.py:79 вывод: !
   DEBUG    root:machine.py:27 TICK: 486,  PC: 167,  AR:  28,  MEM_OUT:  33,  TOS: [28]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 487,  PC: 168,  AR:  28,  MEM_OUT:  33,  TOS: [29]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 488,  PC: 162,  AR:  28,  MEM_OUT:  33,  TOS: [29]                  ,    dup        // print_str

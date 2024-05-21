@@ -26,607 +26,607 @@ out_stdout: |
 out_code: |-
   [
     {
-      "index": 355,
+      "index": 0,
       "opcode": "jump",
       "arg": 0,
       "term": null
     },
     {
-      "index": 256,
+      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "(number literal: 1)"
     },
     {
-      "index": 255,
+      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "defvar"
     },
     {
-      "index": 257,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "defvar"
     },
     {
-      "index": 258,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 260,
+      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "(number literal: 1)"
     },
     {
-      "index": 259,
+      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "defvar"
     },
     {
-      "index": 261,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "defvar"
     },
     {
-      "index": 262,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 264,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "defvar"
     },
     {
-      "index": 263,
+      "index": 0,
       "opcode": "push",
       "arg": 3,
       "term": "defvar"
     },
     {
-      "index": 265,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "defvar"
     },
     {
-      "index": 266,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 268,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "(number literal: 0)"
     },
     {
-      "index": 267,
+      "index": 0,
       "opcode": "push",
       "arg": 4,
       "term": "defvar"
     },
     {
-      "index": 269,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "defvar"
     },
     {
-      "index": 270,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 271,
+      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(variable: b)"
     },
     {
-      "index": 272,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: b)"
     },
     {
-      "index": 273,
+      "index": 0,
       "opcode": "push",
       "arg": 4000000,
       "term": "(number literal: 4000000)"
     },
     {
-      "index": 274,
+      "index": 0,
       "opcode": "sub",
       "arg": null,
       "term": "<"
     },
     {
-      "index": 275,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "<"
     },
     {
-      "index": 276,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "<"
     },
     {
-      "index": 277,
+      "index": 0,
       "opcode": "jump_minus",
       "arg": 2,
       "term": "<"
     },
     {
-      "index": 278,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "<"
     },
     {
-      "index": 279,
+      "index": 0,
       "opcode": "jump",
       "arg": 1,
       "term": "<"
     },
     {
-      "index": 280,
+      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "<"
     },
     {
-      "index": 324,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 325,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 326,
+      "index": 0,
       "opcode": "jump_zero",
       "arg": 44,
       "term": "loop_while"
     },
     {
-      "index": 282,
+      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "(variable: a)"
     },
     {
-      "index": 283,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: a)"
     },
     {
-      "index": 284,
+      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(variable: b)"
     },
     {
-      "index": 285,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: b)"
     },
     {
-      "index": 286,
+      "index": 0,
       "opcode": "add",
       "arg": null,
       "term": "+"
     },
     {
-      "index": 281,
+      "index": 0,
       "opcode": "push",
       "arg": 3,
       "term": "setq"
     },
     {
-      "index": 287,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "setq"
     },
     {
-      "index": 320,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 288,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "(number literal: 0)"
     },
     {
-      "index": 289,
+      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(variable: b)"
     },
     {
-      "index": 290,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: b)"
     },
     {
-      "index": 291,
+      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(number literal: 2)"
     },
     {
-      "index": 292,
+      "index": 0,
       "opcode": "mod",
       "arg": null,
       "term": "%"
     },
     {
-      "index": 293,
+      "index": 0,
       "opcode": "sub",
       "arg": null,
       "term": "="
     },
     {
-      "index": 294,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "="
     },
     {
-      "index": 295,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "="
     },
     {
-      "index": 296,
+      "index": 0,
       "opcode": "jump_zero",
       "arg": 2,
       "term": "="
     },
     {
-      "index": 297,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "="
     },
     {
-      "index": 298,
+      "index": 0,
       "opcode": "jump",
       "arg": 1,
       "term": "="
     },
     {
-      "index": 299,
+      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "="
     },
     {
-      "index": 308,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "if"
     },
     {
-      "index": 309,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "if"
     },
     {
-      "index": 310,
+      "index": 0,
       "opcode": "jump_zero",
       "arg": 8,
       "term": "if"
     },
     {
-      "index": 301,
+      "index": 0,
       "opcode": "push",
       "arg": 4,
       "term": "(variable: sum)"
     },
     {
-      "index": 302,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: sum)"
     },
     {
-      "index": 303,
+      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(variable: b)"
     },
     {
-      "index": 304,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: b)"
     },
     {
-      "index": 305,
+      "index": 0,
       "opcode": "add",
       "arg": null,
       "term": "+"
     },
     {
-      "index": 300,
+      "index": 0,
       "opcode": "push",
       "arg": 4,
       "term": "setq"
     },
     {
-      "index": 306,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "setq"
     },
     {
-      "index": 311,
+      "index": 0,
       "opcode": "jump",
       "arg": 1,
       "term": "if"
     },
     {
-      "index": 307,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "(number literal: 0)"
     },
     {
-      "index": 321,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 313,
+      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(variable: b)"
     },
     {
-      "index": 314,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: b)"
     },
     {
-      "index": 312,
+      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "setq"
     },
     {
-      "index": 315,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "setq"
     },
     {
-      "index": 322,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 317,
+      "index": 0,
       "opcode": "push",
       "arg": 3,
       "term": "(variable: next)"
     },
     {
-      "index": 318,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: next)"
     },
     {
-      "index": 316,
+      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "setq"
     },
     {
-      "index": 319,
+      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "setq"
     },
     {
-      "index": 323,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 327,
+      "index": 0,
       "opcode": "jump",
       "arg": -57,
       "term": "loop_while"
     },
     {
-      "index": 328,
+      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "loop_while"
     },
     {
-      "index": 329,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 332,
+      "index": 0,
       "opcode": "push",
       "arg": -1,
       "term": "print_int"
     },
     {
-      "index": 330,
+      "index": 0,
       "opcode": "push",
       "arg": 4,
       "term": "(variable: sum)"
     },
     {
-      "index": 331,
+      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: sum)"
     },
     {
-      "index": 333,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 334,
+      "index": 0,
       "opcode": "jump_plus",
       "arg": 3,
       "term": "print_int"
     },
     {
-      "index": 335,
+      "index": 0,
       "opcode": "neg",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 336,
+      "index": 0,
       "opcode": "push",
       "arg": 45,
       "term": "print_int"
     },
     {
-      "index": 337,
+      "index": 0,
       "opcode": "write",
       "arg": 0,
       "term": "print_int"
     },
     {
-      "index": 338,
+      "index": 0,
       "opcode": "dup",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 339,
+      "index": 0,
       "opcode": "push",
       "arg": 10,
       "term": "print_int"
     },
     {
-      "index": 340,
+      "index": 0,
       "opcode": "mod",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 341,
+      "index": 0,
       "opcode": "push",
       "arg": 48,
       "term": "print_int"
     },
     {
-      "index": 342,
+      "index": 0,
       "opcode": "add",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 343,
+      "index": 0,
       "opcode": "swap",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 344,
+      "index": 0,
       "opcode": "push",
       "arg": 10,
       "term": "print_int"
     },
     {
-      "index": 345,
+      "index": 0,
       "opcode": "div",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 346,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 347,
+      "index": 0,
       "opcode": "jump_non_zero",
       "arg": -10,
       "term": "print_int"
     },
     {
-      "index": 348,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 349,
+      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 350,
+      "index": 0,
       "opcode": "jump_minus",
       "arg": 2,
       "term": "print_int"
     },
     {
-      "index": 351,
+      "index": 0,
       "opcode": "write",
       "arg": 0,
       "term": "print_int"
     },
     {
-      "index": 352,
+      "index": 0,
       "opcode": "jump",
       "arg": -4,
       "term": "print_int"
     },
     {
-      "index": 353,
+      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 354,
+      "index": 0,
       "opcode": "halt",
       "arg": null,
       "term": null
@@ -2281,37 +2281,37 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 1972,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [52, 54, 49,... +5]   ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1973,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [52, 54, 49,... +5]   ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1974,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [52, 54, 49,... +5]   ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 4
+  DEBUG    root:control_unit.py:79 вывод: 4
   DEBUG    root:machine.py:27 TICK: 1975,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [54, 49, 51,... +4]   ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1976,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [54, 49, 51,... +4]   ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1977,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [54, 49, 51,... +4]   ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1978,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [54, 49, 51,... +4]   ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 6
+  DEBUG    root:control_unit.py:79 вывод: 6
   DEBUG    root:machine.py:27 TICK: 1979,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [49, 51, 55,... +3]   ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1980,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [49, 51, 55,... +3]   ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1981,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [49, 51, 55,... +3]   ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1982,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [49, 51, 55,... +3]   ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 1
+  DEBUG    root:control_unit.py:79 вывод: 1
   DEBUG    root:machine.py:27 TICK: 1983,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 55, 51,... +2]   ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1984,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 55, 51,... +2]   ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1985,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 55, 51,... +2]   ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1986,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 55, 51,... +2]   ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 3
+  DEBUG    root:control_unit.py:79 вывод: 3
   DEBUG    root:machine.py:27 TICK: 1987,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [55, 51, 50,... +1]   ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1988,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [55, 51, 50,... +1]   ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1989,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [55, 51, 50,... +1]   ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1990,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [55, 51, 50,... +1]   ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 7
+  DEBUG    root:control_unit.py:79 вывод: 7
   DEBUG    root:machine.py:27 TICK: 1991,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 50, -1]          ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1992,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 50, -1]          ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1993,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 50, -1]          ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1994,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 50, -1]          ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 3
+  DEBUG    root:control_unit.py:79 вывод: 3
   DEBUG    root:machine.py:27 TICK: 1995,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [50, -1]              ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1996,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [50, -1]              ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1997,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [50, -1]              ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1998,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [50, -1]              ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 2
+  DEBUG    root:control_unit.py:79 вывод: 2
   DEBUG    root:machine.py:27 TICK: 1999,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [-1]                  ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 2000,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [-1]                  ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 2001,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [-1]                  ,    jump_minus 2 // print_int

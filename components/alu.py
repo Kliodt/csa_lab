@@ -1,5 +1,3 @@
-from enum import Enum
-
 from isa import Opcode
 
 def alu(op: Opcode, right: int, left: int) -> int:
