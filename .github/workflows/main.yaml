@@ -1,8 +1,7 @@
 on: push
-run-name: ${{ github.actor }} runs checks
 
 jobs:
-  golden-tests:
+  test:
     runs-on: ubuntu-latest
 
     steps:
