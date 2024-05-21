@@ -1,7 +1,8 @@
 on: push
+run-name: ${{ github.actor }} runs checks
 
 jobs:
-  test:
+  golden-tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,3 +20,24 @@ jobs:
       run: |
         coverage run -m pytest . 
         coverage report -m
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install ruff
+
+      - name: Check code formatting
+        run: |
+          ruff format --check .
+
+      - name: Ruff linters
+        run: |
+          ruff check .

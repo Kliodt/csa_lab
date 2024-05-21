@@ -369,9 +369,7 @@ def not_(args_codes: list[list]) -> list[Instr]:
     return code
 
 
-def eq(
-    args_codes: list[list],
-) -> list[Instr]:
+def eq(args_codes: list[list]) -> list[Instr]:
     term = "="
     assert 2 >= len(args_codes) >= 1, "Недопустимое число аргументов для eq"
     code = []
@@ -397,9 +395,7 @@ def eq(
     return code
 
 
-def larger(
-    args_codes: list[list],
-) -> list[Instr]:
+def larger(args_codes: list[list]) -> list[Instr]:
     term = ">"
     assert 2 >= len(args_codes) >= 1, "Недопустимое число аргументов для larger"
     code = []
@@ -426,9 +422,7 @@ def larger(
     return code
 
 
-def lower(
-    args_codes: list[list],
-) -> list[Instr]:
+def lower(args_codes: list[list]) -> list[Instr]:
     term = "<"
     assert 2 >= len(args_codes) >= 1, "Недопустимое число аргументов для lower"
     code = []
