@@ -12,6 +12,7 @@ def alu(op: Opcode, right: int, left: int) -> int:
             op == Opcode.DIV):
         return left // right
     elif op == Opcode.MOD:
+
         return left % right
     elif op == Opcode.INC:
         return right + 1
