@@ -21,9 +21,17 @@ class DataPath:
         if opcode == Opcode.LOAD:
             self.stack.push(self.memory.signal_read(self.data_addr))
         elif opcode == Opcode.STORE:
-            pass #не сюда, в CU
+            pass  # не сюда, в CU
 
-        elif opcode in {Opcode.ADD, Opcode.SUB, Opcode.MUL, Opcode.DIV, Opcode.MOD, Opcode.AND, Opcode.OR}:
+        elif opcode in {
+            Opcode.ADD,
+            Opcode.SUB,
+            Opcode.MUL,
+            Opcode.DIV,
+            Opcode.MOD,
+            Opcode.AND,
+            Opcode.OR,
+        }:
             self.stack.push(alu(opcode, self.stack.pop(), self.stack.pop()))
         elif opcode in {Opcode.INC, Opcode.DEC, Opcode.NOT, Opcode.NEG}:
             self.stack.push(alu(opcode, self.stack.pop(), 0))
@@ -31,15 +39,16 @@ class DataPath:
         elif opcode == Opcode.READ:
             symbol = self.io_controller.signal_read()
             self.stack.push(symbol)
-            logging.debug("ввод: %s", chr(symbol) if symbol != 0 else "\\0") # fix for golden test parser
+            logging.debug(
+                "ввод: %s", chr(symbol) if symbol != 0 else "\\0"
+            )  # fix for golden test parser
         elif opcode == Opcode.WRITE:
-            pass #не сюда, в CU
+            pass  # не сюда, в CU
 
         elif opcode == Opcode.PUSH:
             self.stack.push(instr["arg"])
         elif opcode == Opcode.POP:
-            pass #не сюда, в CU
-
+            pass  # не сюда, в CU
 
     def latch_data_addr(self):
         self.data_addr = self.stack.pop()

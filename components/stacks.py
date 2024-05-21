@@ -1,4 +1,3 @@
-
 class DataStack:
     stack: list[int]
     _top: int
@@ -28,7 +27,10 @@ class DataStack:
 
     def swap(self):
         assert self._top >= 2, "data stack underflow"
-        [self.stack[self._top - 1], self.stack[self._top - 2]] = [self.stack[self._top - 2], self.stack[self._top - 1]]
+        [self.stack[self._top - 1], self.stack[self._top - 2]] = [
+            self.stack[self._top - 2],
+            self.stack[self._top - 1],
+        ]
 
     def __repr__(self):
         stack_repr = "["
@@ -41,6 +43,7 @@ class DataStack:
         if 4 <= self._top:
             stack_repr += f",... +{self._top - 3}"
         return stack_repr + "]"
+
 
 class CallStack:
     stack: list[int]

@@ -4,7 +4,9 @@ class Memory:
         self.memory_size = memory_size
 
     def signal_read(self, addr: int):
-        assert 0 <= addr < self.memory_size, f"reading from not existing address: {addr}"
+        assert (
+            0 <= addr < self.memory_size
+        ), f"reading from not existing address: {addr}"
         return self.memory[addr]
 
     def signal_write(self, addr: int, data: int):

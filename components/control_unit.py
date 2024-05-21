@@ -4,8 +4,8 @@ from isa import Opcode
 
 import logging
 
-class ControlUnit:
 
+class ControlUnit:
     def __init__(self, program: list, call_stack: CallStack, data_path: DataPath):
         self.program = program
         self.program_counter = 0
@@ -33,7 +33,7 @@ class ControlUnit:
             self.program_counter += 1 + arg
 
         elif sel_next == Opcode.CALL:
-            self.call_stack.push(self.program_counter+1)
+            self.call_stack.push(self.program_counter + 1)
             self.program_counter = arg
 
         elif sel_next == Opcode.RET:
@@ -48,8 +48,15 @@ class ControlUnit:
         if opcode == Opcode.HALT:
             raise StopIteration()
 
-        elif opcode in {Opcode.JUMP, Opcode.JNZ, Opcode.JZ, Opcode.JP, Opcode.JM,
-                        Opcode.CALL, Opcode.RET}:
+        elif opcode in {
+            Opcode.JUMP,
+            Opcode.JNZ,
+            Opcode.JZ,
+            Opcode.JP,
+            Opcode.JM,
+            Opcode.CALL,
+            Opcode.RET,
+        }:
             self.signal_latch_program_counter(opcode, instr["arg"])
             self.tick()
             return True
@@ -68,7 +75,9 @@ class ControlUnit:
             self.tick()
 
         if opcode == Opcode.STORE:
-            self.data_path.memory.signal_write(self.data_path.data_addr, self.data_path.stack.top())
+            self.data_path.memory.signal_write(
+                self.data_path.data_addr, self.data_path.stack.top()
+            )
             self.signal_latch_program_counter(opcode)
             self.tick()
 
@@ -76,7 +85,9 @@ class ControlUnit:
             symbol = self.data_path.stack.pop()
             self.data_path.io_controller.signal_write(symbol)
             self.signal_latch_program_counter(opcode)
-            logging.debug("вывод: %s", chr(symbol) if symbol != 0 else "\\0") # fix for golden test parser
+            logging.debug(
+                "вывод: %s", chr(symbol) if symbol != 0 else "\\0"
+            )  # fix for golden test parser
             self.tick()
 
         elif opcode == Opcode.POP:
@@ -104,14 +115,15 @@ class ControlUnit:
             self.signal_latch_program_counter(opcode)
             self.tick()
 
-
     def __repr__(self):
-        state_repr = "TICK: {:3},  PC: {:3},  AR: {:3},  MEM_OUT: {:3},  TOS: {:22},".format(
-            self.tick_counter,
-            self.program_counter,
-            self.data_path.data_addr,
-            self.data_path.memory.memory[self.data_path.data_addr],
-            str(self.data_path.stack),
+        state_repr = (
+            "TICK: {:3},  PC: {:3},  AR: {:3},  MEM_OUT: {:3},  TOS: {:22},".format(
+                self.tick_counter,
+                self.program_counter,
+                self.data_path.data_addr,
+                self.data_path.memory.memory[self.data_path.data_addr],
+                str(self.data_path.stack),
+            )
         )
 
         instr = self.program[self.program_counter]

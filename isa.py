@@ -1,7 +1,7 @@
 from enum import Enum
 
-class Opcode(str, Enum):
 
+class Opcode(str, Enum):
     PUSH = "push"
     POP = "pop"
 

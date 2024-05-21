@@ -1,5 +1,6 @@
 from isa import Opcode
 
+
 def alu(op: Opcode, right: int, left: int) -> int:
     if op == Opcode.ADD:
         return left + right
@@ -23,5 +24,3 @@ def alu(op: Opcode, right: int, left: int) -> int:
         return int(not right)
     elif op == Opcode.NEG:
         return -right
-
-
