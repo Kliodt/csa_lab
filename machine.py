@@ -10,8 +10,9 @@ from components.stacks import DataStack, CallStack
 from isa import Opcode
 
 
-def simulation(program: list, input_buffer: list, data_memory_size: int, call_stack_size: int) -> tuple[list, int, int]:
-
+def simulation(
+    program: list, input_buffer: list, data_memory_size: int, call_stack_size: int
+) -> tuple[list, int, int]:
     io_controller = IOController()
     io_1 = IO1(input_buffer)
     io_controller.add_io(io_1, 0)
@@ -36,12 +37,12 @@ def simulation(program: list, input_buffer: list, data_memory_size: int, call_st
 
 
 def main(code_file: str, input_file: str):
-    with open(input_file, encoding='utf-8') as inp:
+    with open(input_file, encoding="utf-8") as inp:
         input_text = inp.read()
         input_buffer = []
         for char in input_text:
             input_buffer.append(char)
-        input_buffer.append('\0')
+        input_buffer.append("\0")
 
     with open(code_file, encoding="utf-8") as cf:
         code = json.loads(cf.read())
@@ -55,8 +56,11 @@ def main(code_file: str, input_file: str):
     print("Вывод:")
     print("".join(output))
 
+
 if __name__ == "__main__":
     logging.getLogger().setLevel(logging.DEBUG)
-    assert len(sys.argv) == 3, "Неверное число аргументов. Использование: machine.py <code_file> <input_file>"
+    assert (
+        len(sys.argv) == 3
+    ), "Неверное число аргументов. Использование: machine.py <code_file> <input_file>"
     _, code_file, input_file = sys.argv
     main(code_file, input_file)

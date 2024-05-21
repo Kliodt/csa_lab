@@ -1,20 +1,23 @@
 from abc import ABC, abstractmethod
 
+
 class IO(ABC):
     @abstractmethod
     def signal_in(self) -> int:
         pass
+
     @abstractmethod
     def signal_out(self, data: int):
         pass
 
+
 class IOController:
     def __init__(self):
-        self.io_list: dict[int : IO] = {}
+        self.io_list: dict[int:IO] = {}
         self.port = 0
 
     def add_io(self, io: IO, port: int):
-        self.io_list.update({port : io})
+        self.io_list.update({port: io})
 
     def remove_io(self, port: int):
         self.io_list.pop(port)
@@ -29,6 +32,7 @@ class IOController:
 
     def set_port(self, port: int):
         self.port = port
+
 
 # i/o devices
 class IO1(IO):
@@ -46,6 +50,3 @@ class IO1(IO):
 
     def get_received_data(self) -> list:
         return self.data_out
-
-
-
