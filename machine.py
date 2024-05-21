@@ -37,7 +37,7 @@ def simulation(program: list, input_buffer: list, data_memory_size: int, call_st
 
 def main(code_file: str, input_file: str):
     with open(input_file, encoding='utf-8') as inp:
-        input_text = inp.read()
+        input_text = inp.read().strip()
         input_buffer = []
         for char in input_text:
             input_buffer.append(char)

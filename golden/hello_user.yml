@@ -1178,7 +1178,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 155,  PC: 124,  AR:   0,  MEM_OUT:  87,  TOS: [87, 0]               ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 156,  PC: 125,  AR:   0,  MEM_OUT:  87,  TOS: [87, 0]               ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 157,  PC: 126,  AR:   0,  MEM_OUT:  87,  TOS: [87, 0]               ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: W
+  DEBUG    root:control_unit.py:79 вывод: W
   DEBUG    root:machine.py:27 TICK: 158,  PC: 127,  AR:   0,  MEM_OUT:  87,  TOS: [0]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 159,  PC: 128,  AR:   0,  MEM_OUT:  87,  TOS: [1]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 160,  PC: 122,  AR:   0,  MEM_OUT:  87,  TOS: [1]                   ,    dup        // print_str
@@ -1186,7 +1186,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 163,  PC: 124,  AR:   1,  MEM_OUT: 104,  TOS: [104, 1]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 164,  PC: 125,  AR:   1,  MEM_OUT: 104,  TOS: [104, 1]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 165,  PC: 126,  AR:   1,  MEM_OUT: 104,  TOS: [104, 1]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: h
+  DEBUG    root:control_unit.py:79 вывод: h
   DEBUG    root:machine.py:27 TICK: 166,  PC: 127,  AR:   1,  MEM_OUT: 104,  TOS: [1]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 167,  PC: 128,  AR:   1,  MEM_OUT: 104,  TOS: [2]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 168,  PC: 122,  AR:   1,  MEM_OUT: 104,  TOS: [2]                   ,    dup        // print_str
@@ -1194,7 +1194,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 171,  PC: 124,  AR:   2,  MEM_OUT:  97,  TOS: [97, 2]               ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 172,  PC: 125,  AR:   2,  MEM_OUT:  97,  TOS: [97, 2]               ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 173,  PC: 126,  AR:   2,  MEM_OUT:  97,  TOS: [97, 2]               ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: a
+  DEBUG    root:control_unit.py:79 вывод: a
   DEBUG    root:machine.py:27 TICK: 174,  PC: 127,  AR:   2,  MEM_OUT:  97,  TOS: [2]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 175,  PC: 128,  AR:   2,  MEM_OUT:  97,  TOS: [3]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 176,  PC: 122,  AR:   2,  MEM_OUT:  97,  TOS: [3]                   ,    dup        // print_str
@@ -1202,7 +1202,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 179,  PC: 124,  AR:   3,  MEM_OUT: 116,  TOS: [116, 3]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 180,  PC: 125,  AR:   3,  MEM_OUT: 116,  TOS: [116, 3]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 181,  PC: 126,  AR:   3,  MEM_OUT: 116,  TOS: [116, 3]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: t
+  DEBUG    root:control_unit.py:79 вывод: t
   DEBUG    root:machine.py:27 TICK: 182,  PC: 127,  AR:   3,  MEM_OUT: 116,  TOS: [3]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 183,  PC: 128,  AR:   3,  MEM_OUT: 116,  TOS: [4]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 184,  PC: 122,  AR:   3,  MEM_OUT: 116,  TOS: [4]                   ,    dup        // print_str
@@ -1210,7 +1210,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 187,  PC: 124,  AR:   4,  MEM_OUT:  32,  TOS: [32, 4]               ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 188,  PC: 125,  AR:   4,  MEM_OUT:  32,  TOS: [32, 4]               ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 189,  PC: 126,  AR:   4,  MEM_OUT:  32,  TOS: [32, 4]               ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:control_unit.py:79 вывод:  
   DEBUG    root:machine.py:27 TICK: 190,  PC: 127,  AR:   4,  MEM_OUT:  32,  TOS: [4]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 191,  PC: 128,  AR:   4,  MEM_OUT:  32,  TOS: [5]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 192,  PC: 122,  AR:   4,  MEM_OUT:  32,  TOS: [5]                   ,    dup        // print_str
@@ -1218,7 +1218,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 195,  PC: 124,  AR:   5,  MEM_OUT: 105,  TOS: [105, 5]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 196,  PC: 125,  AR:   5,  MEM_OUT: 105,  TOS: [105, 5]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 197,  PC: 126,  AR:   5,  MEM_OUT: 105,  TOS: [105, 5]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: i
+  DEBUG    root:control_unit.py:79 вывод: i
   DEBUG    root:machine.py:27 TICK: 198,  PC: 127,  AR:   5,  MEM_OUT: 105,  TOS: [5]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 199,  PC: 128,  AR:   5,  MEM_OUT: 105,  TOS: [6]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 200,  PC: 122,  AR:   5,  MEM_OUT: 105,  TOS: [6]                   ,    dup        // print_str
@@ -1226,7 +1226,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 203,  PC: 124,  AR:   6,  MEM_OUT: 115,  TOS: [115, 6]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 204,  PC: 125,  AR:   6,  MEM_OUT: 115,  TOS: [115, 6]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 205,  PC: 126,  AR:   6,  MEM_OUT: 115,  TOS: [115, 6]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: s
+  DEBUG    root:control_unit.py:79 вывод: s
   DEBUG    root:machine.py:27 TICK: 206,  PC: 127,  AR:   6,  MEM_OUT: 115,  TOS: [6]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 207,  PC: 128,  AR:   6,  MEM_OUT: 115,  TOS: [7]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 208,  PC: 122,  AR:   6,  MEM_OUT: 115,  TOS: [7]                   ,    dup        // print_str
@@ -1234,7 +1234,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 211,  PC: 124,  AR:   7,  MEM_OUT:  32,  TOS: [32, 7]               ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 212,  PC: 125,  AR:   7,  MEM_OUT:  32,  TOS: [32, 7]               ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 213,  PC: 126,  AR:   7,  MEM_OUT:  32,  TOS: [32, 7]               ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:control_unit.py:79 вывод:  
   DEBUG    root:machine.py:27 TICK: 214,  PC: 127,  AR:   7,  MEM_OUT:  32,  TOS: [7]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 215,  PC: 128,  AR:   7,  MEM_OUT:  32,  TOS: [8]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 216,  PC: 122,  AR:   7,  MEM_OUT:  32,  TOS: [8]                   ,    dup        // print_str
@@ -1242,7 +1242,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 219,  PC: 124,  AR:   8,  MEM_OUT: 121,  TOS: [121, 8]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 220,  PC: 125,  AR:   8,  MEM_OUT: 121,  TOS: [121, 8]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 221,  PC: 126,  AR:   8,  MEM_OUT: 121,  TOS: [121, 8]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: y
+  DEBUG    root:control_unit.py:79 вывод: y
   DEBUG    root:machine.py:27 TICK: 222,  PC: 127,  AR:   8,  MEM_OUT: 121,  TOS: [8]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 223,  PC: 128,  AR:   8,  MEM_OUT: 121,  TOS: [9]                   ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 224,  PC: 122,  AR:   8,  MEM_OUT: 121,  TOS: [9]                   ,    dup        // print_str
@@ -1250,7 +1250,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 227,  PC: 124,  AR:   9,  MEM_OUT: 111,  TOS: [111, 9]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 228,  PC: 125,  AR:   9,  MEM_OUT: 111,  TOS: [111, 9]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 229,  PC: 126,  AR:   9,  MEM_OUT: 111,  TOS: [111, 9]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: o
+  DEBUG    root:control_unit.py:79 вывод: o
   DEBUG    root:machine.py:27 TICK: 230,  PC: 127,  AR:   9,  MEM_OUT: 111,  TOS: [9]                   ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 231,  PC: 128,  AR:   9,  MEM_OUT: 111,  TOS: [10]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 232,  PC: 122,  AR:   9,  MEM_OUT: 111,  TOS: [10]                  ,    dup        // print_str
@@ -1258,7 +1258,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 235,  PC: 124,  AR:  10,  MEM_OUT: 117,  TOS: [117, 10]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 236,  PC: 125,  AR:  10,  MEM_OUT: 117,  TOS: [117, 10]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 237,  PC: 126,  AR:  10,  MEM_OUT: 117,  TOS: [117, 10]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: u
+  DEBUG    root:control_unit.py:79 вывод: u
   DEBUG    root:machine.py:27 TICK: 238,  PC: 127,  AR:  10,  MEM_OUT: 117,  TOS: [10]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 239,  PC: 128,  AR:  10,  MEM_OUT: 117,  TOS: [11]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 240,  PC: 122,  AR:  10,  MEM_OUT: 117,  TOS: [11]                  ,    dup        // print_str
@@ -1266,7 +1266,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 243,  PC: 124,  AR:  11,  MEM_OUT: 114,  TOS: [114, 11]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 244,  PC: 125,  AR:  11,  MEM_OUT: 114,  TOS: [114, 11]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 245,  PC: 126,  AR:  11,  MEM_OUT: 114,  TOS: [114, 11]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: r
+  DEBUG    root:control_unit.py:79 вывод: r
   DEBUG    root:machine.py:27 TICK: 246,  PC: 127,  AR:  11,  MEM_OUT: 114,  TOS: [11]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 247,  PC: 128,  AR:  11,  MEM_OUT: 114,  TOS: [12]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 248,  PC: 122,  AR:  11,  MEM_OUT: 114,  TOS: [12]                  ,    dup        // print_str
@@ -1274,7 +1274,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 251,  PC: 124,  AR:  12,  MEM_OUT:  32,  TOS: [32, 12]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 252,  PC: 125,  AR:  12,  MEM_OUT:  32,  TOS: [32, 12]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 253,  PC: 126,  AR:  12,  MEM_OUT:  32,  TOS: [32, 12]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:control_unit.py:79 вывод:  
   DEBUG    root:machine.py:27 TICK: 254,  PC: 127,  AR:  12,  MEM_OUT:  32,  TOS: [12]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 255,  PC: 128,  AR:  12,  MEM_OUT:  32,  TOS: [13]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 256,  PC: 122,  AR:  12,  MEM_OUT:  32,  TOS: [13]                  ,    dup        // print_str
@@ -1282,7 +1282,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 259,  PC: 124,  AR:  13,  MEM_OUT: 110,  TOS: [110, 13]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 260,  PC: 125,  AR:  13,  MEM_OUT: 110,  TOS: [110, 13]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 261,  PC: 126,  AR:  13,  MEM_OUT: 110,  TOS: [110, 13]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: n
+  DEBUG    root:control_unit.py:79 вывод: n
   DEBUG    root:machine.py:27 TICK: 262,  PC: 127,  AR:  13,  MEM_OUT: 110,  TOS: [13]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 263,  PC: 128,  AR:  13,  MEM_OUT: 110,  TOS: [14]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 264,  PC: 122,  AR:  13,  MEM_OUT: 110,  TOS: [14]                  ,    dup        // print_str
@@ -1290,7 +1290,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 267,  PC: 124,  AR:  14,  MEM_OUT:  97,  TOS: [97, 14]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 268,  PC: 125,  AR:  14,  MEM_OUT:  97,  TOS: [97, 14]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 269,  PC: 126,  AR:  14,  MEM_OUT:  97,  TOS: [97, 14]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: a
+  DEBUG    root:control_unit.py:79 вывод: a
   DEBUG    root:machine.py:27 TICK: 270,  PC: 127,  AR:  14,  MEM_OUT:  97,  TOS: [14]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 271,  PC: 128,  AR:  14,  MEM_OUT:  97,  TOS: [15]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 272,  PC: 122,  AR:  14,  MEM_OUT:  97,  TOS: [15]                  ,    dup        // print_str
@@ -1298,7 +1298,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 275,  PC: 124,  AR:  15,  MEM_OUT: 109,  TOS: [109, 15]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 276,  PC: 125,  AR:  15,  MEM_OUT: 109,  TOS: [109, 15]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 277,  PC: 126,  AR:  15,  MEM_OUT: 109,  TOS: [109, 15]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: m
+  DEBUG    root:control_unit.py:79 вывод: m
   DEBUG    root:machine.py:27 TICK: 278,  PC: 127,  AR:  15,  MEM_OUT: 109,  TOS: [15]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 279,  PC: 128,  AR:  15,  MEM_OUT: 109,  TOS: [16]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 280,  PC: 122,  AR:  15,  MEM_OUT: 109,  TOS: [16]                  ,    dup        // print_str
@@ -1306,7 +1306,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 283,  PC: 124,  AR:  16,  MEM_OUT: 101,  TOS: [101, 16]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 284,  PC: 125,  AR:  16,  MEM_OUT: 101,  TOS: [101, 16]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 285,  PC: 126,  AR:  16,  MEM_OUT: 101,  TOS: [101, 16]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: e
+  DEBUG    root:control_unit.py:79 вывод: e
   DEBUG    root:machine.py:27 TICK: 286,  PC: 127,  AR:  16,  MEM_OUT: 101,  TOS: [16]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 287,  PC: 128,  AR:  16,  MEM_OUT: 101,  TOS: [17]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 288,  PC: 122,  AR:  16,  MEM_OUT: 101,  TOS: [17]                  ,    dup        // print_str
@@ -1314,7 +1314,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 291,  PC: 124,  AR:  17,  MEM_OUT:  63,  TOS: [63, 17]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 292,  PC: 125,  AR:  17,  MEM_OUT:  63,  TOS: [63, 17]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 293,  PC: 126,  AR:  17,  MEM_OUT:  63,  TOS: [63, 17]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: ?
+  DEBUG    root:control_unit.py:79 вывод: ?
   DEBUG    root:machine.py:27 TICK: 294,  PC: 127,  AR:  17,  MEM_OUT:  63,  TOS: [17]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 295,  PC: 128,  AR:  17,  MEM_OUT:  63,  TOS: [18]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 296,  PC: 122,  AR:  17,  MEM_OUT:  63,  TOS: [18]                  ,    dup        // print_str
@@ -1329,7 +1329,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 307,  PC: 134,  AR:  19,  MEM_OUT:  10,  TOS: [10, 19]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 308,  PC: 135,  AR:  19,  MEM_OUT:  10,  TOS: [10, 19]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 309,  PC: 136,  AR:  19,  MEM_OUT:  10,  TOS: [10, 19]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: 
+  DEBUG    root:control_unit.py:79 вывод: 
 
   DEBUG    root:machine.py:27 TICK: 310,  PC: 137,  AR:  19,  MEM_OUT:  10,  TOS: [19]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 311,  PC: 138,  AR:  19,  MEM_OUT:  10,  TOS: [20]                  ,    jump -7    // print_str
@@ -1338,7 +1338,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 315,  PC: 134,  AR:  20,  MEM_OUT:  72,  TOS: [72, 20]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 316,  PC: 135,  AR:  20,  MEM_OUT:  72,  TOS: [72, 20]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 317,  PC: 136,  AR:  20,  MEM_OUT:  72,  TOS: [72, 20]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: H
+  DEBUG    root:control_unit.py:79 вывод: H
   DEBUG    root:machine.py:27 TICK: 318,  PC: 137,  AR:  20,  MEM_OUT:  72,  TOS: [20]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 319,  PC: 138,  AR:  20,  MEM_OUT:  72,  TOS: [21]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 320,  PC: 132,  AR:  20,  MEM_OUT:  72,  TOS: [21]                  ,    dup        // print_str
@@ -1346,7 +1346,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 323,  PC: 134,  AR:  21,  MEM_OUT: 101,  TOS: [101, 21]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 324,  PC: 135,  AR:  21,  MEM_OUT: 101,  TOS: [101, 21]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 325,  PC: 136,  AR:  21,  MEM_OUT: 101,  TOS: [101, 21]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: e
+  DEBUG    root:control_unit.py:79 вывод: e
   DEBUG    root:machine.py:27 TICK: 326,  PC: 137,  AR:  21,  MEM_OUT: 101,  TOS: [21]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 327,  PC: 138,  AR:  21,  MEM_OUT: 101,  TOS: [22]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 328,  PC: 132,  AR:  21,  MEM_OUT: 101,  TOS: [22]                  ,    dup        // print_str
@@ -1354,7 +1354,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 331,  PC: 134,  AR:  22,  MEM_OUT: 108,  TOS: [108, 22]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 332,  PC: 135,  AR:  22,  MEM_OUT: 108,  TOS: [108, 22]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 333,  PC: 136,  AR:  22,  MEM_OUT: 108,  TOS: [108, 22]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: l
+  DEBUG    root:control_unit.py:79 вывод: l
   DEBUG    root:machine.py:27 TICK: 334,  PC: 137,  AR:  22,  MEM_OUT: 108,  TOS: [22]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 335,  PC: 138,  AR:  22,  MEM_OUT: 108,  TOS: [23]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 336,  PC: 132,  AR:  22,  MEM_OUT: 108,  TOS: [23]                  ,    dup        // print_str
@@ -1362,7 +1362,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 339,  PC: 134,  AR:  23,  MEM_OUT: 108,  TOS: [108, 23]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 340,  PC: 135,  AR:  23,  MEM_OUT: 108,  TOS: [108, 23]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 341,  PC: 136,  AR:  23,  MEM_OUT: 108,  TOS: [108, 23]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: l
+  DEBUG    root:control_unit.py:79 вывод: l
   DEBUG    root:machine.py:27 TICK: 342,  PC: 137,  AR:  23,  MEM_OUT: 108,  TOS: [23]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 343,  PC: 138,  AR:  23,  MEM_OUT: 108,  TOS: [24]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 344,  PC: 132,  AR:  23,  MEM_OUT: 108,  TOS: [24]                  ,    dup        // print_str
@@ -1370,7 +1370,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 347,  PC: 134,  AR:  24,  MEM_OUT: 111,  TOS: [111, 24]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 348,  PC: 135,  AR:  24,  MEM_OUT: 111,  TOS: [111, 24]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 349,  PC: 136,  AR:  24,  MEM_OUT: 111,  TOS: [111, 24]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: o
+  DEBUG    root:control_unit.py:79 вывод: o
   DEBUG    root:machine.py:27 TICK: 350,  PC: 137,  AR:  24,  MEM_OUT: 111,  TOS: [24]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 351,  PC: 138,  AR:  24,  MEM_OUT: 111,  TOS: [25]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 352,  PC: 132,  AR:  24,  MEM_OUT: 111,  TOS: [25]                  ,    dup        // print_str
@@ -1378,7 +1378,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 355,  PC: 134,  AR:  25,  MEM_OUT:  44,  TOS: [44, 25]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 356,  PC: 135,  AR:  25,  MEM_OUT:  44,  TOS: [44, 25]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 357,  PC: 136,  AR:  25,  MEM_OUT:  44,  TOS: [44, 25]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: ,
+  DEBUG    root:control_unit.py:79 вывод: ,
   DEBUG    root:machine.py:27 TICK: 358,  PC: 137,  AR:  25,  MEM_OUT:  44,  TOS: [25]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 359,  PC: 138,  AR:  25,  MEM_OUT:  44,  TOS: [26]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 360,  PC: 132,  AR:  25,  MEM_OUT:  44,  TOS: [26]                  ,    dup        // print_str
@@ -1386,7 +1386,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 363,  PC: 134,  AR:  26,  MEM_OUT:  32,  TOS: [32, 26]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 364,  PC: 135,  AR:  26,  MEM_OUT:  32,  TOS: [32, 26]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 365,  PC: 136,  AR:  26,  MEM_OUT:  32,  TOS: [32, 26]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод:  
+  DEBUG    root:control_unit.py:79 вывод:  
   DEBUG    root:machine.py:27 TICK: 366,  PC: 137,  AR:  26,  MEM_OUT:  32,  TOS: [26]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 367,  PC: 138,  AR:  26,  MEM_OUT:  32,  TOS: [27]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 368,  PC: 132,  AR:  26,  MEM_OUT:  32,  TOS: [27]                  ,    dup        // print_str
@@ -1457,7 +1457,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 435,  PC: 154,  AR:  30,  MEM_OUT:  86,  TOS: [86, 30]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 436,  PC: 155,  AR:  30,  MEM_OUT:  86,  TOS: [86, 30]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 437,  PC: 156,  AR:  30,  MEM_OUT:  86,  TOS: [86, 30]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: V
+  DEBUG    root:control_unit.py:79 вывод: V
   DEBUG    root:machine.py:27 TICK: 438,  PC: 157,  AR:  30,  MEM_OUT:  86,  TOS: [30]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 439,  PC: 158,  AR:  30,  MEM_OUT:  86,  TOS: [31]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 440,  PC: 152,  AR:  30,  MEM_OUT:  86,  TOS: [31]                  ,    dup        // print_str
@@ -1465,7 +1465,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 443,  PC: 154,  AR:  31,  MEM_OUT:  97,  TOS: [97, 31]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 444,  PC: 155,  AR:  31,  MEM_OUT:  97,  TOS: [97, 31]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 445,  PC: 156,  AR:  31,  MEM_OUT:  97,  TOS: [97, 31]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: a
+  DEBUG    root:control_unit.py:79 вывод: a
   DEBUG    root:machine.py:27 TICK: 446,  PC: 157,  AR:  31,  MEM_OUT:  97,  TOS: [31]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 447,  PC: 158,  AR:  31,  MEM_OUT:  97,  TOS: [32]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 448,  PC: 152,  AR:  31,  MEM_OUT:  97,  TOS: [32]                  ,    dup        // print_str
@@ -1473,7 +1473,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 451,  PC: 154,  AR:  32,  MEM_OUT: 100,  TOS: [100, 32]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 452,  PC: 155,  AR:  32,  MEM_OUT: 100,  TOS: [100, 32]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 453,  PC: 156,  AR:  32,  MEM_OUT: 100,  TOS: [100, 32]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: d
+  DEBUG    root:control_unit.py:79 вывод: d
   DEBUG    root:machine.py:27 TICK: 454,  PC: 157,  AR:  32,  MEM_OUT: 100,  TOS: [32]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 455,  PC: 158,  AR:  32,  MEM_OUT: 100,  TOS: [33]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 456,  PC: 152,  AR:  32,  MEM_OUT: 100,  TOS: [33]                  ,    dup        // print_str
@@ -1481,7 +1481,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 459,  PC: 154,  AR:  33,  MEM_OUT: 105,  TOS: [105, 33]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 460,  PC: 155,  AR:  33,  MEM_OUT: 105,  TOS: [105, 33]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 461,  PC: 156,  AR:  33,  MEM_OUT: 105,  TOS: [105, 33]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: i
+  DEBUG    root:control_unit.py:79 вывод: i
   DEBUG    root:machine.py:27 TICK: 462,  PC: 157,  AR:  33,  MEM_OUT: 105,  TOS: [33]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 463,  PC: 158,  AR:  33,  MEM_OUT: 105,  TOS: [34]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 464,  PC: 152,  AR:  33,  MEM_OUT: 105,  TOS: [34]                  ,    dup        // print_str
@@ -1489,7 +1489,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 467,  PC: 154,  AR:  34,  MEM_OUT: 109,  TOS: [109, 34]             ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 468,  PC: 155,  AR:  34,  MEM_OUT: 109,  TOS: [109, 34]             ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 469,  PC: 156,  AR:  34,  MEM_OUT: 109,  TOS: [109, 34]             ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: m
+  DEBUG    root:control_unit.py:79 вывод: m
   DEBUG    root:machine.py:27 TICK: 470,  PC: 157,  AR:  34,  MEM_OUT: 109,  TOS: [34]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 471,  PC: 158,  AR:  34,  MEM_OUT: 109,  TOS: [35]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 472,  PC: 152,  AR:  34,  MEM_OUT: 109,  TOS: [35]                  ,    dup        // print_str
@@ -1504,7 +1504,7 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 483,  PC: 164,  AR:  28,  MEM_OUT:  33,  TOS: [33, 28]              ,    flags      // print_str
   DEBUG    root:machine.py:27 TICK: 484,  PC: 165,  AR:  28,  MEM_OUT:  33,  TOS: [33, 28]              ,    jump_zero 3 // print_str
   DEBUG    root:machine.py:27 TICK: 485,  PC: 166,  AR:  28,  MEM_OUT:  33,  TOS: [33, 28]              ,    write 0    // print_str
-  DEBUG    root:control_unit.py:80 вывод: !
+  DEBUG    root:control_unit.py:79 вывод: !
   DEBUG    root:machine.py:27 TICK: 486,  PC: 167,  AR:  28,  MEM_OUT:  33,  TOS: [28]                  ,    inc        // print_str
   DEBUG    root:machine.py:27 TICK: 487,  PC: 168,  AR:  28,  MEM_OUT:  33,  TOS: [29]                  ,    jump -7    // print_str
   DEBUG    root:machine.py:27 TICK: 488,  PC: 162,  AR:  28,  MEM_OUT:  33,  TOS: [29]                  ,    dup        // print_str

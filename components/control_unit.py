@@ -1,4 +1,3 @@
-
 from components.data_path import DataPath
 from components.stacks import CallStack
 from isa import Opcode

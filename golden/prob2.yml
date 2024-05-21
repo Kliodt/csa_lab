@@ -2281,37 +2281,37 @@ out_log: |
   DEBUG    root:machine.py:27 TICK: 1972,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [52, 54, 49,... +5]   ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1973,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [52, 54, 49,... +5]   ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1974,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [52, 54, 49,... +5]   ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 4
+  DEBUG    root:control_unit.py:79 вывод: 4
   DEBUG    root:machine.py:27 TICK: 1975,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [54, 49, 51,... +4]   ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1976,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [54, 49, 51,... +4]   ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1977,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [54, 49, 51,... +4]   ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1978,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [54, 49, 51,... +4]   ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 6
+  DEBUG    root:control_unit.py:79 вывод: 6
   DEBUG    root:machine.py:27 TICK: 1979,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [49, 51, 55,... +3]   ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1980,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [49, 51, 55,... +3]   ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1981,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [49, 51, 55,... +3]   ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1982,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [49, 51, 55,... +3]   ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 1
+  DEBUG    root:control_unit.py:79 вывод: 1
   DEBUG    root:machine.py:27 TICK: 1983,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 55, 51,... +2]   ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1984,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 55, 51,... +2]   ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1985,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 55, 51,... +2]   ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1986,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 55, 51,... +2]   ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 3
+  DEBUG    root:control_unit.py:79 вывод: 3
   DEBUG    root:machine.py:27 TICK: 1987,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [55, 51, 50,... +1]   ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1988,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [55, 51, 50,... +1]   ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1989,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [55, 51, 50,... +1]   ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1990,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [55, 51, 50,... +1]   ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 7
+  DEBUG    root:control_unit.py:79 вывод: 7
   DEBUG    root:machine.py:27 TICK: 1991,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 50, -1]          ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1992,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 50, -1]          ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1993,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 50, -1]          ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1994,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [51, 50, -1]          ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 3
+  DEBUG    root:control_unit.py:79 вывод: 3
   DEBUG    root:machine.py:27 TICK: 1995,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [50, -1]              ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 1996,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [50, -1]              ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 1997,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [50, -1]              ,    jump_minus 2 // print_int
   DEBUG    root:machine.py:27 TICK: 1998,  PC:  97,  AR:   4,  MEM_OUT: 4613732,  TOS: [50, -1]              ,    write 0    // print_int
-  DEBUG    root:control_unit.py:80 вывод: 2
+  DEBUG    root:control_unit.py:79 вывод: 2
   DEBUG    root:machine.py:27 TICK: 1999,  PC:  98,  AR:   4,  MEM_OUT: 4613732,  TOS: [-1]                  ,    jump -4    // print_int
   DEBUG    root:machine.py:27 TICK: 2000,  PC:  95,  AR:   4,  MEM_OUT: 4613732,  TOS: [-1]                  ,    flags      // print_int
   DEBUG    root:machine.py:27 TICK: 2001,  PC:  96,  AR:   4,  MEM_OUT: 4613732,  TOS: [-1]                  ,    jump_minus 2 // print_int
