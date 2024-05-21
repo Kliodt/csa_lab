@@ -17,12 +17,8 @@ class Expression:
 
 
 class Instr:
-    count = 0
-
     def __init__(self, opcode: Opcode, arg=None, term=None):
         self.opcode = opcode
-        self.index = 0
-        Instr.count += 1
         self.arg = arg
         self.term = term
 
@@ -35,7 +31,6 @@ class Instr:
 
     def to_dict(self):
         return {
-            "index": self.index,
             "opcode": self.opcode,
             "arg": self.arg,
             "term": self.term,

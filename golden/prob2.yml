@@ -26,607 +26,506 @@ out_stdout: |
 out_code: |-
   [
     {
-      "index": 0,
       "opcode": "jump",
       "arg": 0,
       "term": null
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "(number literal: 1)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "defvar"
     },
     {
-      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "defvar"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "(number literal: 1)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "defvar"
     },
     {
-      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "defvar"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "defvar"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 3,
       "term": "defvar"
     },
     {
-      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "defvar"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "(number literal: 0)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 4,
       "term": "defvar"
     },
     {
-      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "defvar"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(variable: b)"
     },
     {
-      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: b)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 4000000,
       "term": "(number literal: 4000000)"
     },
     {
-      "index": 0,
       "opcode": "sub",
       "arg": null,
       "term": "<"
     },
     {
-      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "<"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "<"
     },
     {
-      "index": 0,
       "opcode": "jump_minus",
       "arg": 2,
       "term": "<"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "<"
     },
     {
-      "index": 0,
       "opcode": "jump",
       "arg": 1,
       "term": "<"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "<"
     },
     {
-      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 0,
       "opcode": "jump_zero",
       "arg": 44,
       "term": "loop_while"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "(variable: a)"
     },
     {
-      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: a)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(variable: b)"
     },
     {
-      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: b)"
     },
     {
-      "index": 0,
       "opcode": "add",
       "arg": null,
       "term": "+"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 3,
       "term": "setq"
     },
     {
-      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "setq"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "(number literal: 0)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(variable: b)"
     },
     {
-      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: b)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(number literal: 2)"
     },
     {
-      "index": 0,
       "opcode": "mod",
       "arg": null,
       "term": "%"
     },
     {
-      "index": 0,
       "opcode": "sub",
       "arg": null,
       "term": "="
     },
     {
-      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "="
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "="
     },
     {
-      "index": 0,
       "opcode": "jump_zero",
       "arg": 2,
       "term": "="
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "="
     },
     {
-      "index": 0,
       "opcode": "jump",
       "arg": 1,
       "term": "="
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "="
     },
     {
-      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "if"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "if"
     },
     {
-      "index": 0,
       "opcode": "jump_zero",
       "arg": 8,
       "term": "if"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 4,
       "term": "(variable: sum)"
     },
     {
-      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: sum)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(variable: b)"
     },
     {
-      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: b)"
     },
     {
-      "index": 0,
       "opcode": "add",
       "arg": null,
       "term": "+"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 4,
       "term": "setq"
     },
     {
-      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "setq"
     },
     {
-      "index": 0,
       "opcode": "jump",
       "arg": 1,
       "term": "if"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "(number literal: 0)"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "(variable: b)"
     },
     {
-      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: b)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 1,
       "term": "setq"
     },
     {
-      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "setq"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 3,
       "term": "(variable: next)"
     },
     {
-      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: next)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 2,
       "term": "setq"
     },
     {
-      "index": 0,
       "opcode": "store",
       "arg": null,
       "term": "setq"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "loop_while"
     },
     {
-      "index": 0,
       "opcode": "jump",
       "arg": -57,
       "term": "loop_while"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 0,
       "term": "loop_while"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": -1,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 4,
       "term": "(variable: sum)"
     },
     {
-      "index": 0,
       "opcode": "load",
       "arg": null,
       "term": "(variable: sum)"
     },
     {
-      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "jump_plus",
       "arg": 3,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "neg",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 45,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "write",
       "arg": 0,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "dup",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 10,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "mod",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 48,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "add",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "swap",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "push",
       "arg": 10,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "div",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "jump_non_zero",
       "arg": -10,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "flags",
       "arg": null,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "jump_minus",
       "arg": 2,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "write",
       "arg": 0,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "jump",
       "arg": -4,
       "term": "print_int"
     },
     {
-      "index": 0,
       "opcode": "pop",
       "arg": null,
       "term": "(top-level expression)"
     },
     {
-      "index": 0,
       "opcode": "halt",
       "arg": null,
       "term": null
