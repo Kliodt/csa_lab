@@ -96,7 +96,7 @@
 (defun print_sum(a b) (print_int (+ a b)))
 (print_sum 123 987)
 ```
-Возможна **рекурсия**: 
+Возможна рекурсия ([см. тест](golden/recursion.yml)): 
 ```lisp
 (defun decrement_and_print(a)       # объявление функции и переменной а
     (if (< 0 a)                     # проверка условия
@@ -252,6 +252,9 @@ GitHub Actions при совершении `push`-а автоматически
 
 Конфигурация для GitHub Actions находится в файле [main.yaml](.github/workflows/main.yaml)
 
+Результаты тестирования:
+
+
 Алгоритмы согласно варианту:
 - [hello_world](golden/hello_world.yml)
 - [cat](golden/cat.yml)
@@ -259,9 +262,9 @@ GitHub Actions при совершении `push`-а автоматически
 - [prob2](golden/prob2.yml)
 
 Дополнительные алгоритмы:
-- [rhombus (РОМБ)](golden/rhombus.yml) - Функция, которая печатает РОМБ со стороной длины n из символов sym
+- [rhombus (РОМБ)](golden/rhombus.yml) - функция, которая печатает РОМБ со стороной длины n из символов sym
 - [every_statement_expression](golden/every_statement_expression.yml) - демонстрация, что любое выражение (statement) - expression
-
+- [recursion](golden/recursion.yml) - демонстрация рекурсии
 
 
 Статистика по алгоритмам:
