@@ -243,6 +243,35 @@
 
 # Тестирование
 Тестирование выполняется при помощи golden test-ов.
+- Конфигурация лежит в директории [golden](golden)
+
+GitHub Actions при совершении `push`-а автоматически
+- запускает golden-тесты
+- проверяет форматирование
+- запускает линтеры
+
+Конфигурация для GitHub Actions находится в файле [main.yaml](.github/workflows/main.yaml)
+
+Алгоритмы согласно варианту:
+- [hello_world](golden/hello_world.yml)
+- [cat](golden/cat.yml)
+- [hello_user](golden/hello_user.yml)
+- [prob2](golden/prob2.yml)
+
+Дополнительные алгоритмы:
+- [rhombus (РОМБ)](golden/rhombus.yml) - Функция, которая печатает РОМБ со стороной длины n из символов sym
+- [every_statement_expression](golden/every_statement_expression.yml) - демонстрация, что любое выражение (statement) - expression
+
+
+
+Статистика по алгоритмам:
+```none
+| ФИО                     | алг   | LoC | code байт | code инстр. | инстр. | такт. | вариант                                                                                 |
+| Клиодт Вадим Дмитриевич | hello | 1   | -         | 60          | 134    | 157   | lisp -> asm | stack | harv | hw | instr | struct | stream | port | cstr | prob2 | cache |
+| Клиодт Вадим Дмитриевич | cat   | 4   | -         | 20          | 239    | 239   | lisp -> asm | stack | harv | hw | instr | struct | stream | port | cstr | prob2 | cache |
+| Клиодт Вадим Дмитриевич | prob2 | 14  | -         | 101         | 1683   | 2003  | lisp -> asm | stack | harv | hw | instr | struct | stream | port | cstr | prob2 | cache |
+
+```
 
 
 
