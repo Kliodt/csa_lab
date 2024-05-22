@@ -8,17 +8,12 @@ in_stdin: |-
   This is cat test
 out_stdout: |
   ============================================================
-  program counter: 19, ticks: 239.
+  program counter: 18, ticks: 238.
   Вывод:
   This is cat test
 
 out_code: |-
   [
-    {
-      "opcode": "jump",
-      "arg": 0,
-      "term": null
-    },
     {
       "opcode": "push",
       "arg": 0,
@@ -116,242 +111,241 @@ out_code: |-
     }
   ]
 out_log: |
-  DEBUG    root:machine.py:25 TICK:   0,  PC:   0,  AR:   0,  MEM_OUT:   0,  TOS: []                    ,    jump 0    
-  DEBUG    root:machine.py:28 TICK:   1,  PC:   1,  AR:   0,  MEM_OUT:   0,  TOS: []                    ,    push 0     // defvar
-  DEBUG    root:machine.py:28 TICK:   2,  PC:   2,  AR:   0,  MEM_OUT:   0,  TOS: [0]                   ,    push 1     // defvar
-  DEBUG    root:machine.py:28 TICK:   3,  PC:   3,  AR:   0,  MEM_OUT:   0,  TOS: [1, 0]                ,    store      // defvar
-  DEBUG    root:machine.py:28 TICK:   5,  PC:   4,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    pop        // (top-level expression)
-  DEBUG    root:machine.py:28 TICK:   6,  PC:   5,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:25 TICK:   0,  PC:   0,  AR:   0,  MEM_OUT:   0,  TOS: []                    ,    push 0     // defvar
+  DEBUG    root:machine.py:28 TICK:   1,  PC:   1,  AR:   0,  MEM_OUT:   0,  TOS: [0]                   ,    push 1     // defvar
+  DEBUG    root:machine.py:28 TICK:   2,  PC:   2,  AR:   0,  MEM_OUT:   0,  TOS: [1, 0]                ,    store      // defvar
+  DEBUG    root:machine.py:28 TICK:   4,  PC:   3,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    pop        // (top-level expression)
+  DEBUG    root:machine.py:28 TICK:   5,  PC:   4,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: T
-  DEBUG    root:machine.py:28 TICK:   7,  PC:   6,  AR:   1,  MEM_OUT:   0,  TOS: [84]                  ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK:   8,  PC:   7,  AR:   1,  MEM_OUT:   0,  TOS: [1, 84]               ,    store      // setq
-  DEBUG    root:machine.py:28 TICK:  10,  PC:   8,  AR:   1,  MEM_OUT:  84,  TOS: [84]                  ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK:  11,  PC:   9,  AR:   1,  MEM_OUT:  84,  TOS: [84]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  12,  PC:  10,  AR:   1,  MEM_OUT:  84,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK:  13,  PC:  11,  AR:   1,  MEM_OUT:  84,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  14,  PC:  12,  AR:   1,  MEM_OUT:  84,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  16,  PC:  13,  AR:   1,  MEM_OUT:  84,  TOS: [84]                  ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK:  17,  PC:  14,  AR:   1,  MEM_OUT:  84,  TOS: [84, 84]              ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK:   6,  PC:   5,  AR:   1,  MEM_OUT:   0,  TOS: [84]                  ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK:   7,  PC:   6,  AR:   1,  MEM_OUT:   0,  TOS: [1, 84]               ,    store      // setq
+  DEBUG    root:machine.py:28 TICK:   9,  PC:   7,  AR:   1,  MEM_OUT:  84,  TOS: [84]                  ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK:  10,  PC:   8,  AR:   1,  MEM_OUT:  84,  TOS: [84]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  11,  PC:   9,  AR:   1,  MEM_OUT:  84,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK:  12,  PC:  10,  AR:   1,  MEM_OUT:  84,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  13,  PC:  11,  AR:   1,  MEM_OUT:  84,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  15,  PC:  12,  AR:   1,  MEM_OUT:  84,  TOS: [84]                  ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK:  16,  PC:  13,  AR:   1,  MEM_OUT:  84,  TOS: [84, 84]              ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: T
-  DEBUG    root:machine.py:28 TICK:  18,  PC:  15,  AR:   1,  MEM_OUT:  84,  TOS: [84]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  19,  PC:  16,  AR:   1,  MEM_OUT:  84,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK:  20,  PC:   5,  AR:   1,  MEM_OUT:  84,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK:  17,  PC:  14,  AR:   1,  MEM_OUT:  84,  TOS: [84]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  18,  PC:  15,  AR:   1,  MEM_OUT:  84,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK:  19,  PC:   4,  AR:   1,  MEM_OUT:  84,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: h
-  DEBUG    root:machine.py:28 TICK:  21,  PC:   6,  AR:   1,  MEM_OUT:  84,  TOS: [104]                 ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK:  22,  PC:   7,  AR:   1,  MEM_OUT:  84,  TOS: [1, 104]              ,    store      // setq
-  DEBUG    root:machine.py:28 TICK:  24,  PC:   8,  AR:   1,  MEM_OUT: 104,  TOS: [104]                 ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK:  25,  PC:   9,  AR:   1,  MEM_OUT: 104,  TOS: [104]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  26,  PC:  10,  AR:   1,  MEM_OUT: 104,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK:  27,  PC:  11,  AR:   1,  MEM_OUT: 104,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  28,  PC:  12,  AR:   1,  MEM_OUT: 104,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  30,  PC:  13,  AR:   1,  MEM_OUT: 104,  TOS: [104]                 ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK:  31,  PC:  14,  AR:   1,  MEM_OUT: 104,  TOS: [104, 104]            ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK:  20,  PC:   5,  AR:   1,  MEM_OUT:  84,  TOS: [104]                 ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK:  21,  PC:   6,  AR:   1,  MEM_OUT:  84,  TOS: [1, 104]              ,    store      // setq
+  DEBUG    root:machine.py:28 TICK:  23,  PC:   7,  AR:   1,  MEM_OUT: 104,  TOS: [104]                 ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK:  24,  PC:   8,  AR:   1,  MEM_OUT: 104,  TOS: [104]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  25,  PC:   9,  AR:   1,  MEM_OUT: 104,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK:  26,  PC:  10,  AR:   1,  MEM_OUT: 104,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  27,  PC:  11,  AR:   1,  MEM_OUT: 104,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  29,  PC:  12,  AR:   1,  MEM_OUT: 104,  TOS: [104]                 ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK:  30,  PC:  13,  AR:   1,  MEM_OUT: 104,  TOS: [104, 104]            ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: h
-  DEBUG    root:machine.py:28 TICK:  32,  PC:  15,  AR:   1,  MEM_OUT: 104,  TOS: [104]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  33,  PC:  16,  AR:   1,  MEM_OUT: 104,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK:  34,  PC:   5,  AR:   1,  MEM_OUT: 104,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK:  31,  PC:  14,  AR:   1,  MEM_OUT: 104,  TOS: [104]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  32,  PC:  15,  AR:   1,  MEM_OUT: 104,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK:  33,  PC:   4,  AR:   1,  MEM_OUT: 104,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: i
-  DEBUG    root:machine.py:28 TICK:  35,  PC:   6,  AR:   1,  MEM_OUT: 104,  TOS: [105]                 ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK:  36,  PC:   7,  AR:   1,  MEM_OUT: 104,  TOS: [1, 105]              ,    store      // setq
-  DEBUG    root:machine.py:28 TICK:  38,  PC:   8,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK:  39,  PC:   9,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  40,  PC:  10,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK:  41,  PC:  11,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  42,  PC:  12,  AR:   1,  MEM_OUT: 105,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  44,  PC:  13,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK:  45,  PC:  14,  AR:   1,  MEM_OUT: 105,  TOS: [105, 105]            ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK:  34,  PC:   5,  AR:   1,  MEM_OUT: 104,  TOS: [105]                 ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK:  35,  PC:   6,  AR:   1,  MEM_OUT: 104,  TOS: [1, 105]              ,    store      // setq
+  DEBUG    root:machine.py:28 TICK:  37,  PC:   7,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK:  38,  PC:   8,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  39,  PC:   9,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK:  40,  PC:  10,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  41,  PC:  11,  AR:   1,  MEM_OUT: 105,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  43,  PC:  12,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK:  44,  PC:  13,  AR:   1,  MEM_OUT: 105,  TOS: [105, 105]            ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: i
-  DEBUG    root:machine.py:28 TICK:  46,  PC:  15,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  47,  PC:  16,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK:  48,  PC:   5,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK:  45,  PC:  14,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  46,  PC:  15,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK:  47,  PC:   4,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: s
-  DEBUG    root:machine.py:28 TICK:  49,  PC:   6,  AR:   1,  MEM_OUT: 105,  TOS: [115]                 ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK:  50,  PC:   7,  AR:   1,  MEM_OUT: 105,  TOS: [1, 115]              ,    store      // setq
-  DEBUG    root:machine.py:28 TICK:  52,  PC:   8,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK:  53,  PC:   9,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  54,  PC:  10,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK:  55,  PC:  11,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  56,  PC:  12,  AR:   1,  MEM_OUT: 115,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  58,  PC:  13,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK:  59,  PC:  14,  AR:   1,  MEM_OUT: 115,  TOS: [115, 115]            ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK:  48,  PC:   5,  AR:   1,  MEM_OUT: 105,  TOS: [115]                 ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK:  49,  PC:   6,  AR:   1,  MEM_OUT: 105,  TOS: [1, 115]              ,    store      // setq
+  DEBUG    root:machine.py:28 TICK:  51,  PC:   7,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK:  52,  PC:   8,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  53,  PC:   9,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK:  54,  PC:  10,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  55,  PC:  11,  AR:   1,  MEM_OUT: 115,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  57,  PC:  12,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK:  58,  PC:  13,  AR:   1,  MEM_OUT: 115,  TOS: [115, 115]            ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: s
-  DEBUG    root:machine.py:28 TICK:  60,  PC:  15,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  61,  PC:  16,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK:  62,  PC:   5,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK:  59,  PC:  14,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  60,  PC:  15,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK:  61,  PC:   4,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод:  
-  DEBUG    root:machine.py:28 TICK:  63,  PC:   6,  AR:   1,  MEM_OUT: 115,  TOS: [32]                  ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK:  64,  PC:   7,  AR:   1,  MEM_OUT: 115,  TOS: [1, 32]               ,    store      // setq
-  DEBUG    root:machine.py:28 TICK:  66,  PC:   8,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK:  67,  PC:   9,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  68,  PC:  10,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK:  69,  PC:  11,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  70,  PC:  12,  AR:   1,  MEM_OUT:  32,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  72,  PC:  13,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK:  73,  PC:  14,  AR:   1,  MEM_OUT:  32,  TOS: [32, 32]              ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK:  62,  PC:   5,  AR:   1,  MEM_OUT: 115,  TOS: [32]                  ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK:  63,  PC:   6,  AR:   1,  MEM_OUT: 115,  TOS: [1, 32]               ,    store      // setq
+  DEBUG    root:machine.py:28 TICK:  65,  PC:   7,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK:  66,  PC:   8,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  67,  PC:   9,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK:  68,  PC:  10,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  69,  PC:  11,  AR:   1,  MEM_OUT:  32,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  71,  PC:  12,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK:  72,  PC:  13,  AR:   1,  MEM_OUT:  32,  TOS: [32, 32]              ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод:  
-  DEBUG    root:machine.py:28 TICK:  74,  PC:  15,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  75,  PC:  16,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK:  76,  PC:   5,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK:  73,  PC:  14,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  74,  PC:  15,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK:  75,  PC:   4,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: i
-  DEBUG    root:machine.py:28 TICK:  77,  PC:   6,  AR:   1,  MEM_OUT:  32,  TOS: [105]                 ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK:  78,  PC:   7,  AR:   1,  MEM_OUT:  32,  TOS: [1, 105]              ,    store      // setq
-  DEBUG    root:machine.py:28 TICK:  80,  PC:   8,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK:  81,  PC:   9,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  82,  PC:  10,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK:  83,  PC:  11,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  84,  PC:  12,  AR:   1,  MEM_OUT: 105,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  86,  PC:  13,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK:  87,  PC:  14,  AR:   1,  MEM_OUT: 105,  TOS: [105, 105]            ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK:  76,  PC:   5,  AR:   1,  MEM_OUT:  32,  TOS: [105]                 ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK:  77,  PC:   6,  AR:   1,  MEM_OUT:  32,  TOS: [1, 105]              ,    store      // setq
+  DEBUG    root:machine.py:28 TICK:  79,  PC:   7,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK:  80,  PC:   8,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  81,  PC:   9,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK:  82,  PC:  10,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  83,  PC:  11,  AR:   1,  MEM_OUT: 105,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  85,  PC:  12,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK:  86,  PC:  13,  AR:   1,  MEM_OUT: 105,  TOS: [105, 105]            ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: i
-  DEBUG    root:machine.py:28 TICK:  88,  PC:  15,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  89,  PC:  16,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK:  90,  PC:   5,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK:  87,  PC:  14,  AR:   1,  MEM_OUT: 105,  TOS: [105]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  88,  PC:  15,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK:  89,  PC:   4,  AR:   1,  MEM_OUT: 105,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: s
-  DEBUG    root:machine.py:28 TICK:  91,  PC:   6,  AR:   1,  MEM_OUT: 105,  TOS: [115]                 ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK:  92,  PC:   7,  AR:   1,  MEM_OUT: 105,  TOS: [1, 115]              ,    store      // setq
-  DEBUG    root:machine.py:28 TICK:  94,  PC:   8,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK:  95,  PC:   9,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK:  96,  PC:  10,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK:  97,  PC:  11,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK:  98,  PC:  12,  AR:   1,  MEM_OUT: 115,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 100,  PC:  13,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK: 101,  PC:  14,  AR:   1,  MEM_OUT: 115,  TOS: [115, 115]            ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK:  90,  PC:   5,  AR:   1,  MEM_OUT: 105,  TOS: [115]                 ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK:  91,  PC:   6,  AR:   1,  MEM_OUT: 105,  TOS: [1, 115]              ,    store      // setq
+  DEBUG    root:machine.py:28 TICK:  93,  PC:   7,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK:  94,  PC:   8,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK:  95,  PC:   9,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK:  96,  PC:  10,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  97,  PC:  11,  AR:   1,  MEM_OUT: 115,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK:  99,  PC:  12,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK: 100,  PC:  13,  AR:   1,  MEM_OUT: 115,  TOS: [115, 115]            ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: s
-  DEBUG    root:machine.py:28 TICK: 102,  PC:  15,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 103,  PC:  16,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK: 104,  PC:   5,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK: 101,  PC:  14,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 102,  PC:  15,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK: 103,  PC:   4,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод:  
-  DEBUG    root:machine.py:28 TICK: 105,  PC:   6,  AR:   1,  MEM_OUT: 115,  TOS: [32]                  ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK: 106,  PC:   7,  AR:   1,  MEM_OUT: 115,  TOS: [1, 32]               ,    store      // setq
-  DEBUG    root:machine.py:28 TICK: 108,  PC:   8,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK: 109,  PC:   9,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 110,  PC:  10,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK: 111,  PC:  11,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 112,  PC:  12,  AR:   1,  MEM_OUT:  32,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 114,  PC:  13,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK: 115,  PC:  14,  AR:   1,  MEM_OUT:  32,  TOS: [32, 32]              ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK: 104,  PC:   5,  AR:   1,  MEM_OUT: 115,  TOS: [32]                  ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK: 105,  PC:   6,  AR:   1,  MEM_OUT: 115,  TOS: [1, 32]               ,    store      // setq
+  DEBUG    root:machine.py:28 TICK: 107,  PC:   7,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK: 108,  PC:   8,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 109,  PC:   9,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK: 110,  PC:  10,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 111,  PC:  11,  AR:   1,  MEM_OUT:  32,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 113,  PC:  12,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK: 114,  PC:  13,  AR:   1,  MEM_OUT:  32,  TOS: [32, 32]              ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод:  
-  DEBUG    root:machine.py:28 TICK: 116,  PC:  15,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 117,  PC:  16,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK: 118,  PC:   5,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK: 115,  PC:  14,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 116,  PC:  15,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK: 117,  PC:   4,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: c
-  DEBUG    root:machine.py:28 TICK: 119,  PC:   6,  AR:   1,  MEM_OUT:  32,  TOS: [99]                  ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK: 120,  PC:   7,  AR:   1,  MEM_OUT:  32,  TOS: [1, 99]               ,    store      // setq
-  DEBUG    root:machine.py:28 TICK: 122,  PC:   8,  AR:   1,  MEM_OUT:  99,  TOS: [99]                  ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK: 123,  PC:   9,  AR:   1,  MEM_OUT:  99,  TOS: [99]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 124,  PC:  10,  AR:   1,  MEM_OUT:  99,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK: 125,  PC:  11,  AR:   1,  MEM_OUT:  99,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 126,  PC:  12,  AR:   1,  MEM_OUT:  99,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 128,  PC:  13,  AR:   1,  MEM_OUT:  99,  TOS: [99]                  ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK: 129,  PC:  14,  AR:   1,  MEM_OUT:  99,  TOS: [99, 99]              ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK: 118,  PC:   5,  AR:   1,  MEM_OUT:  32,  TOS: [99]                  ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK: 119,  PC:   6,  AR:   1,  MEM_OUT:  32,  TOS: [1, 99]               ,    store      // setq
+  DEBUG    root:machine.py:28 TICK: 121,  PC:   7,  AR:   1,  MEM_OUT:  99,  TOS: [99]                  ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK: 122,  PC:   8,  AR:   1,  MEM_OUT:  99,  TOS: [99]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 123,  PC:   9,  AR:   1,  MEM_OUT:  99,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK: 124,  PC:  10,  AR:   1,  MEM_OUT:  99,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 125,  PC:  11,  AR:   1,  MEM_OUT:  99,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 127,  PC:  12,  AR:   1,  MEM_OUT:  99,  TOS: [99]                  ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK: 128,  PC:  13,  AR:   1,  MEM_OUT:  99,  TOS: [99, 99]              ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: c
-  DEBUG    root:machine.py:28 TICK: 130,  PC:  15,  AR:   1,  MEM_OUT:  99,  TOS: [99]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 131,  PC:  16,  AR:   1,  MEM_OUT:  99,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK: 132,  PC:   5,  AR:   1,  MEM_OUT:  99,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK: 129,  PC:  14,  AR:   1,  MEM_OUT:  99,  TOS: [99]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 130,  PC:  15,  AR:   1,  MEM_OUT:  99,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK: 131,  PC:   4,  AR:   1,  MEM_OUT:  99,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: a
-  DEBUG    root:machine.py:28 TICK: 133,  PC:   6,  AR:   1,  MEM_OUT:  99,  TOS: [97]                  ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK: 134,  PC:   7,  AR:   1,  MEM_OUT:  99,  TOS: [1, 97]               ,    store      // setq
-  DEBUG    root:machine.py:28 TICK: 136,  PC:   8,  AR:   1,  MEM_OUT:  97,  TOS: [97]                  ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK: 137,  PC:   9,  AR:   1,  MEM_OUT:  97,  TOS: [97]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 138,  PC:  10,  AR:   1,  MEM_OUT:  97,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK: 139,  PC:  11,  AR:   1,  MEM_OUT:  97,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 140,  PC:  12,  AR:   1,  MEM_OUT:  97,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 142,  PC:  13,  AR:   1,  MEM_OUT:  97,  TOS: [97]                  ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK: 143,  PC:  14,  AR:   1,  MEM_OUT:  97,  TOS: [97, 97]              ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK: 132,  PC:   5,  AR:   1,  MEM_OUT:  99,  TOS: [97]                  ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK: 133,  PC:   6,  AR:   1,  MEM_OUT:  99,  TOS: [1, 97]               ,    store      // setq
+  DEBUG    root:machine.py:28 TICK: 135,  PC:   7,  AR:   1,  MEM_OUT:  97,  TOS: [97]                  ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK: 136,  PC:   8,  AR:   1,  MEM_OUT:  97,  TOS: [97]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 137,  PC:   9,  AR:   1,  MEM_OUT:  97,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK: 138,  PC:  10,  AR:   1,  MEM_OUT:  97,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 139,  PC:  11,  AR:   1,  MEM_OUT:  97,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 141,  PC:  12,  AR:   1,  MEM_OUT:  97,  TOS: [97]                  ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK: 142,  PC:  13,  AR:   1,  MEM_OUT:  97,  TOS: [97, 97]              ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: a
-  DEBUG    root:machine.py:28 TICK: 144,  PC:  15,  AR:   1,  MEM_OUT:  97,  TOS: [97]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 145,  PC:  16,  AR:   1,  MEM_OUT:  97,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK: 146,  PC:   5,  AR:   1,  MEM_OUT:  97,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK: 143,  PC:  14,  AR:   1,  MEM_OUT:  97,  TOS: [97]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 144,  PC:  15,  AR:   1,  MEM_OUT:  97,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK: 145,  PC:   4,  AR:   1,  MEM_OUT:  97,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: t
-  DEBUG    root:machine.py:28 TICK: 147,  PC:   6,  AR:   1,  MEM_OUT:  97,  TOS: [116]                 ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK: 148,  PC:   7,  AR:   1,  MEM_OUT:  97,  TOS: [1, 116]              ,    store      // setq
-  DEBUG    root:machine.py:28 TICK: 150,  PC:   8,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK: 151,  PC:   9,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 152,  PC:  10,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK: 153,  PC:  11,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 154,  PC:  12,  AR:   1,  MEM_OUT: 116,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 156,  PC:  13,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK: 157,  PC:  14,  AR:   1,  MEM_OUT: 116,  TOS: [116, 116]            ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK: 146,  PC:   5,  AR:   1,  MEM_OUT:  97,  TOS: [116]                 ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK: 147,  PC:   6,  AR:   1,  MEM_OUT:  97,  TOS: [1, 116]              ,    store      // setq
+  DEBUG    root:machine.py:28 TICK: 149,  PC:   7,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK: 150,  PC:   8,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 151,  PC:   9,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK: 152,  PC:  10,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 153,  PC:  11,  AR:   1,  MEM_OUT: 116,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 155,  PC:  12,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK: 156,  PC:  13,  AR:   1,  MEM_OUT: 116,  TOS: [116, 116]            ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: t
-  DEBUG    root:machine.py:28 TICK: 158,  PC:  15,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 159,  PC:  16,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK: 160,  PC:   5,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK: 157,  PC:  14,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 158,  PC:  15,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK: 159,  PC:   4,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод:  
-  DEBUG    root:machine.py:28 TICK: 161,  PC:   6,  AR:   1,  MEM_OUT: 116,  TOS: [32]                  ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK: 162,  PC:   7,  AR:   1,  MEM_OUT: 116,  TOS: [1, 32]               ,    store      // setq
-  DEBUG    root:machine.py:28 TICK: 164,  PC:   8,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK: 165,  PC:   9,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 166,  PC:  10,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK: 167,  PC:  11,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 168,  PC:  12,  AR:   1,  MEM_OUT:  32,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 170,  PC:  13,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK: 171,  PC:  14,  AR:   1,  MEM_OUT:  32,  TOS: [32, 32]              ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK: 160,  PC:   5,  AR:   1,  MEM_OUT: 116,  TOS: [32]                  ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK: 161,  PC:   6,  AR:   1,  MEM_OUT: 116,  TOS: [1, 32]               ,    store      // setq
+  DEBUG    root:machine.py:28 TICK: 163,  PC:   7,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK: 164,  PC:   8,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 165,  PC:   9,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK: 166,  PC:  10,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 167,  PC:  11,  AR:   1,  MEM_OUT:  32,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 169,  PC:  12,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK: 170,  PC:  13,  AR:   1,  MEM_OUT:  32,  TOS: [32, 32]              ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод:  
-  DEBUG    root:machine.py:28 TICK: 172,  PC:  15,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 173,  PC:  16,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK: 174,  PC:   5,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK: 171,  PC:  14,  AR:   1,  MEM_OUT:  32,  TOS: [32]                  ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 172,  PC:  15,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK: 173,  PC:   4,  AR:   1,  MEM_OUT:  32,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: t
-  DEBUG    root:machine.py:28 TICK: 175,  PC:   6,  AR:   1,  MEM_OUT:  32,  TOS: [116]                 ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK: 176,  PC:   7,  AR:   1,  MEM_OUT:  32,  TOS: [1, 116]              ,    store      // setq
-  DEBUG    root:machine.py:28 TICK: 178,  PC:   8,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK: 179,  PC:   9,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 180,  PC:  10,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK: 181,  PC:  11,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 182,  PC:  12,  AR:   1,  MEM_OUT: 116,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 184,  PC:  13,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK: 185,  PC:  14,  AR:   1,  MEM_OUT: 116,  TOS: [116, 116]            ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK: 174,  PC:   5,  AR:   1,  MEM_OUT:  32,  TOS: [116]                 ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK: 175,  PC:   6,  AR:   1,  MEM_OUT:  32,  TOS: [1, 116]              ,    store      // setq
+  DEBUG    root:machine.py:28 TICK: 177,  PC:   7,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK: 178,  PC:   8,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 179,  PC:   9,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK: 180,  PC:  10,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 181,  PC:  11,  AR:   1,  MEM_OUT: 116,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 183,  PC:  12,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK: 184,  PC:  13,  AR:   1,  MEM_OUT: 116,  TOS: [116, 116]            ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: t
-  DEBUG    root:machine.py:28 TICK: 186,  PC:  15,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 187,  PC:  16,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK: 188,  PC:   5,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK: 185,  PC:  14,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 186,  PC:  15,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK: 187,  PC:   4,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: e
-  DEBUG    root:machine.py:28 TICK: 189,  PC:   6,  AR:   1,  MEM_OUT: 116,  TOS: [101]                 ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK: 190,  PC:   7,  AR:   1,  MEM_OUT: 116,  TOS: [1, 101]              ,    store      // setq
-  DEBUG    root:machine.py:28 TICK: 192,  PC:   8,  AR:   1,  MEM_OUT: 101,  TOS: [101]                 ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK: 193,  PC:   9,  AR:   1,  MEM_OUT: 101,  TOS: [101]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 194,  PC:  10,  AR:   1,  MEM_OUT: 101,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK: 195,  PC:  11,  AR:   1,  MEM_OUT: 101,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 196,  PC:  12,  AR:   1,  MEM_OUT: 101,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 198,  PC:  13,  AR:   1,  MEM_OUT: 101,  TOS: [101]                 ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK: 199,  PC:  14,  AR:   1,  MEM_OUT: 101,  TOS: [101, 101]            ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK: 188,  PC:   5,  AR:   1,  MEM_OUT: 116,  TOS: [101]                 ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK: 189,  PC:   6,  AR:   1,  MEM_OUT: 116,  TOS: [1, 101]              ,    store      // setq
+  DEBUG    root:machine.py:28 TICK: 191,  PC:   7,  AR:   1,  MEM_OUT: 101,  TOS: [101]                 ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK: 192,  PC:   8,  AR:   1,  MEM_OUT: 101,  TOS: [101]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 193,  PC:   9,  AR:   1,  MEM_OUT: 101,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK: 194,  PC:  10,  AR:   1,  MEM_OUT: 101,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 195,  PC:  11,  AR:   1,  MEM_OUT: 101,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 197,  PC:  12,  AR:   1,  MEM_OUT: 101,  TOS: [101]                 ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK: 198,  PC:  13,  AR:   1,  MEM_OUT: 101,  TOS: [101, 101]            ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: e
-  DEBUG    root:machine.py:28 TICK: 200,  PC:  15,  AR:   1,  MEM_OUT: 101,  TOS: [101]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 201,  PC:  16,  AR:   1,  MEM_OUT: 101,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK: 202,  PC:   5,  AR:   1,  MEM_OUT: 101,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK: 199,  PC:  14,  AR:   1,  MEM_OUT: 101,  TOS: [101]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 200,  PC:  15,  AR:   1,  MEM_OUT: 101,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK: 201,  PC:   4,  AR:   1,  MEM_OUT: 101,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: s
-  DEBUG    root:machine.py:28 TICK: 203,  PC:   6,  AR:   1,  MEM_OUT: 101,  TOS: [115]                 ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK: 204,  PC:   7,  AR:   1,  MEM_OUT: 101,  TOS: [1, 115]              ,    store      // setq
-  DEBUG    root:machine.py:28 TICK: 206,  PC:   8,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK: 207,  PC:   9,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 208,  PC:  10,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK: 209,  PC:  11,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 210,  PC:  12,  AR:   1,  MEM_OUT: 115,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 212,  PC:  13,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK: 213,  PC:  14,  AR:   1,  MEM_OUT: 115,  TOS: [115, 115]            ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK: 202,  PC:   5,  AR:   1,  MEM_OUT: 101,  TOS: [115]                 ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK: 203,  PC:   6,  AR:   1,  MEM_OUT: 101,  TOS: [1, 115]              ,    store      // setq
+  DEBUG    root:machine.py:28 TICK: 205,  PC:   7,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK: 206,  PC:   8,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 207,  PC:   9,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK: 208,  PC:  10,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 209,  PC:  11,  AR:   1,  MEM_OUT: 115,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 211,  PC:  12,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK: 212,  PC:  13,  AR:   1,  MEM_OUT: 115,  TOS: [115, 115]            ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: s
-  DEBUG    root:machine.py:28 TICK: 214,  PC:  15,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 215,  PC:  16,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK: 216,  PC:   5,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK: 213,  PC:  14,  AR:   1,  MEM_OUT: 115,  TOS: [115]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 214,  PC:  15,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK: 215,  PC:   4,  AR:   1,  MEM_OUT: 115,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: t
-  DEBUG    root:machine.py:28 TICK: 217,  PC:   6,  AR:   1,  MEM_OUT: 115,  TOS: [116]                 ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK: 218,  PC:   7,  AR:   1,  MEM_OUT: 115,  TOS: [1, 116]              ,    store      // setq
-  DEBUG    root:machine.py:28 TICK: 220,  PC:   8,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK: 221,  PC:   9,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 222,  PC:  10,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK: 223,  PC:  11,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    push 1     // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 224,  PC:  12,  AR:   1,  MEM_OUT: 116,  TOS: [1]                   ,    load       // (variable: a)
-  DEBUG    root:machine.py:28 TICK: 226,  PC:  13,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    dup        // print_char
-  DEBUG    root:machine.py:28 TICK: 227,  PC:  14,  AR:   1,  MEM_OUT: 116,  TOS: [116, 116]            ,    write 0    // print_char
+  DEBUG    root:machine.py:28 TICK: 216,  PC:   5,  AR:   1,  MEM_OUT: 115,  TOS: [116]                 ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK: 217,  PC:   6,  AR:   1,  MEM_OUT: 115,  TOS: [1, 116]              ,    store      // setq
+  DEBUG    root:machine.py:28 TICK: 219,  PC:   7,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK: 220,  PC:   8,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 221,  PC:   9,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK: 222,  PC:  10,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    push 1     // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 223,  PC:  11,  AR:   1,  MEM_OUT: 116,  TOS: [1]                   ,    load       // (variable: a)
+  DEBUG    root:machine.py:28 TICK: 225,  PC:  12,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    dup        // print_char
+  DEBUG    root:machine.py:28 TICK: 226,  PC:  13,  AR:   1,  MEM_OUT: 116,  TOS: [116, 116]            ,    write 0    // print_char
   DEBUG    root:control_unit.py:88 вывод: t
-  DEBUG    root:machine.py:28 TICK: 228,  PC:  15,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 229,  PC:  16,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump -12   // loop_while
-  DEBUG    root:machine.py:28 TICK: 230,  PC:   5,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    read 0     // read_char
+  DEBUG    root:machine.py:28 TICK: 227,  PC:  14,  AR:   1,  MEM_OUT: 116,  TOS: [116]                 ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 228,  PC:  15,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    jump -12   // loop_while
+  DEBUG    root:machine.py:28 TICK: 229,  PC:   4,  AR:   1,  MEM_OUT: 116,  TOS: []                    ,    read 0     // read_char
   DEBUG    root:data_path.py:42 ввод: \0
-  DEBUG    root:machine.py:28 TICK: 231,  PC:   6,  AR:   1,  MEM_OUT: 116,  TOS: [0]                   ,    push 1     // setq
-  DEBUG    root:machine.py:28 TICK: 232,  PC:   7,  AR:   1,  MEM_OUT: 116,  TOS: [1, 0]                ,    store      // setq
-  DEBUG    root:machine.py:28 TICK: 234,  PC:   8,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    flags      // loop_while
-  DEBUG    root:machine.py:28 TICK: 235,  PC:   9,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    pop        // loop_while
-  DEBUG    root:machine.py:28 TICK: 236,  PC:  10,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    jump_zero 6 // loop_while
-  DEBUG    root:machine.py:28 TICK: 237,  PC:  17,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    push 0     // loop_while
-  DEBUG    root:machine.py:28 TICK: 238,  PC:  18,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    pop        // (top-level expression)
-  DEBUG    root:machine.py:28 TICK: 239,  PC:  19,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    halt      
+  DEBUG    root:machine.py:28 TICK: 230,  PC:   5,  AR:   1,  MEM_OUT: 116,  TOS: [0]                   ,    push 1     // setq
+  DEBUG    root:machine.py:28 TICK: 231,  PC:   6,  AR:   1,  MEM_OUT: 116,  TOS: [1, 0]                ,    store      // setq
+  DEBUG    root:machine.py:28 TICK: 233,  PC:   7,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    flags      // loop_while
+  DEBUG    root:machine.py:28 TICK: 234,  PC:   8,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    pop        // loop_while
+  DEBUG    root:machine.py:28 TICK: 235,  PC:   9,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    jump_zero 6 // loop_while
+  DEBUG    root:machine.py:28 TICK: 236,  PC:  16,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    push 0     // loop_while
+  DEBUG    root:machine.py:28 TICK: 237,  PC:  17,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    pop        // (top-level expression)
+  DEBUG    root:machine.py:28 TICK: 238,  PC:  18,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    halt      

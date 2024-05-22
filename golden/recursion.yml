@@ -12,7 +12,7 @@ in_source: |-
 
   (decrement_and_print 5)             # вызов функции
 
-in_stdin: |-
+in_stdin: |
 out_stdout: |
   ============================================================
   program counter: 75, ticks: 388.

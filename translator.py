@@ -716,7 +716,10 @@ def main(program_str: str) -> list:
 
     program_code.append(Instr(Opcode.HALT))
 
-    full_code = [Instr(Opcode.JUMP, arg=next_func_addr)]
+    if next_func_addr != 0:
+        full_code = [Instr(Opcode.JUMP, arg=next_func_addr)]
+    else:
+        full_code = []
     full_code.extend(func_definitions_code)
     full_code.extend(program_code)
 

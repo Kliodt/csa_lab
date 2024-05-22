@@ -246,14 +246,13 @@
 - Конфигурация лежит в директории [golden](golden)
 
 GitHub Actions при совершении `push`-а автоматически
-- запускает golden-тесты
-- проверяет форматирование
-- запускает линтеры
+- запускает golden-тесты (задание `test`)
+- проверяет форматирование и запускает линтеры (задание `lint`)
 
 Конфигурация для GitHub Actions находится в файле [main.yaml](.github/workflows/main.yaml)
 
 Результаты тестирования:
-
+![img.png](img/img.png)
 
 Алгоритмы согласно варианту:
 - [hello_world](golden/hello_world.yml)
@@ -262,10 +261,118 @@ GitHub Actions при совершении `push`-а автоматически
 - [prob2](golden/prob2.yml)
 
 Дополнительные алгоритмы:
-- [rhombus (РОМБ)](golden/rhombus.yml) - функция, которая печатает РОМБ со стороной длины n из символов sym
+- [rhombus (РОМБ)](golden/rhombus.yml) - функция, которая печатает РОМБ со стороной длины n из символов sym (демонстрация возможностей языка)
 - [every_statement_expression](golden/every_statement_expression.yml) - демонстрация, что любое выражение (statement) - expression
 - [recursion](golden/recursion.yml) - демонстрация рекурсии
 
+Исходный код, результат компиляции и журнал работы для программы `cat` (Ввод: ABCD):
+```none
+(defvar a)
+(loop_while (setq a (read_char))
+    (print_char a)
+)
+```
+Определяется переменная `a`, в нее считывается символ из потока ввода. Пока значение не нулевое, происходит печать `a` 
+в поток вывода. Как только будет введен `\0`, программа прекратит печать и завершится. Нулевое значение не будет напечатано.
+```none
+[
+  { "opcode": "push",   "arg": 0,   "term": "defvar" }, 
+  { "opcode": "push",   "arg": 1,   "term": "defvar" }, 
+  { "opcode": "store",   "arg": null,   "term": "defvar" }, 
+  { "opcode": "pop",   "arg": null,   "term": "(top-level expression)" }, 
+  { "opcode": "read",   "arg": 0,   "term": "read_char" }, 
+  { "opcode": "push",   "arg": 1,   "term": "setq" }, 
+  { "opcode": "store",   "arg": null,   "term": "setq" }, 
+  { "opcode": "flags",   "arg": null,   "term": "loop_while" }, 
+  { "opcode": "pop",   "arg": null,   "term": "loop_while" }, 
+  { "opcode": "jump_zero",   "arg": 6,   "term": "loop_while" }, 
+  { "opcode": "push",   "arg": 1,   "term": "(variable: a)" }, 
+  { "opcode": "load",   "arg": null,   "term": "(variable: a)" }, 
+  { "opcode": "dup",   "arg": null,   "term": "print_char" }, 
+  { "opcode": "write",   "arg": 0,   "term": "print_char" }, 
+  { "opcode": "pop",   "arg": null,   "term": "loop_while" }, 
+  { "opcode": "jump",   "arg": -12,   "term": "loop_while" }, 
+  { "opcode": "push",   "arg": 0,   "term": "loop_while" }, 
+  { "opcode": "pop",   "arg": null,   "term": "(top-level expression)" }, 
+  { "opcode": "halt",   "arg": null,   "term": null } 
+] 
+```
+``` none
+DEBUG:root:TICK:   0,  PC:   0,  AR:   0,  MEM_OUT:   0,  TOS: []                    ,    push 0     // defvar
+DEBUG:root:TICK:   1,  PC:   1,  AR:   0,  MEM_OUT:   0,  TOS: [0]                   ,    push 1     // defvar
+DEBUG:root:TICK:   2,  PC:   2,  AR:   0,  MEM_OUT:   0,  TOS: [1, 0]                ,    store      // defvar
+DEBUG:root:TICK:   4,  PC:   3,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    pop        // (top-level expression)
+DEBUG:root:TICK:   5,  PC:   4,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    read 0     // read_char
+DEBUG:root:ввод: A
+DEBUG:root:TICK:   6,  PC:   5,  AR:   1,  MEM_OUT:   0,  TOS: [65]                  ,    push 1     // setq
+DEBUG:root:TICK:   7,  PC:   6,  AR:   1,  MEM_OUT:   0,  TOS: [1, 65]               ,    store      // setq
+DEBUG:root:TICK:   9,  PC:   7,  AR:   1,  MEM_OUT:  65,  TOS: [65]                  ,    flags      // loop_while
+DEBUG:root:TICK:  10,  PC:   8,  AR:   1,  MEM_OUT:  65,  TOS: [65]                  ,    pop        // loop_while
+DEBUG:root:TICK:  11,  PC:   9,  AR:   1,  MEM_OUT:  65,  TOS: []                    ,    jump_zero 6 // loop_while
+DEBUG:root:TICK:  12,  PC:  10,  AR:   1,  MEM_OUT:  65,  TOS: []                    ,    push 1     // (variable: a)
+DEBUG:root:TICK:  13,  PC:  11,  AR:   1,  MEM_OUT:  65,  TOS: [1]                   ,    load       // (variable: a)
+DEBUG:root:TICK:  15,  PC:  12,  AR:   1,  MEM_OUT:  65,  TOS: [65]                  ,    dup        // print_char
+DEBUG:root:TICK:  16,  PC:  13,  AR:   1,  MEM_OUT:  65,  TOS: [65, 65]              ,    write 0    // print_char
+DEBUG:root:вывод: A
+DEBUG:root:TICK:  17,  PC:  14,  AR:   1,  MEM_OUT:  65,  TOS: [65]                  ,    pop        // loop_while
+DEBUG:root:TICK:  18,  PC:  15,  AR:   1,  MEM_OUT:  65,  TOS: []                    ,    jump -12   // loop_while
+DEBUG:root:TICK:  19,  PC:   4,  AR:   1,  MEM_OUT:  65,  TOS: []                    ,    read 0     // read_char
+DEBUG:root:ввод: B
+DEBUG:root:TICK:  20,  PC:   5,  AR:   1,  MEM_OUT:  65,  TOS: [66]                  ,    push 1     // setq
+DEBUG:root:TICK:  21,  PC:   6,  AR:   1,  MEM_OUT:  65,  TOS: [1, 66]               ,    store      // setq
+DEBUG:root:TICK:  23,  PC:   7,  AR:   1,  MEM_OUT:  66,  TOS: [66]                  ,    flags      // loop_while
+DEBUG:root:TICK:  24,  PC:   8,  AR:   1,  MEM_OUT:  66,  TOS: [66]                  ,    pop        // loop_while
+DEBUG:root:TICK:  25,  PC:   9,  AR:   1,  MEM_OUT:  66,  TOS: []                    ,    jump_zero 6 // loop_while
+DEBUG:root:TICK:  26,  PC:  10,  AR:   1,  MEM_OUT:  66,  TOS: []                    ,    push 1     // (variable: a)
+DEBUG:root:TICK:  27,  PC:  11,  AR:   1,  MEM_OUT:  66,  TOS: [1]                   ,    load       // (variable: a)
+DEBUG:root:TICK:  29,  PC:  12,  AR:   1,  MEM_OUT:  66,  TOS: [66]                  ,    dup        // print_char
+DEBUG:root:TICK:  30,  PC:  13,  AR:   1,  MEM_OUT:  66,  TOS: [66, 66]              ,    write 0    // print_char
+DEBUG:root:вывод: B
+DEBUG:root:TICK:  31,  PC:  14,  AR:   1,  MEM_OUT:  66,  TOS: [66]                  ,    pop        // loop_while
+DEBUG:root:TICK:  32,  PC:  15,  AR:   1,  MEM_OUT:  66,  TOS: []                    ,    jump -12   // loop_while
+DEBUG:root:TICK:  33,  PC:   4,  AR:   1,  MEM_OUT:  66,  TOS: []                    ,    read 0     // read_char
+DEBUG:root:ввод: C
+DEBUG:root:TICK:  34,  PC:   5,  AR:   1,  MEM_OUT:  66,  TOS: [67]                  ,    push 1     // setq
+DEBUG:root:TICK:  35,  PC:   6,  AR:   1,  MEM_OUT:  66,  TOS: [1, 67]               ,    store      // setq
+DEBUG:root:TICK:  37,  PC:   7,  AR:   1,  MEM_OUT:  67,  TOS: [67]                  ,    flags      // loop_while
+DEBUG:root:TICK:  38,  PC:   8,  AR:   1,  MEM_OUT:  67,  TOS: [67]                  ,    pop        // loop_while
+DEBUG:root:TICK:  39,  PC:   9,  AR:   1,  MEM_OUT:  67,  TOS: []                    ,    jump_zero 6 // loop_while
+DEBUG:root:TICK:  40,  PC:  10,  AR:   1,  MEM_OUT:  67,  TOS: []                    ,    push 1     // (variable: a)
+DEBUG:root:TICK:  41,  PC:  11,  AR:   1,  MEM_OUT:  67,  TOS: [1]                   ,    load       // (variable: a)
+DEBUG:root:TICK:  43,  PC:  12,  AR:   1,  MEM_OUT:  67,  TOS: [67]                  ,    dup        // print_char
+DEBUG:root:TICK:  44,  PC:  13,  AR:   1,  MEM_OUT:  67,  TOS: [67, 67]              ,    write 0    // print_char
+DEBUG:root:вывод: C
+DEBUG:root:TICK:  45,  PC:  14,  AR:   1,  MEM_OUT:  67,  TOS: [67]                  ,    pop        // loop_while
+DEBUG:root:TICK:  46,  PC:  15,  AR:   1,  MEM_OUT:  67,  TOS: []                    ,    jump -12   // loop_while
+DEBUG:root:TICK:  47,  PC:   4,  AR:   1,  MEM_OUT:  67,  TOS: []                    ,    read 0     // read_char
+DEBUG:root:ввод: D
+DEBUG:root:TICK:  48,  PC:   5,  AR:   1,  MEM_OUT:  67,  TOS: [68]                  ,    push 1     // setq
+DEBUG:root:TICK:  49,  PC:   6,  AR:   1,  MEM_OUT:  67,  TOS: [1, 68]               ,    store      // setq
+DEBUG:root:TICK:  51,  PC:   7,  AR:   1,  MEM_OUT:  68,  TOS: [68]                  ,    flags      // loop_while
+DEBUG:root:TICK:  52,  PC:   8,  AR:   1,  MEM_OUT:  68,  TOS: [68]                  ,    pop        // loop_while
+DEBUG:root:TICK:  53,  PC:   9,  AR:   1,  MEM_OUT:  68,  TOS: []                    ,    jump_zero 6 // loop_while
+DEBUG:root:TICK:  54,  PC:  10,  AR:   1,  MEM_OUT:  68,  TOS: []                    ,    push 1     // (variable: a)
+DEBUG:root:TICK:  55,  PC:  11,  AR:   1,  MEM_OUT:  68,  TOS: [1]                   ,    load       // (variable: a)
+DEBUG:root:TICK:  57,  PC:  12,  AR:   1,  MEM_OUT:  68,  TOS: [68]                  ,    dup        // print_char
+DEBUG:root:TICK:  58,  PC:  13,  AR:   1,  MEM_OUT:  68,  TOS: [68, 68]              ,    write 0    // print_char
+DEBUG:root:вывод: D
+DEBUG:root:TICK:  59,  PC:  14,  AR:   1,  MEM_OUT:  68,  TOS: [68]                  ,    pop        // loop_while
+DEBUG:root:TICK:  60,  PC:  15,  AR:   1,  MEM_OUT:  68,  TOS: []                    ,    jump -12   // loop_while
+DEBUG:root:TICK:  61,  PC:   4,  AR:   1,  MEM_OUT:  68,  TOS: []                    ,    read 0     // read_char
+DEBUG:root:ввод: \0
+DEBUG:root:TICK:  62,  PC:   5,  AR:   1,  MEM_OUT:  68,  TOS: [0]                   ,    push 1     // setq
+DEBUG:root:TICK:  63,  PC:   6,  AR:   1,  MEM_OUT:  68,  TOS: [1, 0]                ,    store      // setq
+DEBUG:root:TICK:  65,  PC:   7,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    flags      // loop_while
+DEBUG:root:TICK:  66,  PC:   8,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    pop        // loop_while
+DEBUG:root:TICK:  67,  PC:   9,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    jump_zero 6 // loop_while
+DEBUG:root:TICK:  68,  PC:  16,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    push 0     // loop_while
+DEBUG:root:TICK:  69,  PC:  17,  AR:   1,  MEM_OUT:   0,  TOS: [0]                   ,    pop        // (top-level expression)
+DEBUG:root:TICK:  70,  PC:  18,  AR:   1,  MEM_OUT:   0,  TOS: []                    ,    halt      
+
+program counter: 18, ticks: 70.
+Вывод:
+ABCD
+```
 
 Статистика по алгоритмам:
 ```none
@@ -273,7 +380,6 @@ GitHub Actions при совершении `push`-а автоматически
 | Клиодт Вадим Дмитриевич | hello | 1   | -         | 60          | 134    | 157   | lisp -> asm | stack | harv | hw | instr | struct | stream | port | cstr | prob2 | cache |
 | Клиодт Вадим Дмитриевич | cat   | 4   | -         | 20          | 239    | 239   | lisp -> asm | stack | harv | hw | instr | struct | stream | port | cstr | prob2 | cache |
 | Клиодт Вадим Дмитриевич | prob2 | 14  | -         | 101         | 1683   | 2003  | lisp -> asm | stack | harv | hw | instr | struct | stream | port | cstr | prob2 | cache |
-
 ```
 
 
