@@ -113,11 +113,13 @@ str_literals_addresses: list
 next_var_addr: int
 def_port = 0  # default i/o port
 dynamic_string_max_length = 40  # default
+next_func_addr: int
+func_definitions_code: list
 
 
 def defun_process(func_vars: list, body: list) -> list[Instr]:
     # returns function name and list of instructions
-    global variables, next_var_addr
+    global variables, next_var_addr, functions
     code = []
     func_vars.reverse()
 
@@ -144,15 +146,24 @@ def defun_process(func_vars: list, body: list) -> list[Instr]:
 
 
 def to_machine_code(exp: Expression) -> list[Instr]:
-    global next_var_addr, str_literals_addresses
+    global \
+        next_var_addr, \
+        str_literals_addresses, \
+        next_func_addr, \
+        func_definitions_code, \
+        functions
     # 1 вызвать для каждого аргумента
     arg_code: list[list] = []
 
     for i in range(len(exp.arguments)):
         arg = exp.arguments[i]
 
+        # отдельный случай для объявления функций
+        if exp.name == "defun":
+            break
+
         # выражения раскрываем рекурсивно
-        if isinstance(arg, Expression):
+        elif isinstance(arg, Expression):
             assert not (
                 i == 0 and (exp.name == "defvar" or exp.name == "setq")
             ), "Недопустимое выражение для переменной"
@@ -183,12 +194,6 @@ def to_machine_code(exp: Expression) -> list[Instr]:
             arg_code.append([Instr(Opcode.PUSH, arg=next_var_addr, term="defvar")])
             next_var_addr += 1
 
-        # отдельный случай для объявления функций
-        elif exp.name == "defun" and i == 0:
-            assert (
-                0
-            ), "Объявление функции разрешено только на верхнем уровне вложенности"
-
         # переменные загружаем из памяти
         elif arg in variables:
             var_addr = variables.get(arg)
@@ -207,6 +212,33 @@ def to_machine_code(exp: Expression) -> list[Instr]:
             assert 0, f"Нераспознанный аргумент: {arg}"
 
     # 2 вызвать для выражения
+    if exp.name == "defun":
+        assert len(exp.arguments) >= 2, "Функция должна иметь тело"
+        name_and_vars = re.search(r"(.*)\s*\((.*)\)", exp.arguments[0])
+
+        assert (
+            name_and_vars is not None
+        ), f"Неверное объявление функции: {exp.arguments[0]}"
+        func_name = name_and_vars.groups()[0]
+
+        assert (
+            func_name not in functions
+        ), f"Двойное объявление функции запрещено: {func_name}"
+        assert (
+            func_name not in instructions
+        ), f"Имя функции совпадает с именем конструкции языка: {func_name}"
+
+        func_vars = name_and_vars.groups()[1].split(" ")
+        if func_vars[0] == "":
+            func_vars.pop()
+
+        functions.update({func_name: next_func_addr})
+        function_code = defun_process(func_vars, exp.arguments[1:])
+
+        func_definitions_code.extend(function_code)
+        next_func_addr += len(function_code)
+        return [Instr(Opcode.PUSH, arg=0, term="defun")]
+
     if exp.name in instructions:
         instr_code = instructions.get(exp.name)(arg_code)
         return instr_code
@@ -641,10 +673,16 @@ instructions = {
 
 
 def main(program_str: str) -> list:
-    global next_var_addr, str_literals_addresses, dynamic_string_max_length
+    global \
+        next_var_addr, \
+        str_literals_addresses, \
+        dynamic_string_max_length, \
+        next_func_addr, \
+        func_definitions_code
     expressions, str_literals, str_dynamic = parse_string(f"(A {program_str})")
-    func_definitions_code = []
     program_code = []
+    func_definitions_code = []
+    next_func_addr = 0
     # запись строковых литералов в память
     # (записываются в начало памяти данных)
     str_lit_addr = 0
@@ -681,38 +719,13 @@ def main(program_str: str) -> list:
 
     # код программы
     next_var_addr = str_lit_addr + 1
-    next_func_addr = 0
 
     for exp in expressions.arguments:
-        if exp.name == "defun":
-            assert len(exp.arguments) >= 2, "Функция должна иметь тело"
-            name_and_vars = re.search(r"(.*)\s*\((.*)\)", exp.arguments[0])
-
-            assert (
-                name_and_vars is not None
-            ), f"Неверное объявление функции: {exp.arguments[0]}"
-            func_name = name_and_vars.groups()[0]
-
-            assert (
-                func_name not in functions
-            ), f"Двойное объявление функции запрещено: {func_name}"
-            assert (
-                func_name not in instructions
-            ), f"Имя функции совпадает с именем конструкции языка: {func_name}"
-
-            func_vars = name_and_vars.groups()[1].split(" ")
-            if func_vars[0] == "":
-                func_vars.pop()
-
-            functions.update({func_name: next_func_addr})
-
-            function_code = defun_process(func_vars, exp.arguments[1:])
-
-            func_definitions_code.extend(function_code)
-            next_func_addr += len(function_code)
-        else:
-            program_code.extend(to_machine_code(exp))
-            program_code.append(Instr(Opcode.POP, term="(top-level expression)"))
+        # if exp.name == "defun":
+        #     pass
+        # else:
+        program_code.extend(to_machine_code(exp))
+        program_code.append(Instr(Opcode.POP, term="(top-level expression)"))
 
     program_code.append(Instr(Opcode.HALT))
 
