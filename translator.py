@@ -146,7 +146,12 @@ def defun_process(func_vars: list, body: list) -> list[Instr]:
 
 
 def to_machine_code(exp: Expression) -> list[Instr]:
-    global next_var_addr, str_literals_addresses, next_func_addr, func_definitions_code, functions
+    global \
+        next_var_addr, \
+        str_literals_addresses, \
+        next_func_addr, \
+        func_definitions_code, \
+        functions
     # 1 вызвать для каждого аргумента
     arg_code: list[list] = []
 
@@ -212,15 +217,15 @@ def to_machine_code(exp: Expression) -> list[Instr]:
         name_and_vars = re.search(r"(.*)\s*\((.*)\)", exp.arguments[0])
 
         assert (
-                name_and_vars is not None
+            name_and_vars is not None
         ), f"Неверное объявление функции: {exp.arguments[0]}"
         func_name = name_and_vars.groups()[0]
 
         assert (
-                func_name not in functions
+            func_name not in functions
         ), f"Двойное объявление функции запрещено: {func_name}"
         assert (
-                func_name not in instructions
+            func_name not in instructions
         ), f"Имя функции совпадает с именем конструкции языка: {func_name}"
 
         func_vars = name_and_vars.groups()[1].split(" ")
@@ -668,7 +673,12 @@ instructions = {
 
 
 def main(program_str: str) -> list:
-    global next_var_addr, str_literals_addresses, dynamic_string_max_length, next_func_addr, func_definitions_code
+    global \
+        next_var_addr, \
+        str_literals_addresses, \
+        dynamic_string_max_length, \
+        next_func_addr, \
+        func_definitions_code
     expressions, str_literals, str_dynamic = parse_string(f"(A {program_str})")
     program_code = []
     func_definitions_code = []
