@@ -672,7 +672,7 @@ instructions = {
 }
 
 
-def main(program_str: str) -> list:
+def main(program_str: str) -> (list, list):
     global \
         next_var_addr, \
         str_literals_addresses, \
@@ -683,35 +683,16 @@ def main(program_str: str) -> list:
     program_code = []
     func_definitions_code = []
     next_func_addr = 0
+    static_memory = []
     # запись строковых литералов в память
     # (записываются в начало памяти данных)
     str_lit_addr = 0
     for str_lit in str_literals:
         str_literals_addresses.append(str_lit_addr)
         for char in str_lit:
-            program_code.extend(
-                [
-                    Instr(
-                        Opcode.PUSH,
-                        arg=ord(char),
-                        term=f"(static string, char: {char})",
-                    ),
-                    Instr(Opcode.PUSH, arg=str_lit_addr),
-                    Instr(Opcode.STORE),
-                    Instr(Opcode.POP),
-                ]
-            )
-            str_lit_addr += 1
-
-        program_code.extend(
-            [
-                Instr(Opcode.PUSH, arg=0, term="(static string, 0-termination)"),
-                Instr(Opcode.PUSH, arg=str_lit_addr),
-                Instr(Opcode.STORE),
-                Instr(Opcode.POP),
-            ]
-        )
-        str_lit_addr += 1
+            static_memory.append(ord(char))
+        static_memory.append(0)  # 0-terminator
+        str_lit_addr += len(str_lit) + 1
 
     for i in range(str_dynamic):
         str_literals_addresses.append(str_lit_addr)
@@ -721,9 +702,6 @@ def main(program_str: str) -> list:
     next_var_addr = str_lit_addr + 1
 
     for exp in expressions.arguments:
-        # if exp.name == "defun":
-        #     pass
-        # else:
         program_code.extend(to_machine_code(exp))
         program_code.append(Instr(Opcode.POP, term="(top-level expression)"))
 
@@ -738,7 +716,7 @@ def main(program_str: str) -> list:
 
     # for p in full_code:
     #     print(str(p))
-    return full_code
+    return full_code, static_memory
 
 
 def translate(input_file: str, output_file: str):
@@ -753,7 +731,13 @@ def translate(input_file: str, output_file: str):
             program_lines = src_file.readlines()
             program_lines_no_comments = [re.sub(r"#.*", "", pl) for pl in program_lines]
             program: str = "".join(program_lines_no_comments)
-            json.dump(main(program), out_file, default=Instr.to_dict, indent=2)
+            program_memory, data_memory = main(program)
+            json.dump(
+                {"static_data": data_memory, "code": program_memory},
+                out_file,
+                default=Instr.to_dict,
+                indent=2,
+            )
 
 
 if __name__ == "__main__":

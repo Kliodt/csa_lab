@@ -1,7 +1,7 @@
 class Memory:
-    def __init__(self, memory_size: int):
-        self.memory = [0] * memory_size
-        self.memory_size = memory_size
+    def __init__(self, array: list):
+        self.memory = array
+        self.memory_size = len(array)
 
     def signal_read(self, addr: int):
         assert (

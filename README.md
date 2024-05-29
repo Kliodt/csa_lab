@@ -276,28 +276,32 @@ GitHub Actions при совершении `push`-а автоматически
 Определяется переменная `a`, в нее считывается символ из потока ввода. Пока значение не нулевое, происходит печать `a` 
 в поток вывода. Как только будет введен `\0`, программа прекратит печать и завершится. Нулевое значение не будет напечатано.
 ```json
-[
-  { "opcode": "push",   "arg": 0,   "term": "defvar" }, 
-  { "opcode": "push",   "arg": 1,   "term": "defvar" }, 
-  { "opcode": "store",   "arg": null,   "term": "defvar" }, 
-  { "opcode": "pop",   "arg": null,   "term": "(top-level expression)" }, 
-  { "opcode": "read",   "arg": 0,   "term": "read_char" }, 
-  { "opcode": "push",   "arg": 1,   "term": "setq" }, 
-  { "opcode": "store",   "arg": null,   "term": "setq" }, 
-  { "opcode": "flags",   "arg": null,   "term": "loop_while" }, 
-  { "opcode": "pop",   "arg": null,   "term": "loop_while" }, 
-  { "opcode": "jump_zero",   "arg": 6,   "term": "loop_while" }, 
-  { "opcode": "push",   "arg": 1,   "term": "(variable: a)" }, 
-  { "opcode": "load",   "arg": null,   "term": "(variable: a)" }, 
-  { "opcode": "dup",   "arg": null,   "term": "print_char" }, 
-  { "opcode": "write",   "arg": 0,   "term": "print_char" }, 
-  { "opcode": "pop",   "arg": null,   "term": "loop_while" }, 
-  { "opcode": "jump",   "arg": -12,   "term": "loop_while" }, 
-  { "opcode": "push",   "arg": 0,   "term": "loop_while" }, 
-  { "opcode": "pop",   "arg": null,   "term": "(top-level expression)" }, 
-  { "opcode": "halt",   "arg": null,   "term": null } 
-] 
+{
+  "static_data": [],
+  "code": [
+    { "opcode": "push",   "arg": 0,   "term": "defvar" }, 
+    { "opcode": "push",   "arg": 1,   "term": "defvar" }, 
+    { "opcode": "store",   "arg": null,   "term": "defvar" }, 
+    { "opcode": "pop",   "arg": null,   "term": "(top-level expression)" }, 
+    { "opcode": "read",   "arg": 0,   "term": "read_char" }, 
+    { "opcode": "push",   "arg": 1,   "term": "setq" }, 
+    { "opcode": "store",   "arg": null,   "term": "setq" }, 
+    { "opcode": "flags",   "arg": null,   "term": "loop_while" }, 
+    { "opcode": "pop",   "arg": null,   "term": "loop_while" }, 
+    { "opcode": "jump_zero",   "arg": 6,   "term": "loop_while" }, 
+    { "opcode": "push",   "arg": 1,   "term": "(variable: a)" }, 
+    { "opcode": "load",   "arg": null,   "term": "(variable: a)" }, 
+    { "opcode": "dup",   "arg": null,   "term": "print_char" }, 
+    { "opcode": "write",   "arg": 0,   "term": "print_char" }, 
+    { "opcode": "pop",   "arg": null,   "term": "loop_while" }, 
+    { "opcode": "jump",   "arg": -12,   "term": "loop_while" }, 
+    { "opcode": "push",   "arg": 0,   "term": "loop_while" }, 
+    { "opcode": "pop",   "arg": null,   "term": "(top-level expression)" }, 
+    { "opcode": "halt",   "arg": null,   "term": null }
+  ] 
+}
 ```
+
 ``` none
 DEBUG:root:TICK:   0,  PC:   0,  AR:   0,  MEM_OUT:   0,  TOS: []                    ,    push 0     // defvar
 DEBUG:root:TICK:   1,  PC:   1,  AR:   0,  MEM_OUT:   0,  TOS: [0]                   ,    push 1     // defvar
