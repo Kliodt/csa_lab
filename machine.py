@@ -11,13 +11,13 @@ from isa import Opcode
 
 
 def simulation(
-    program: list, input_buffer: list, data_memory_size: int, call_stack_size: int
+    program: list, input_buffer: list, data_memory: list, call_stack_size: int
 ) -> tuple[list, int, int]:
     io_controller = IOController()
     io_1 = IO1(input_buffer)
     io_controller.add_io(io_1, 0)
 
-    data_path = DataPath(DataStack(100), Memory(data_memory_size), io_controller)
+    data_path = DataPath(DataStack(100), Memory(data_memory), io_controller)
 
     control_unit = ControlUnit(program, CallStack(call_stack_size), data_path)
 
@@ -45,13 +45,15 @@ def main(code_file: str, input_file: str):
         input_buffer.append("\0")
 
     with open(code_file, encoding="utf-8") as cf:
-        code = json.loads(cf.read())
+        data_and_code = json.loads(cf.read())
+        static_data = data_and_code["static_data"]
+        code = data_and_code["code"]
 
     for instr in code:
         # Конвертация строки в Opcode
         instr["opcode"] = Opcode(instr["opcode"])
-
-    output, pc, tc = simulation(code, input_buffer, 1000, 30)
+    static_data += [0] * 300
+    output, pc, tc = simulation(code, input_buffer, static_data, 30)
     print(f"program counter: {pc}, ticks: {tc}.")
     print("Вывод:")
     print("".join(output))
